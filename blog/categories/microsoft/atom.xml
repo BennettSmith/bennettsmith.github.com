@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Microsoft | iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/blog/categories/microsoft/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-30T10:42:26-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
+  <author>
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mac Market Share Increasing!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2009/01/mac-market-share-increasing/"/>
+    <updated>2009-01-17T00:00:00-08:00</updated>
+    <id>http://blog.idevelopsoftware.com/2009/01/mac-market-share-increasing</id>
+    <content type="html"><![CDATA[<p>I was at the local library today to do a couple hours programming in a quiet environment without the normal distractions of my home office. To my surprise when I looked around I saw a sea of Apple MacBook and MacBook Pro laptops. Sure, there were a few Toshiba or HP laptops too, but the majority of the machines in the room had shinning bright Apple logos on the screens.</p>
+
+<p>My <em>unscientific</em> survey in the library today yielded the following numbers:</p>
+
+<div align="center">
+  <table width="70%">
+    <tr>
+      <th align="left" width="75%">
+        System
+      </th>
+      
+      <th align="left" width="25%">
+        Count
+      </th>
+    </tr>
+    
+    <tr>
+      <td>
+        White MacBook
+      </td>
+      
+      <td>
+        2
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Unibody 13″ Macbook
+      </td>
+      
+      <td>
+        1
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        15″ MacBook Pro
+      </td>
+      
+      <td>
+        2
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        12″ PowerBook
+      </td>
+      
+      <td>
+        1
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Toshiba
+      </td>
+      
+      <td>
+        1
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        HP
+      </td>
+      
+      <td>
+        2
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        IBM
+      </td>
+      
+      <td>
+        1
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<p>That breaks down to 60% Apple, 40% Microsoft.</p>
+
+<p>Now that’s what I like to see! Maybe the recent discussion on the macsb about Mac market share isn’t so far fetched after all. Here are a few interesting links:</p>
+
+<ul>
+<li><a href="http://successfulsoftware.net/2009/01/09/macosx-market-share/">Mac OS X Market Share</a></li>
+<li><a href="http://blog.wired.com/business/2008/01/gartner-says-ma.html">Mac Market Share to Double in Three Years</a></li>
+</ul>
+
+
+<p>Who knows if this is all true or not. With the recent announcement that Steve Jobs will be taking a six month leave of absense from Apple due to health concerns the future for Apple is less clear than it once was. I’m sure Apple will do just fine over the next 12-18 months since there are a number of products already in development. The big concern has to be about the sort of innovations that Apple can concieve of and execute on <strong>after</strong> the current pipeline runs dry. Will there be other folks at Apple with the same vision and forsight as Steve Jobs? Probably, but it is far from certain.</p>
+
+<p>Atleast for now it seems like the market share for Apple will continue to climb. Microsoft will have to hit a home run with the new Windows 7 operating system if they want to fend off the onslaught of Mac OS X. Being a long time developer on both platforms I can say that from my point of view having more users on the Mac makes me happy! I look forward to developing, releasing and selling more applications on the Mac platform.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_42">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fmac-market-share-increasing%2F&linkname=Mac%20Market%20Share%20Increasing%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fmac-market-share-increasing%2F&linkname=Mac%20Market%20Share%20Increasing%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fmac-market-share-increasing%2F&linkname=Mac%20Market%20Share%20Increasing%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[You can&#8217;t keep a good class library down &#8230; MFC gets reprieve from death sentence!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/
+/"/>
+    <updated>2008-07-15T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence</id>
+    <content type="html"><![CDATA[<p>A few years ago I was working at a company where we built applications using Visual Studio 6 and MFC. The applications had been around for about 10-12 years, and were all showing their age. Customers were beginning to request updated user interface features like they were seeing in <em>modern</em> Microsoft products such as Office and Internet Explorer. Sadly, we could not deliver these user interface enhancements easily because MFC was not getting any attention from Microsoft.</p>
+
+<p>In late 2002 Microsoft was pushing the .NET Framework, C# and WinForms as the heir apparent for Win32, C++ and MFC. Converting a decade of legacy C++ MFC code to .NET and WinForms just wasn’t an option. We all felt like Microsoft had just abandoned us for greener pastures.</p>
+
+<p>Our solution at the time was to start a long difficult process of moving away from MFC toward a cross-platform class library built by <a href="http://www.trolltech.com">Trolltech</a>, called Qt. In many respects this turned out to be a good decision since it meant we could begin to seriously consider offering our applications on Windows, Linux and the Mac instead of just on Windows. Still, it felt like Microsoft had hung us out to dry.</p>
+
+<p>The WinForms classes just were not rich enough to build complex desktop applications at the time. Many of the conveniences we had come to rely upon from the MFC class libraries were missing and it would have been up to us to roll our own alternatives had we gone down the WinForms route. I think Microsoft was too focused on building web applications to devote sufficient resources to WinForms.</p>
+
+<p>Here we are six years later and Microsoft has announced that they are providing a <em>MFC Feature Pack for Visual C++ 2008</em> that will add significantly to the capabilities of the MFC class libraries. I can hear MFC development teams all across the Internet celebrating this change in stance from Microsoft.</p>
+
+<p>Here are a couple links to information from Microsoft on the topic:</p>
+
+<ul>
+<li><a href="http://msdn.microsoft.com/en-us/library/bb982354.aspx">MFC Feature Pack for Visual C++ 2008</a></li>
+<li><a href="http://channel9.msdn.com/posts/Charles/Pat-Brenner-New-Updates-to-MFC-in-Visual-Studio-2008/">Pat Brenner: New Updates to MFC in Visual Studio 2008</a></li>
+</ul>
+
+
+<p>Couple MFC with a good third-party widget library like the toolkit offered by <a href="http://www.codejock.com/">CodeJock Software</a> and you have everything necessary to build some awesome new desktop applications.</p>
+
+<p><strong>Long Live MFC!</strong></p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_37">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fyou-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence%2F&linkname=You%20can%26%238217%3Bt%20keep%20a%20good%20class%20library%20down%20%26%238230%3B%20MFC%20gets%20reprieve%20from%20death%20sentence%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fyou-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence%2F&linkname=You%20can%26%238217%3Bt%20keep%20a%20good%20class%20library%20down%20%26%238230%3B%20MFC%20gets%20reprieve%20from%20death%20sentence%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fyou-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence%2F&linkname=You%20can%26%238217%3Bt%20keep%20a%20good%20class%20library%20down%20%26%238230%3B%20MFC%20gets%20reprieve%20from%20death%20sentence%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Microsoft Professional Developers Conference 2008 &#8211; See you there?]]></title>
+    <link href="http://blog.idevelopsoftware.com/2008/07/microsoft-professional-developers-conference-2008-see-you-there/"/>
+    <updated>2008-07-03T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2008/07/microsoft-professional-developers-conference-2008-see-you-there</id>
+    <content type="html"><![CDATA[<p><a href="http://www.microsoftpdc.com/Default.aspx"><img src="http://www.microsoftpdc.com/Images/logo-flat.png" alt="logo-flat.png" border="0" width="249" height="54" align="right" /></a></p>
+
+<p>The last time I attended the Microsoft Professional Developer Conference was back in 2001, shortly after the attacks of September 11th, 2001. Just over 6000 people made the trip to Los Angeles to learn about the latest technologies from Microsoft, as they were in the midst of rolling out the .NET Framework. They were pushing Hailstorm (I still have the free book they gave everyone with the Hailstorm API in it. I never did get a chance to use it though.). Everyone was excited about building new web services using .NET and C#.</p>
+
+<p>A lot has changed since then. Vista and Windows Server 2008 are here, the .NET Framework has gone through three major revisions, Visual Studio has seen major improvements supporting team development, Intel has delivered multi-core processors and Microsoft still hasn’t delivered on the promise that was Hailstorm.</p>
+
+<p>The preliminary agenda for PDC 2008 has some interesting sessions listed. Topics I am hoping to learn more about this year include:</p>
+
+<ul>
+<li>Silverlight</li>
+<li>Visual Studio 10</li>
+<li>Windows 7</li>
+<li>Multi-core Programming Techniques</li>
+</ul>
+
+
+<p>Even though Bill Gates is now officially retired it looks like he is scheduled to speak at the conference as well. For a geeky college dropout with a whiny voice he does a great job delivering keynotes to developers. He doesn’t have the stage presence of a Steve Jobs, but he isn’t running Apple either. I look forward to hearing what his message for Microsoft developers is this year.</p>
+
+<p>The dates for the conference are October 26 – 30, and the event is being held at the Los Angeles Convention Center once again. I hope to see you there.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_32">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fmicrosoft-professional-developers-conference-2008-see-you-there%2F&linkname=Microsoft%20Professional%20Developers%20Conference%202008%20%26%238211%3B%20See%20you%20there%3F" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fmicrosoft-professional-developers-conference-2008-see-you-there%2F&linkname=Microsoft%20Professional%20Developers%20Conference%202008%20%26%238211%3B%20See%20you%20there%3F" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fmicrosoft-professional-developers-conference-2008-see-you-there%2F&linkname=Microsoft%20Professional%20Developers%20Conference%202008%20%26%238211%3B%20See%20you%20there%3F" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to enable MSI Logging]]></title>
+    <link href="http://blog.idevelopsoftware.com/2008/06/how-to-enable-msi-logging/"/>
+    <updated>2008-06-09T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2008/06/how-to-enable-msi-logging</id>
+    <content type="html"><![CDATA[<p>If you are trying to debug an installer problem it is probably worth having MSI logging turned on. This will produce a file in your %TEMP% directory that contains a detailed trace of the activities that took place in MSIEXEC. This can be very helpful when an install or uninstall fails without any clear indication as to why it failed.</p>
+
+<p>Log files are stored in the directory pointed to by the TEMP environment variable. The filename format is MSIxxxx.LOG, where xxxx is replaced with a random string. A new log file is created for each invocation of MSIEXEC.</p>
+
+<p>To enable logging through group policy, do the following:</p>
+
+<ul>
+<li>Start / Run… / gpedit.msc</li>
+<li>Drill down into <code>Local Computer Policy / Computer Configuration / Administrative Templates / Windows Components / Windows Installer / Logging</code></li>
+<li>Enable logging with the setting “voicewarmup”. These are the command-line arguments that MSIEXEC will use.</li>
+</ul>
+
+
+<p>These links contain more information on setting up logging:</p>
+
+<ul>
+<li><a href="http://technet2.microsoft.com/windowsserver/en/library/0907105e-7856-4c93-b97f-a9a306623af51033.mspx?mfr=true">TechNet Article</a></li>
+<li><a href="http://www.pctools.com/guides/registry/detail/1127">PC Tools Guide</a></li>
+</ul>
+
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_29">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F06%2Fhow-to-enable-msi-logging%2F&linkname=How%20to%20enable%20MSI%20Logging" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F06%2Fhow-to-enable-msi-logging%2F&linkname=How%20to%20enable%20MSI%20Logging" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F06%2Fhow-to-enable-msi-logging%2F&linkname=How%20to%20enable%20MSI%20Logging" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GetQueuedCompletionStatus() &#8211; Devil in the Details!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2008/05/attention-to-details-required-when-using-getqueuedcompletionstatus/"/>
+    <updated>2008-05-22T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2008/05/attention-to-details-required-when-using-getqueuedcompletionstatus</id>
+    <content type="html"><![CDATA[<p>One of the projects I work on makes use of the Win32 asynchronous I/O model for managing network traffic between a Windows Service and a custom-built network device.</p>
+
+<p>One of the key Win32 APIs we use is called GetQueuedCompletionStatus. This API provides access to an I/O completion port that is managed by a separate operating system thread.</p>
+
+<p>When dealing with this API and Windows asynchronous I/O in general it helps to think about the model as being supported by a separate workpool thread. This API gives the caller a way to synchronize with the operations of that workpool thread (or threads).</p>
+
+<p>The prototype for this API is as follows:</p>
+
+<pre>BOOL GetQueuedCompletionStatus(
+    HANDLE CompletionPort,
+    LPDWORD lpNumberofBytes,
+    PULONG_PTR lpCompletionKey,
+    LPOVERLAPED* lpOverlapped,
+    DWORD dwMilliseconds);
+</pre>
+
+
+<p></p></p>
+
+<p>At first glance the API may not seem too complex. There are 5 parameters and a boolean return type. Some of the parameters are easy to figure out just be looking at their names. Others are less clear. You could speculate that the returned boolean is an indicator of whether or not the operation was successful or not. It is easy to be lulled into a false sense of understanding by reading through the first few paragraphs of the MSDN documentation on this API.</p>
+
+<p>It actually turns out that this API is very complex (perhaps too complex?), and careful study of the MSDN documentation is required if you wish to handle all of the possible conditions when this API returns. Pay careful attention to the section in the documentation that discusses <strong>Return Values</strong> and <strong>Remarks</strong>.</p>
+
+<p>My favorite gem from the return values section (and the one I recently missed when using this API) is:</p>
+
+<blockquote><p>If a socket handle associated with a completion port is closed, GetQueuedCompletionStatus returns ERROR_SUCCESS, with *lpOverlaped non-NULL and lpNumberOfBytes equal to zero.</p></blockquote>
+
+<p>In other words, when the socket is closed (possibly because the peer closed it) you will get what appears to be a successful I/O completion. This does not represent what most would consider a successful return, and if you have not carefully checked the other parameters, your code may mis-interpret this condition.</p>
+
+<p>Another area where you need to be careful when using Windows Asynchronous I/O is application shutdown. There may be a number of pending I/O operations that have been queued to the I/O completion port. It is your responsibility to finish processing all of these I/O operations (possibly by first closing the socket and then handling each failed I/O completion event) <strong>and</strong> release any resources that were allocated for the I/O operations. Failing to do this will likely result in a memory leak for the application.</p>
+
+<p>The moral of the story is to always read the entire MSDN documentation page and make sure your code handles all of the possible combinations of return values!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_28">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F05%2Fattention-to-details-required-when-using-getqueuedcompletionstatus%2F&linkname=GetQueuedCompletionStatus%28%29%20%26%238211%3B%20Devil%20in%20the%20Details%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F05%2Fattention-to-details-required-when-using-getqueuedcompletionstatus%2F&linkname=GetQueuedCompletionStatus%28%29%20%26%238211%3B%20Devil%20in%20the%20Details%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F05%2Fattention-to-details-required-when-using-getqueuedcompletionstatus%2F&linkname=GetQueuedCompletionStatus%28%29%20%26%238211%3B%20Devil%20in%20the%20Details%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

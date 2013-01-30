@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Qt | iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/blog/categories/qt/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-30T10:42:26-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
+  <author>
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Nokia places Qt under LGPL License &#8211; Sweet!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet/"/>
+    <updated>2009-01-14T00:00:00-08:00</updated>
+    <id>http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet</id>
+    <content type="html"><![CDATA[<p>I have been a big fan of the Trolltech Qt Framework for a number of years. It is a fantastic way to build high quality cross-platform desktop applications in C++. For the past six years it seems like every project I work on has included a rich desktop GUI application of some sort. Each time this need would arise I would start the process of <em>selling</em> the idea of using the Qt Framework for the project. The biggest hurdle was always the per-developer cost for the commercial license of the framework. I would hear things like</p>
+
+<blockquote><p>Just use MFC. It’s free and we don’t really see a need for the application to be cross-platform anyway.</p></blockquote>
+
+<p>or sometimes I would hear</p>
+
+<blockquote><p>Use the GPL version of Qt and just <em>keep it under the radar</em> until we are sure the application will be released to our customers.</p></blockquote>
+
+<p>It was always frustrating to try and make the case that Qt was a better solution than MFC for UI, was more comprehensive for general development than other frameworks, and that it was worth planning for the possiblity of releasing the applications for Linux or Mac as well as Windows. In the end each project did adopt the Qt Framework, but it really was a distraction to try and justify the use.</p>
+
+<p>Thankfully with the purchase of Trolltech by Nokia we are seeing a change in the licensing terms for the Qt Framework. Starting with the 4.5 release it looks like the framework will be placed under the LGPL license making it much easier to adopt as part of commercial development efforts.</p>
+
+<p>Here are a couple links that discuss the development further:</p>
+
+<ul>
+<li><a href="http://arstechnica.com/news.ars/post/20090114-nokia-qt-lgpl-switch-huge-win-for-cross-platform-development.html">ARS Technica</a></li>
+<li><a href="http://www.pcworld.com/article/157054/nokia_hopes_to_increase_qt_popularity_with_new_license.html">PC World</a></li>
+</ul>
+
+
+<p>and you can read the news directly from Nokia on the <a href="http://www.qtsoftware.com/about/licensing">Qt Licensing Terms</a> page.</p>
+
+<p>This new development on the licensing front and the recent inclusion of WebKit into the Qt Framework make me very optimistic about a long and prosperous future for developers who know the Qt Framework! <strong>Thank you Nokia!</strong></p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_41">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fnokia-places-qt-under-lgpl-license-sweet%2F&linkname=Nokia%20places%20Qt%20under%20LGPL%20License%20%26%238211%3B%20Sweet%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fnokia-places-qt-under-lgpl-license-sweet%2F&linkname=Nokia%20places%20Qt%20under%20LGPL%20License%20%26%238211%3B%20Sweet%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fnokia-places-qt-under-lgpl-license-sweet%2F&linkname=Nokia%20places%20Qt%20under%20LGPL%20License%20%26%238211%3B%20Sweet%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Use QImage to create a composite image (i.e. One image with another overlaid on top of it.)
+]]></title>
+    <link href="http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/
+/"/>
+    <updated>2008-03-19T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it</id>
+    <content type="html"><![CDATA[<p><span class="alignright"><a target="_blank" href="http://www.trolltech.com"><img src="http://idvlpsw.files.wordpress.com/2008/03/qt.png" alt="qt.png" border="0" width="48" height="48" /></a></span>Today I wanted to combine two images of similar size to create a new image. The new image was going to be used for a toolbar button. I have purchased a set of commercial images in the PNG format for use on application toolbars. The set came with a bunch of overlay images that could be used to modify each of the base images. The overlays included things like arrows, warning signs, arrows, people, etc. My first though for using these images was to fire up Adobe Illustrator and just create a new icon by merging the base and overlay together. Then I realized that Qt could do the job for me at runtime, and with a little work I could dynamically overlay different badges on a base icon.</p>
+
+<p>The code below can be used to construct a composite image. You pass in references to a base image and an overlay image. These images are used to construct a third image, and that is returned to the caller.</p>
+
+<pre>QImage createImageWithOverlay(const QImage& baseImage, const QImage& overlayImage)
+{
+    QImage imageWithOverlay = QImage(baseImage.size(), QImage::Format_ARGB32_Premultiplied);
+    QPainter painter(&imageWithOverlay);
+
+    painter.setCompositionMode(QPainter::CompositionMode_Source);
+    painter.fillRect(imageWithOverlay.rect(), Qt::transparent);
+
+    painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
+    painter.drawImage(0, 0, baseImage);
+
+    painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
+    painter.drawImage(0, 0, overlayImage);
+
+    painter.end();
+
+    return imageWithOverlay;
+}
+</pre>
+
+
+<p></p></p>
+
+<p>Here is an example of using this routine to create an image that might be used to represent something being transfered from a network attached machine.</p>
+
+<pre>QImage baseImage(":/Resources/connect_pc_64.png");
+    QImage overlayLogoff(":/Resources/overlay_arrow_east_64.png");
+    QImage logoffImage = createImageWithOverlay(baseImage, overlayLogoff)
+</pre>
+
+
+<p>The two source images and resulting composite are shown below.</p>
+
+<ol>
+<li><p>:/Resources/connect_pc_64.png
+<img src="http://idvlpsw.files.wordpress.com/2008/03/connect-pc-64.png" border="0" width="64" height="64" /></p></li>
+<li><p>:/Resources/overlay_arrow_east_64.png
+<img src="http://idvlpsw.files.wordpress.com/2008/03/arrow-east-64.png" border="0" width="64" height="64" /></p></li>
+<li><p>Generated Composite Image
+<img src="http://idvlpsw.files.wordpress.com/2008/03/logoffimage.png" border="0" width="64" height="64" /></p></li>
+</ol>
+
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_19">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fuse-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it%2F&linkname=Use%20QImage%20to%20create%20a%20composite%20image%20%28i.e.%20One%20image%20with%20another%20overlaid%20on%20top%20of%20it.%29" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fuse-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it%2F&linkname=Use%20QImage%20to%20create%20a%20composite%20image%20%28i.e.%20One%20image%20with%20another%20overlaid%20on%20top%20of%20it.%29" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fuse-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it%2F&linkname=Use%20QImage%20to%20create%20a%20composite%20image%20%28i.e.%20One%20image%20with%20another%20overlaid%20on%20top%20of%20it.%29" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HOWTO &#8211; Use Visual Studio 2005 for Qt Open Source Development]]></title>
+    <link href="http://blog.idevelopsoftware.com/2006/02/howto-use-visual-studio-2005-for-qt-open-source-development/"/>
+    <updated>2006-02-14T00:00:00-08:00</updated>
+    <id>http://blog.idevelopsoftware.com/2006/02/howto-use-visual-studio-2005-for-qt-open-source-development</id>
+    <content type="html"><![CDATA[<p><em>THIS IS A WORK IN PROGRESS. EXPECT UPDATES AND DON’T BE SURPRISED BY INCOMPLETE INFORMATION</em><span class="alignright"><a target="_blank" href="http://www.trolltech.com"><img src="http://idvlpsw.files.wordpress.com/2008/03/qt.png" alt="qtlogo_feature.png" border="0" /></a></span></p>
+
+<p>Trolltech has released Qt 4 under a dual-license for all supported platforms. In earlier versions of Qt they only released the open source version for Mac and Linux, leaving Windows developers with no choice but to purchase a commercial license. That all changed with the release of Qt 4 when Trolltech started to provide an open source version for Windows development too! The only catch was that Trolltech only supports the MinGW GCC compiler for development using the open source version.</p>
+
+<p>This article describes how to patch Qt 4 open source edition on Windows so you can develop using Visual Studio 2005. You can even develop using the free Express edition of Visual Studio 2005 so long as you also install the latest Platform SDK.</p>
+
+<p>Please keep in mind that these patches and tips are not provided so you can get around the very generous Trolltech dual-license terms of use. If you are developing or intend to develop a commercial application using Qt 4 you must purchase a commercial license for Qt 4. Only use the information provided in this article if you wish to develop open source GPL software for the Windows platform and wish to use the Microsoft Visual C++ 2005 compiler instead of the MinGW GCC compiler.</p>
+
+<h2>Download Qt 4.1 Source Code, Patches, and Notes</h2>
+
+<ul>
+<li>Download the latest open source Windows version of Qt 4.1 from Trolltech at http://www.trolltech.com/download/qt/windows.html. Unzip the file to C:. It will extract all of the files into a sub-directory called qt-win-opensource-src-4.1.0.</li>
+<li>Download the latest patch file used to modify the open source version of Qt 4.1 to support Microsoft Visual Studio 2005 from Source Forge at http://sourceforge.net/projects/qtwin/. Unzip the file to C:\qt-win-opensource-src-4.1.0.</li>
+<li>Download the build script, environment setup and notes from http://www.idevelopsoftware.com/downloads/qt/Qt41WinBuildScript.zip. Unzip the file to C:\qt-win-opensource-src-4.1.0.</li>
+<li><p>If you don’t already have Visual Studio 2005 you can download the Express edition. You will also need to download the Platform SDK.
+http://msdn.microsoft.com/vstudio/express/visualC/default.aspx</p>
+
+<p>http://msdn.microsoft.com/vstudio/express/visualc/usingpsdk/default.aspx</p></li>
+</ul>
+
+
+<h2>Building Qt 4.1 using Visual C++ 2005</h2>
+
+<p>Open C:\qt-win-opensource-src-4.1.0 in Windows Explorer.<br/>
+Double-click on the “Qt 4.1 Command Prompt” shortcut to open a Command Prompt window with the environment setup for Qt 4.1 development. IMPORTANT: You must already have Visual Studio 2005 installed. You may need to edit setenv.cmd if your copy of Visual Studio 2005 is not in the default location.</p>
+
+<p>Run “installpatch41.bat”<br/>
+This will patch the Qt 4.1 source code so it builds properly using the Visual C++ 2005 compiler.</p>
+
+<p>Run “build.cmd”<br/>
+This will build all of the Qt 4.1 libraries, utilities, and sample applications using the Visual C++ 2005 compiler.</p>
+
+<p>To rebuild, if necessary, make sure to first clean up the previous build. Do this by running<br/>
+nmake distclean</p>
+
+<p>from the C:\qt-win-opensource-src-4.1.0 directory.</p>
+
+<p>External Tools Configuration in Visual Studio 2005</p>
+
+<p>Launch Visual Studio 2005 and select the “External Tools…” item from the Tools menu.<br/>
+Use the “Add button to define each of the following external tools:</p>
+
+<p>Title ……………….. QMake (Project File Generation Mode)<br/>
+Command ……………… D:\qt-win-opensource-src-4.1.0\bin\qmake.exe<br/>
+Arguments ……………. -project -spec win32-msvc2005<br/>
+Initial directory …….. $(ProjectDir)<br/>
+Use Output window …….. [X]<br/>
+Treat output as Unicode .. [ ]<br/>
+Prompt for arguments ….. [ ]<br/>
+Close on exit ………… [X]</p>
+
+<p>Title ……………….. QMake (Makefile Generation Mode)<br/>
+Command ……………… D:\qt-win-opensource-src-4.1.0\bin\qmake.exe<br/>
+Arguments ……………. -makefile -spec win32-msvc2005<br/>
+Initial directory …….. $(ProjectDir)<br/>
+Use Output window …….. [X]<br/>
+Treat output as Unicode .. [ ]<br/>
+Prompt for arguments ….. [ ]<br/>
+Close on exit ………… [X]</p>
+
+<p>Title ……………….. Qt Designer<br/>
+Command ……………… D:\qt-win-opensource-src-4.1.0\bin\designer.exe<br/>
+Arguments …………….<br/>
+Initial directory …….. $(ProjectDir)<br/>
+Use Output window …….. [ ]<br/>
+Treat output as Unicode .. [ ]<br/>
+Prompt for arguments ….. [ ]<br/>
+Close on exit ………… [ ]</p>
+
+<p>Title ……………….. Qt Assistant<br/>
+Command ……………… D:\qt-win-opensource-src-4.1.0\bin\assistant.exe<br/>
+Arguments …………….<br/>
+Initial directory …….. $(ProjectDir)<br/>
+Use Output window …….. [ ]<br/>
+Treat output as Unicode .. [ ]<br/>
+Prompt for arguments ….. [ ]<br/>
+Close on exit ………… [ ]<br/>
+Adding a Qt 4.1 Development Toolbar</p>
+
+<p>Add a new toolbar for Qt 4.1 Development by selecting “Customize…” from the Tools menu. Once the “Customize” dialog appears select the “Toolbars” tab and press “New…” For the toolbar name enter “Qt 4.1 Development” and press “OK”.<br/>
+Select the “Commands” tab on the “Customize” dialog. Select “Tools” from the “Categories:” list. Scroll down in the “Commands:” list until you see “External Command 7″. Drag commands 7, 8, 9, and 10 onto the new “Qt 4.1 Development” toolbar.<br/>
+Creating a New Visual Studio 2005 Project</p>
+
+<p>Open the “New Project” dialog by selecting File->New->Project… from the menu. Under “Project types” on the left side of the dialog expand “Visual C++” and then select “General.” The right side of the dialog will display a list of all the general project types. Select “Makefile Project” from the list of project types. Provide a name for the project and set the location on disk where you wish the project to be saved. Be sure not to check “Create directory for solution”, as this will create an extra level of directories that is just confusing. Click the “OK” button and you will be presented with the “Makefile Application Wizard.” Simply press the “Finish” button on the first page of the wizard.</p>
+
+<p>Once the project has been created and opened, set the NMake Configuration Properties for the project as shown below. In the “Solution Explorer” right-click on the name of your project. Select “Properties…” from the context menu. On the property pages dialog select “Configuration Properties” and “NMake” on the left side tree control. On the right side, enter the following information, making sure to set the properties for both the debug and release configurations.</p>
+
+<p>Release Configuration Settings</p>
+
+<p>General<br/>
+——-<br/>
+Build Command Line …………………. nmake release-all<br/>
+Rebuild All Commaond Line …………… nmake release-clean release-all<br/>
+Clean Command Line …………………. nmake release-clean<br/>
+Output ……………………………. foo.exe</p>
+
+<p>IntelliSense<br/>
+————<br/>
+Common Language Runtime Support ……… No Common Language Runtime support<br/>
+Preprocessor Definitions ……………. WIN32;NDEBUG;UNICODE;QT_LARGEFILE_SUPPORT;QT_DLL;<br/>
+QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT<br/>
+Include Search Path ………………… “c:/qt-win-opensource-src-4.1.0/include/QtCore”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include/QtGui”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include/ActiveQt”;<br/>
+“c:/qt-win-opensource-src-4.1.0/mkspecs/win32-msvc2005″<br/>
+Forced Includes …………………….<br/>
+Assembly Search Path ………………..<br/>
+Forced Using Assemblies ……………..<br/>
+Debug Configuration Settings</p>
+
+<p>General<br/>
+——-<br/>
+Build Command Line …………………. nmake debug-all<br/>
+Rebuild All Commaond Line …………… nmake debug-clean debug-all<br/>
+Clean Command Line …………………. nmake debug-clean<br/>
+Output ……………………………. food.exe</p>
+
+<p>IntelliSense<br/>
+————<br/>
+Common Language Runtime Support ……… No Common Language Runtime support<br/>
+Preprocessor Definitions ……………. WIN32;_DEBUG;UNICODE;QT_LARGEFILE_SUPPORT;QT_DLL;<br/>
+QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT<br/>
+Include Search Path ………………… “c:/qt-win-opensource-src-4.1.0/include/QtCore”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include/QtGui”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include/ActiveQt”;<br/>
+“c:/qt-win-opensource-src-4.1.0/mkspecs/win32-msvc2005″<br/>
+Forced Includes …………………….<br/>
+Assembly Search Path ………………..<br/>
+Forced Using Assemblies ……………..<br/>
+QMake Project Settings</p>
+
+<p>Create a project file called “foo.pro” in the directory for your makefile project. Replace the name “foo.pro” with the name of your actual application. Place the file in the directory where your Visual Studio project was created. To start with, the contents might look something like this:</p>
+
+<p>CONFIG += qt<br/>
+TEMPLATE = app<br/>
+SOURCES += foo.cpp<br/>
+HEADERS += foo.h<br/>
+FORMS += foo.ui<br/>
+You should be off and running now. For more detailed information I would suggest reading the qmake reference manual. You might also want to take a look at the Qt 4.1 tutorials in Qt Assistant. Have fun!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_13">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

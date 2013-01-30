@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Separate Interface and Implementation in C/C++ - iDevelopSoftware</title>
+  <meta name="author" content="Bennett Smith">
+
+  
+  <meta name="description" content="I spend most of my time developing software in C/C++, and have done so for many years now. One thing that always catches me by surprise is when I &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2008/04/separate-interface-and-implementation-in-cc/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="iDevelopSoftware" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38083118-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">iDevelopSoftware</a></h1>
+  
+    <h2>Simplicity and Clarity by Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.idevelopsoftware.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Separate Interface and Implementation in C/C++</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-04-02T00:00:00-07:00" pubdate data-updated="true">Apr 2<span>nd</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I spend most of my time developing software in C/C++, and have done so for many years now. One thing that always catches me by surprise is when I find code written by someone who decides to put implementation details of a function or method in a header file. The only reason I can come up with for why developers would do this is pure laziness.</p>
+
+<blockquote><p>Let’s face it, C and C++ are such a pain in the but. I mean, each ADT or Class needs two files; a .h and .c/.cpp. It sure would be easier to just lump all the stuff in a single file. Well, since C/C++ can’t generally handle that we might as well sprinkle some of the code into the .h file and some of it into the .cpp file. The compiler really doesn’t care where the code is. And, to top it off, switching between files in most editors takes at least one keystroke. Whoooaaa – what a burden for a busy developer. <img src='http://www.idevelopsoftware.com/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /></p></blockquote>
+
+<p>Of course, this has been written about by numerous people on the web as well as having been covered by many technical journals and books. The concept is to keep the interface in one file and the implementation in another. I am still amazed to find that people routinely place implemenation details in the header files of C++ classes. All this does is <strong>slow down compile times</strong>. Some might say “So what, it doesn’t really matter anyhow. The program still compiles.” Well I say life is too short to spend all your time waiting for the compiler to recompile code that it already compiled, and for which there is no actualy reason to recompile at this point.</p>
+
+<p>It all comes down to dependency management. Developers need to understand how the pieces of their programs interact, how that interaction impacts the build speed for the application, and be aware of techniques they can use to minimize the dependencies between components in their applications.</p>
+
+<p>So, why is it such a bad idea to put implementation details into a header file? There are a number of design principles that would suggest separating interface from implementation pays dividens over the lifetime of an application.</p>
+
+<p>When implementation details creep into an interface header everyone suffers. The compiler has to recompile many more modules each time an implementation change is made. Usually these recompiles are completely unnecessary since all the other modules require is the interface definition from the header file. The problem is that the compiler cannot distinguish an interface change from an implementation change when all of the code is packed into a single header file.</p>
+
+<p>By keeping interface and implementation seperate compile speed will improve. On all but the most trivial projects this is an important thing to keep in mind.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_21">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F04%2Fseparate-interface-and-implementation-in-cc%2F&linkname=Separate%20Interface%20and%20Implementation%20in%20C%2FC%2B%2B" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F04%2Fseparate-interface-and-implementation-in-cc%2F&linkname=Separate%20Interface%20and%20Implementation%20in%20C%2FC%2B%2B" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F04%2Fseparate-interface-and-implementation-in-cc%2F&linkname=Separate%20Interface%20and%20Implementation%20in%20C%2FC%2B%2B" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">bsmith</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-04-02T00:00:00-07:00" pubdate data-updated="true">Apr 2<span>nd</span>, 2008</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/c-/'>C++</a>, <a class='category' href='/blog/categories/patterns/'>Patterns</a>, <a class='category' href='/blog/categories/software/'>Software</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2008/04/separate-interface-and-implementation-in-cc/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2008/04/separate-interface-and-implementation-in-cc/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2008/03/what-is-the-product-exposure-if-you-ship-debug-symbols/" title="Previous Post: What is the product exposure if you ship debug symbols?">&laquo; What is the product exposure if you ship debug symbols?</a>
+      
+      
+        <a class="basic-alignment right" href="/2008/04/software-managers-dont-forget-to-invest-for-the-future/" title="Next Post: Software Managers, don&#8217;t forget to invest for the future!">Software Managers, don&#8217;t forget to invest for the future! &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/plugin-experiments/">Plugin Experiments</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/code-blocks/">Code Blocks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+/">Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/">Capturing AirPort Extreme Log with Lion Server Syslog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/BennettSmith">@BennettSmith</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'BennettSmith',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("BennettSmith", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/BennettSmith" class="twitter-follow-button" data-show-count="false">Follow @BennettSmith</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Bennett Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'idevelopsoftware';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

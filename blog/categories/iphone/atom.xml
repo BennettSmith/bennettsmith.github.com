@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iPhone | iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/blog/categories/iphone/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-30T10:42:26-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
+  <author>
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Heading to Big Nerd Ranch later this month!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/10/heading-to-big-nerd-ranch-later-this-month/"/>
+    <updated>2010-10-03T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/10/heading-to-big-nerd-ranch-later-this-month</id>
+    <content type="html"><![CDATA[<p>One of the podcasts I listen to on a regular basis is called MacBreak. The hosts are Leo Leporte, Alex Lindsay, Andy Ihnatko and a rotating list of other Mac/Apple/iOS luminaries. If you aren’t familiar with it head over to <a href="http://twit.tv/mbw">http://twit.tv/mbw</a> and have a listen. It is highly recommended for anyone interested in <em>all things Macintosh (and iOS too)</em>.</p>
+
+<p>A few episodes ago Alex Lindsay mentioned that his company was going to be hosting a one week <em>Commuter iOS Class</em> at their San Francisco offices so their team could come up to speed developing applications for iOS devices. The class would be taught by the folks from <a href="http://www.bignerdranch.com/">Big Nerd Ranch</a>. Usually the BNR folks teach classes from their <em>monastery</em> at a secret location just outside Atlanta, Georgia. Having them venture out to San Francisco; wow, what an opportunity. Oh, did I mention that Alex Lindsay also announced that there were a limited number of spots open to <em>the unwashed masses</em> to attend and the class would be held from 2:00 p.m. until 10:00 p.m. each day so folks could continue to do at least part of their day jobs.</p>
+
+<p>All in all this just sounded too good to pass up so I fired off an e-mail to the folks at BNR to let them know I wanted to attend. My fingers were crossed because I know how quickly their classes fill up. Needless to say I wouldn’t be writing this post if I didn’t get in. <img src='http://www.idevelopsoftware.com/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /></p>
+
+<p>So, I’m off to the <a href="http://www.pixelcorps.com/">Pixel Corps</a> offices later this month to soak up some more iOS goodness. Hope to see a few of you there too.</p>
+
+<p>BTW: Here is a link to the <a href="http://www.bignerdranch.com/classes/commuter_ios_class_with_macbreak_2pm-10pm">course description</a> for anyone curious.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_63">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Attending iOSDevCamp 2010 &#8211; Building Meet4Drinks]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks/"/>
+    <updated>2010-08-19T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks</id>
+    <content type="html"><![CDATA[<p><a href="http://www.iosdevcamp.org"><img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/08/iosdevcamp2010.png" alt="iosdevcamp2010.png" title="iosdevcamp2010.png" border="0" width="250" height="37"  style="padding: 5px; padding-right: 20px; float:left;" /></a><br/>
+I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is a great event where iPhone/iPad software developers and UI/UX designers come together for a weekend of coding and exploration of ideas around how to use iOS devices. The event organizers hold something called a Hackathon where attendees form ad-hoc teams around shared application ideas and spend two full days designing and coding like crazy to build something cool. Everyone has a great time and meets like-minded folks in the developer community.</p>
+
+<p>Earlier this year, in April the event organizers held a special iPadDevCamp. That was my first exposure to this great event format. You can read more about that experience over on the <a href="http://blog.poweredbyamp.com/marketplace-platform/seller-dashboard-ipad/">Powered By AMP</a> blog. For that event I was on a team with some co-workers from <a href="www.auctiva.com">Auctiva</a>. We built a prototype of an e-commerce sales management tool for AMP sellers.</p>
+
+<p>This time I’m attending solo, without a cadre of other Auctiva designers and developers. I want to explore developing location-aware applications for the iPhone and put together a basic idea for an app. It is called Meet4Drinks, and you can read more about it at <a href="http://www.meet4drinks.net">http://www.meet4drinks.net</a>.</p>
+
+<p>If it sounds like something you would enjoy, it’s not too late to register today. The event starts tomorrow (Friday) evening and goes through Sunday evening. Visit <a href="http://www.iosdevcamp.org">http://www.iosdevcamp.org</a> to register.</p>
+
+<p>Look for updates on Meet4Drinks next week, once my head is back above water after the event. Hope to see you there.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_61">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iPad Review &#8211; First 24 hours]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/04/ipad-review-first-24-hours/"/>
+    <updated>2010-04-05T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/04/ipad-review-first-24-hours</id>
+    <content type="html"><![CDATA[<p>My experience with it so far is mixed. Like you I tried to touch-type on the keyboard and that really didn’t work at all. I have tried to do the two finger plus thumbs approach and am not that fast typing like that. The keyboard is big enough that I find it kind of weird to hold it in one hand and type with the other. My hand has to move too far to get all the keys unlike on the iPhone where everything is much closer together. I have not tried to hook up a bluetooth keyboard yet either. I expect that to work much better for things like typing e-mails.</p>
+
+<p>I ended up purchasing the 64GB version instead of the 16GB version. The change was based on a recommendation I heard on MacBreak Weekly. They mentioned that based on their preview use (had it for about a week before April 3rd) they feel that if you are going to use it to read books then you will easily fill the 16GB and then have to pick/choose which items to sync to your iPad. With the 64GB version you can just dump all the books/PDFs you want on it and not worry about running out of space.</p>
+
+<p>I have the Kindle for iPad application on it and pulled down all my Kindle books. Very cool! It just works! I also downloaded the iBooks application from the App Store. That application reads the ePub format. I have purchased a number of technical books in the past few years from Pragmatic Programmers. All of their books are available in ePub format so I downloaded that version and loaded them into the iPad too.</p>
+
+<p>So far I really like having all of my technical books in one place like this. I have not tried reading out in full sunlight, but expect it will be an issue. For reading indoors it works fine. Not as easy on the eyes as the Kindle, but it shows all of the technical illustrations in the books in full color which is much better.</p>
+
+<p>I purchased the Pages, Numbers and Keynote applications from Apple also. They really show off the sort of things you can accomplish with the iPad, but the crash a lot. I feel more like a beta tester of these apps than just a user. Sort of a let down, but then I have been here before with other Apple products. Eventually these will be great applications.</p>
+
+<p>With the iPad I also purchased the Apple case for the iPad. I was really surprised when I opened it up at home. The quality of the case is really bad. It only cost $39, but it sucks compared to the case that Amazon sells for the Kindle. After about 2 hours of using the iPad in the case I got so annoyed with it that now I am using the iPad without a case. I am shopping for a different case now.</p>
+
+<p>I have had Safari crash on me more than once now on the iPad. It seems like the crashes were always on very long (lots of scrolling) web pages so maybe it is a memory issue. I’m not sure, but the end result is you are just reading along on the page and all of a sudden you are back to the menu of icons wondering how you got there.</p>
+
+<p>Even more surprising than the crashes of apps on the device is the crash I experienced this morning of the Xcode development environment on the desktop. Apple released an update to Xcode that includes all of the iPad development tools yesterday. I was working on a sample application this morning, following the instructions on how to build an app when all of a sudden Xcode just up and crashed on me. This is very unusual. Earlier versions of Xcode have been very stable for years.</p>
+
+<p>Over all I think purchasing one as a developer at this point is a good move, but for basic consumers it is probably more sensible to wait about 3 months before jumping on the iPad bandwagon.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_54">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F04%2Fipad-review-first-24-hours%2F&linkname=iPad%20Review%20%26%238211%3B%20First%2024%20hours" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F04%2Fipad-review-first-24-hours%2F&linkname=iPad%20Review%20%26%238211%3B%20First%2024%20hours" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F04%2Fipad-review-first-24-hours%2F&linkname=iPad%20Review%20%26%238211%3B%20First%2024%20hours" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What a bump!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2008/07/what-a-bump/"/>
+    <updated>2008-07-17T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2008/07/what-a-bump</id>
+    <content type="html"><![CDATA[<p>Tonight I was looking at the stats for this blog, mostly because I was curious if any of my recent post have been picked up by google searches or not. Well, the answer to that question is mostly no, but I’ll keep on writing about things I find important.</p>
+
+<p>What really caught my eye was this graph:</p>
+
+<div style="text-align:center;">
+  <img src="http://idvlpsw.files.wordpress.com/2008/07/picture-12.png" alt="Picture 12.png" border="0" />
+</div>
+
+
+<p>Notice anything special about July 11th? Yup, that’s the day the iPhone 3G was released. I happened to be one of the brave soles that tried to upgrade my iPhone 2.5G, and I wrote about the problems that ensued. It looks like you just have to talk about the iPhone if you want to drive traffic to your blog!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_38">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fwhat-a-bump%2F&linkname=What%20a%20bump%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fwhat-a-bump%2F&linkname=What%20a%20bump%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fwhat-a-bump%2F&linkname=What%20a%20bump%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Upgrade to iPhone OS 2.0 Fails &#8211; Unknown Error (-9838)]]></title>
+    <link href="http://blog.idevelopsoftware.com/2008/07/upgrade-to-iphone-os-20-fails-unknown-error-9838/"/>
+    <updated>2008-07-11T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2008/07/upgrade-to-iphone-os-20-fails-unknown-error-9838</id>
+    <content type="html"><![CDATA[<p>The new iPhone 3G went on sale this morning at 8:00 AM and I’m sure there are long lines at various Apple stores around the country. I already have a first generation iPhone and was looking forward to the iPhone OS 2.0 upgrade. Sure, I’ll still have to live with the EDGE network speed when not connected to a WiFi hotspot and I won’t have a GPS, but other than those two shortcomings (and not being able to get one in white) my first generation iPhone is working just fine.</p>
+
+<p>So, this morning when I sat down at my desk and pressed the “Check for Updates” button in iTunes with my iPhone connected it said that the iPhone OS 2.0 update was available for download and installation. I ran through the process and everything seemed to be going well right up until when it restarted the iPhone with the new 2.0 software. Then I get the dialog box shown below.</p>
+
+<div style="text-align:center;">
+  <img src="http://idvlpsw.files.wordpress.com/2008/07/picture-3.png" alt="Picture 3.png" border="0" width="503" height="176" />
+</div>
+
+
+<p>WTF! An unknown error? What sort of an iTunes Store failure is this? My phone appears to be bricked at this point. All I can do is make an emergency call. Oh boy, just what I wanted from Apple! If only I could make an “emergency call” to the Apple technical support line maybe they could let me know what the -9838 error is. I am not very happy right now.</p>
+
+<p>The dialog box says to try again later. Well, I have retried this operation by ejecting and reconnecting my iPhone at least ten times now, and each time I see the same dialog box.</p>
+
+<p>When I get this resolved I will post an update. For now, if you are eager to get the iPhone OS 2.0 I would suggest that your best bet is to go buy a second iPhone. Clearly Apple has not fully baked the iPhone OS 2.0 support for the first generation iPhones. How disappointing!</p>
+
+<p><strong>Update @ 9:05 AM</strong></p>
+
+<p>It is now 1 hour after I started this upgrade process and the iTunes Store is now reporting a different unknown error code.</p>
+
+<div style="text-align:center;">
+  <img src="http://idvlpsw.files.wordpress.com/2008/07/picture-4.png" alt="Picture 4.png" border="0" width="491" height="163" />
+</div>
+
+
+<p>What fun!</p>
+
+<p><strong>Updated @ 10:12 AM</strong></p>
+
+<p>Still no luck getting my phone to work. I am getting the “unknown error occurred (-4)”, and have been for more than an hour now.</p>
+
+<p>There is a discussion of this issue on the Apple support site. Here is the link:</p>
+
+<p><a href="http://discussions.apple.com/thread.jspa?threadID=1594694&amp;tstart=0">Topic : Cannot connect to store (error -9838): can’t activate iPhone !</a></p>
+
+<p>Someone at Apple should be held to the flames for not anticipating this sort of issue and taking steps to eleminate it. They had very similar problems when the first generation iPhones were released and people couldn’t activate them.</p>
+
+<p>Think Different, indeed….</p>
+
+<p><strong>Updated @ 10:20 AM</strong></p>
+
+<p>Finally!</p>
+
+<div style="text-align:center;">
+  <img src="http://idvlpsw.files.wordpress.com/2008/07/picture-5.png" alt="Picture 5.png" border="0" width="347" height="108" />
+</div>
+
+
+<p>Apple is very fond of reminding people that they build great user interfaces for their applications. Here is a perfect example of where they failed miserably. I think a lot fewer people would be complaining about this server scalability issue if the iTunes application had a “retry” button. Instead of just asking you to try later the software should do that for us. After all, the computer is more than capable of retrying the connection until it succeeds. There is no reason at all for all of us humans to be sitting here clicking on play lists and then clicking on the iPhone item and then waiting for an error and then repeating the process FOR TWO AND A HALF HOURS!</p>
+
+<p>Apple, you need to put more engineering resources into this sort of thing. The scale you are dealing with on the iPhone and the iTunes Store and now the App Store is way beyond what .mac ever was. You need to THINK DIFFERENT!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_34">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fupgrade-to-iphone-os-20-fails-unknown-error-9838%2F&linkname=Upgrade%20to%20iPhone%20OS%202.0%20Fails%20%26%238211%3B%20Unknown%20Error%20%28-9838%29" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fupgrade-to-iphone-os-20-fails-unknown-error-9838%2F&linkname=Upgrade%20to%20iPhone%20OS%202.0%20Fails%20%26%238211%3B%20Unknown%20Error%20%28-9838%29" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fupgrade-to-iphone-os-20-fails-unknown-error-9838%2F&linkname=Upgrade%20to%20iPhone%20OS%202.0%20Fails%20%26%238211%3B%20Unknown%20Error%20%28-9838%29" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How I setup Ubuntu 11.04 Server using VirtualBox on a MacBook Air - iDevelopSoftware</title>
+  <meta name="author" content="Bennett Smith">
+
+  
+  <meta name="description" content="Download and install the latest version of VirtualBox from http://www.virtualbox.org. As I write this article the current version is 4.1. Download &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2011/07/how-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="iDevelopSoftware" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38083118-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">iDevelopSoftware</a></h1>
+  
+    <h2>Simplicity and Clarity by Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.idevelopsoftware.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">How I Setup Ubuntu 11.04 Server Using VirtualBox on a MacBook Air</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-22T00:00:00-07:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Download and install the latest version of VirtualBox from http://www.virtualbox.org. As I write this article the current version is 4.1.</p>
+
+<p>Download the Ubuntu 11.04 Server .ISO file from http://www.ubuntu.com. I first tried the 64-bit version but it seems that VirtualBox has trouble with it. The 32-bit version worked just fine, and for the sort of development tasks I am planning it will be okay so I didn’t look any further into why the 64-bit version failed to install.</p>
+
+<p>Create a new virtual machine. I called mine “ubuntu-11.04″. This one will be used as a basis for other machines I clone.  I went with 512MB of RAM and 40GB of hard drive space, making sure that the hard drive was configured to grow dynamically.  I accepted all of the default settings during the installation process. I did not install any additional packages at this stage.  Since I plan on using Vagrant (http://vagrantup.com) to manage my virtual machines I chose to name this machine ubuntu and gave it a user name of “Vagrant Manager” with a login of “vagrant” and a password of “vagrant”.</p>
+
+<p>Shutdown the virtual machine and then create a snapshot (I called mine “Fresh Install”).</p>
+
+<p>You are now ready to create a clone of this machine and start playing around.  Right-click on the virtual machine you just created and select “Clone…” from the context menu.  Give your new virtual machine a unique name and be sure to check the “Reinitialize the MAC address of all network cards” option. I assigned the name “vagrant-ubuntu-natty” since that is in keeping with the conventions mentioned on the Vagrant site. I choose to only clone the current machine state.</p>
+
+<p>Boot up the new virtual machine once the clone operation completes.  Log in using vagrant/vagrant.  You will now need to correct issues with the ethernet drivers.  Basically, when you asked VirtualBox to reinitialize the MAC addresses it caused the operating system to no longer recognize the virtual ethernet adapter hardware.  The steps to correct this are:</p>
+
+<pre>sudo rm /etc/udev/rules.d/70-persistent-net.rules</pre>
+
+
+
+
+<pre>sudo service udev restart</pre>
+
+
+
+
+<pre>sudo shutdown -r now</pre>
+
+
+<p>By running these three commands your virtual machine will be reconfigured to now recognize the new virtual ethernet adapters with their reinitialized MAC addresses.</p>
+
+<p>Now you can proceed to install the VirtualBox Guest Additions software.  Start by updating the Ubuntu software using these commands:</p>
+
+<pre>sudo apt-get update</pre>
+
+
+
+
+<pre>sudo apt-get -y upgrade</pre>
+
+
+
+
+<pre>sudo apt-get -y install linux-headers-$(uname -r)</pre>
+
+
+
+
+<pre>sudo apt-get -y install dkms</pre>
+
+
+
+
+<pre>sudo shutdown -r now</pre>
+
+
+<p>At this point you are actually ready to do the installation of the Guest Additions. From the Devices menu in VirtualBox select the “Install Guest Additions…” menu item. This will “insert” the CD containing the guest additions software into the virtual machine.Now, from your virtual machine run the following commands.</p>
+
+<pre>sudo mkdir /tmp/cdrom</pre>
+
+
+
+
+<pre>sudo mount /dev/cdrom /tmp/cdrom</pre>
+
+
+
+
+<pre>cd /tmp/cdrom</pre>
+
+
+
+
+<pre>sudo ./VBoxLinuxAdditions.run</pre>
+
+
+<p>Note, the installation of the Window System drivers will fail. This is okay; remember, we are running the server variant of Ubuntu and don’t have any of the windowing system components installed.</p>
+
+<p>Now change the hostname for the system so it can be used as a Vagrant base box.</p>
+
+<pre>sudo hostname vagrant-ubuntu-natty.vagrantup.com</pre>
+
+
+<p>Edit the /etc/hosts file and change the second line where localhost is defined. Set the fully qualified domain name for the host and the short name for the host.</p>
+
+<p>Edit the /etc/hostname file and replace “ubuntu” with “vagrant-ubuntu-natty”.</p>
+
+<p>Edit the /etc/resolv.conf file and replace the domain and search values with “vagrantup.com”.</p>
+
+<p>Reboot the machine once more using</p>
+
+<pre>sudo shutdown -r now</pre>
+
+
+<p>It is now time to setup the rest of the required software on the guest in order for it to be used as a Vagrant base box.</p>
+
+<p>Start by editing /etc/sudoers using</p>
+
+<pre>sudo vim /etc/sudoers</pre>
+
+
+<p>Add or change the line giving sudo access to administrators to read as follows:</p>
+
+<pre>%admin ALL=NOPASSWD: ALL</pre>
+
+
+<p>Add the following line right after the “Defaults env_reset” line:</p>
+
+<pre>Defaults env_keep="SSH_AUTH_SOCK"</pre>
+
+
+<p>Run the command:</p>
+
+<pre>sudo /etc/init.d/sudo restart</pre>
+
+
+<p>Now setup the software Vagrant relies upon to provide all it’s goodness.</p>
+
+<pre>sudo apt-get install -y ruby-dev</pre>
+
+
+
+
+<pre>sudo apt-get install -y rubygems</pre>
+
+
+
+
+<pre>sudo apt-get install -y puppet</pre>
+
+
+
+
+<pre>sudo apt-get install -y chef</pre>
+
+
+
+
+<pre>sudo gem install chef</pre>
+
+
+
+
+<pre>sudo apt-get install -y openssh-server openssh-client</pre>
+
+
+<p>When installing the chef package (above) you will be prompted for the URL of the Chef server. Just press enter here and ignore that step. We are only interested in chef-solo, and this URL is only used by chef-client. The package installer will go ahead and configure the chef client to run automatically. We now need to disable this by running the following command:</p>
+
+<pre>sudo /usr/sbin/update-rc.d chef-client disable</pre>
+
+
+<p>Edit the file /etc/ssh/sshd_config and add the following line (case matters here):</p>
+
+<pre>UseDNS no</pre>
+
+
+<p>Configure a secure key pair for our new Vagrant base box by running the following command on the host system.</p>
+
+<pre>ssh-keygen -P "" -t rsa -C "Some meaningful comment" -f ./vagrant-id_rsa</pre>
+
+
+<p>This command will create two files in the local directory called vagrant-id_rsa and vagrant-id_rsa.pub.  You will need to copy vagrant-id_rsa.pub into the ~/.ssh/authorized_keys file on the guest system. To do this you will need to setup port forwarding between the host and guest. The first step is to learn what the IP address of the host and guest systems are.  Use the following command to view the network adapters that are configured on each system:</p>
+
+<pre>ifconfig</pre>
+
+
+<p>Run this on both the host and guest. Once you know both IP addresses you need to add a port forwarding rule in Virtual Box for the SSH port. This is done by selecting the “Settings…” menu item from the “Machine” menu.  Once you have the settings dialog box open select the “Network” button and then open the “Advanced” section.  You will see a button labeled “Port Forwarding”. Press it to open the port forwarding rule editor. Here you need to create a rule as follows:</p>
+
+<pre>Name: SSH</pre>
+
+
+
+
+<pre>Protocol: TCP</pre>
+
+
+
+
+<pre>Host IP: &lt;fill in host IP address from ifconfig&gt;</pre>
+
+
+
+
+<pre>Host Port: 9999</pre>
+
+
+
+
+<pre>Guest IP: &lt;fill in guest IP address from ifconfig&gt;</pre>
+
+
+
+
+<pre>Guest Port: 22</pre>
+
+
+<p>Close the panel and dismiss the settings dialog box. You should now have a port open between the host and the guest for SSH/SCP.  To verify this, enter the following command in a terminal window on the host system.</p>
+
+<pre>ssh -p 9999 vagrant@&lt;host ip address&gt;</pre>
+
+
+<p>When prompted for a password enter “vagrant”. You should now be in an ssh session on the guest system. If this worked you are ready to propogate the public key generated earlier. You can exit out of the SSH session now by typing exit in the guest. Back on the host type the following command to copy the public key.</p>
+
+<pre>cat vagrant-id_rsa.pub | ssh -p 9999 vagrant@&lt;host ip address&gt; 'sh -c "cat - &gt;&gt;~/.ssh/authorized_keys"'</pre>
+
+
+<p>You will be prompted for the guest password. Type “vagrant” again. You will now want to test that the key propogated successfully. On the host system enter the following commands.</p>
+
+<pre>ssh-add ./vagrant-id_rsa</pre>
+
+
+
+
+<pre>ssh -p 9999 vagrant@&lt;host ip address&gt;</pre>
+
+
+<p>If everything worked in the earlier steps you should be in an SSH session on the guest without the need to enter your password!</p>
+
+<p>As a final step before packaging a vagrant base box you should clean things up in the guest by running the following commands:</p>
+
+<pre>sudo apt-get clean</pre>
+
+
+
+
+<pre>sudo apt-get autoclean</pre>
+
+
+<p>You are now ready to package the vagrant base box. Back on the host system in a terminal window first create a Vagrantfile that points to the SSH private key. Here is an example of what it might look like if you decide to copy your key (generated earlier). Call this file Vagrantfile.pkg.</p>
+
+<pre>Vagrant::Config.run do |config|</pre>
+
+
+
+
+<pre>  config.ssh.private_key_path = "lcl-vagrant-id_rsa"</pre>
+
+
+
+
+<pre>end</pre>
+
+
+<p>Now invoke this command in the terminal window to create the package.</p>
+
+<pre>vagrant package --base vagrant-ubuntu-natty --include lcl-vagrant-id_rsa --vagrantfile Vagrantfile.pkg</pre>
+
+
+<p>The packaging takes a little while. Once it completes you should test the base box using these steps:</p>
+
+<pre>mv package.box vagrant-ubuntu-natty.box</pre>
+
+
+
+
+<pre>vagrant box add lclbase32 vagrant-ubuntu-natty.box</pre>
+
+
+
+
+<pre>mkdir test_environment</pre>
+
+
+
+
+<pre>cd test_environment</pre>
+
+
+
+
+<pre>vagrant init lclbase32</pre>
+
+
+
+
+<pre>vagrant up</pre>
+
+
+
+
+<pre>vagrant ssh</pre>
+
+
+<p>If all went well you are now finished with building a Vagrant base box. Congratulations!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_68">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F07%2Fhow-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air%2F&linkname=How%20I%20setup%20Ubuntu%2011.04%20Server%20using%20VirtualBox%20on%20a%20MacBook%20Air" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F07%2Fhow-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air%2F&linkname=How%20I%20setup%20Ubuntu%2011.04%20Server%20using%20VirtualBox%20on%20a%20MacBook%20Air" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F07%2Fhow-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air%2F&linkname=How%20I%20setup%20Ubuntu%2011.04%20Server%20using%20VirtualBox%20on%20a%20MacBook%20Air" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-22T00:00:00-07:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/mac/'>Mac</a>, <a class='category' href='/blog/categories/software/'>Software</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2011/07/how-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2011/07/how-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/03/notes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts/" title="Previous Post: Notes on setting up a Ruby on Rails Environment for Ubuntu 10.04.1 LTS">&laquo; Notes on setting up a Ruby on Rails Environment for Ubuntu 10.04.1 LTS</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/" title="Next Post: Cookbook: Snow Leopard, RVM, Ruby on Rails">Cookbook: Snow Leopard, RVM, Ruby on Rails &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/plugin-experiments/">Plugin Experiments</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/code-blocks/">Code Blocks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+/">Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/">Capturing AirPort Extreme Log with Lion Server Syslog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/BennettSmith">@BennettSmith</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'BennettSmith',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("BennettSmith", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/BennettSmith" class="twitter-follow-button" data-show-count="false">Follow @BennettSmith</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Bennett Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'idevelopsoftware';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

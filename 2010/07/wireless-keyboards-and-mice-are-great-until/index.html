@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Wireless Keyboards and Mice are Great Until&#8230;. - iDevelopSoftware</title>
+  <meta name="author" content="Bennett Smith">
+
+  
+  <meta name="description" content="Tonight I sat down at my 27″ iMac to get a little work done. The first thing I do is tap the keyboard and move the mouse to wake the machine from &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2010/07/wireless-keyboards-and-mice-are-great-until/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="iDevelopSoftware" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38083118-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">iDevelopSoftware</a></h1>
+  
+    <h2>Simplicity and Clarity by Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.idevelopsoftware.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Wireless Keyboards and Mice Are Great Until&#8230;.</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-13T00:00:00-07:00" pubdate data-updated="true">Jul 13<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Tonight I sat down at my 27″ iMac to get a little work done. The first thing I do is tap the keyboard and move the mouse to wake the machine from sleep mode. The machine awoke and then quickly displayed the <em>Connection Lost</em> graphics in the middle of the screen for both the mouse and keyboard. My first thought; no problem, it’s just the batteries so I replaced them. Still no connection (and it did seem kind of odd for both the mouse and keyboard batteries to be dead at the same time.) Looking up at the system tray I see an odd Bluetooth icon. Here’s a closeup of what I found:</p>
+
+<div style="text-align:center;">
+  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/LittleSnapper.png" alt="LittleSnapper.png" border="0" width="280" height="69" align="center" />
+</div>
+
+
+<p>The <em>Bluetooth: Not Available</em> message in the system tray is not a good sign. Next I opened up <em>Console.app</em> to see if there were any indications of what the root cause for this behavior was. It appears there is truly something wrong with the Bluetooth Module. Here is what it showed:</p>
+
+<div style="text-align:center;">
+  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/Console2.png" alt="[AppleUSBBluetoothHCIController][FindInterfaces] some interface pipes were not found. Device is no good a a transport" border="0" width="730" height="124" align="center" />
+</div>
+
+
+<p>A visit to the support forums at Apple led me to an idea to reset the SMC on the iMac. I tried that and still nothing. At this point I’m not a happy camper. It is looking like the Bluetooth Module in my iMac has given up the ghost.</p>
+
+<p>Next step, the iPhone Apple AppStore application to make a Genius Bar appointment.</p>
+
+<div style="text-align:center;">
+  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/genius.png" alt="genius.png" border="0" width="213" height="320" align="center" />
+</div>
+
+
+<p>If you have read this far then you might be wondering why I’m telling you all of this. The reason is simple. Without a USB keyboard and mouse laying around somewhere none of the troubleshooting above would have been possible. Having a wireless bluetooth keyboard and mouse ship by default with the iMac is a really odd choice on Apple’s part.</p>
+
+<p>Thankfully I have a keyboard and mouse from the Xserve in my garage. In case you forgot what these old fashion beasts look like, here’s a picture of the dynamic duo that saved my bacon tonight!</p>
+
+<div style="txt-align:center;">
+  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/backup_plan.png" alt="backup_plan.png" border="0" width="640" height="478" align="center" />
+</div>
+
+
+
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_59">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-13T00:00:00-07:00" pubdate data-updated="true">Jul 13<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/apple/'>Apple</a>, <a class='category' href='/blog/categories/blog/'>Blog</a>, <a class='category' href='/blog/categories/hardware/'>Hardware</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2010/07/wireless-keyboards-and-mice-are-great-until/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2010/07/wireless-keyboards-and-mice-are-great-until/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/05/one-more-reason-to-love-my-macbook-pro-as-a-windows-development-box/" title="Previous Post: One more reason to love my MacBook Pro as a Windows Development Box">&laquo; One more reason to love my MacBook Pro as a Windows Development Box</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/08/imac-bluetooth-problems-gone-but-how/" title="Next Post: iMac bluetooth problems gone, but how?">iMac bluetooth problems gone, but how? &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/plugin-experiments/">Plugin Experiments</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/code-blocks/">Code Blocks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+/">Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/">Capturing AirPort Extreme Log with Lion Server Syslog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/BennettSmith">@BennettSmith</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'BennettSmith',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("BennettSmith", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/BennettSmith" class="twitter-follow-button" data-show-count="false">Follow @BennettSmith</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Bennett Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'idevelopsoftware';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

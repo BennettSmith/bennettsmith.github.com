@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Objective-C | iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/blog/categories/objective-c/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-30T10:42:26-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
+  <author>
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Heading to Big Nerd Ranch later this month!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/10/heading-to-big-nerd-ranch-later-this-month/"/>
+    <updated>2010-10-03T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/10/heading-to-big-nerd-ranch-later-this-month</id>
+    <content type="html"><![CDATA[<p>One of the podcasts I listen to on a regular basis is called MacBreak. The hosts are Leo Leporte, Alex Lindsay, Andy Ihnatko and a rotating list of other Mac/Apple/iOS luminaries. If you aren’t familiar with it head over to <a href="http://twit.tv/mbw">http://twit.tv/mbw</a> and have a listen. It is highly recommended for anyone interested in <em>all things Macintosh (and iOS too)</em>.</p>
+
+<p>A few episodes ago Alex Lindsay mentioned that his company was going to be hosting a one week <em>Commuter iOS Class</em> at their San Francisco offices so their team could come up to speed developing applications for iOS devices. The class would be taught by the folks from <a href="http://www.bignerdranch.com/">Big Nerd Ranch</a>. Usually the BNR folks teach classes from their <em>monastery</em> at a secret location just outside Atlanta, Georgia. Having them venture out to San Francisco; wow, what an opportunity. Oh, did I mention that Alex Lindsay also announced that there were a limited number of spots open to <em>the unwashed masses</em> to attend and the class would be held from 2:00 p.m. until 10:00 p.m. each day so folks could continue to do at least part of their day jobs.</p>
+
+<p>All in all this just sounded too good to pass up so I fired off an e-mail to the folks at BNR to let them know I wanted to attend. My fingers were crossed because I know how quickly their classes fill up. Needless to say I wouldn’t be writing this post if I didn’t get in. <img src='http://www.idevelopsoftware.com/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /></p>
+
+<p>So, I’m off to the <a href="http://www.pixelcorps.com/">Pixel Corps</a> offices later this month to soak up some more iOS goodness. Hope to see a few of you there too.</p>
+
+<p>BTW: Here is a link to the <a href="http://www.bignerdranch.com/classes/commuter_ios_class_with_macbreak_2pm-10pm">course description</a> for anyone curious.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_63">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Attending iOSDevCamp 2010 &#8211; Building Meet4Drinks]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks/"/>
+    <updated>2010-08-19T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks</id>
+    <content type="html"><![CDATA[<p><a href="http://www.iosdevcamp.org"><img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/08/iosdevcamp2010.png" alt="iosdevcamp2010.png" title="iosdevcamp2010.png" border="0" width="250" height="37"  style="padding: 5px; padding-right: 20px; float:left;" /></a><br/>
+I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is a great event where iPhone/iPad software developers and UI/UX designers come together for a weekend of coding and exploration of ideas around how to use iOS devices. The event organizers hold something called a Hackathon where attendees form ad-hoc teams around shared application ideas and spend two full days designing and coding like crazy to build something cool. Everyone has a great time and meets like-minded folks in the developer community.</p>
+
+<p>Earlier this year, in April the event organizers held a special iPadDevCamp. That was my first exposure to this great event format. You can read more about that experience over on the <a href="http://blog.poweredbyamp.com/marketplace-platform/seller-dashboard-ipad/">Powered By AMP</a> blog. For that event I was on a team with some co-workers from <a href="www.auctiva.com">Auctiva</a>. We built a prototype of an e-commerce sales management tool for AMP sellers.</p>
+
+<p>This time I’m attending solo, without a cadre of other Auctiva designers and developers. I want to explore developing location-aware applications for the iPhone and put together a basic idea for an app. It is called Meet4Drinks, and you can read more about it at <a href="http://www.meet4drinks.net">http://www.meet4drinks.net</a>.</p>
+
+<p>If it sounds like something you would enjoy, it’s not too late to register today. The event starts tomorrow (Friday) evening and goes through Sunday evening. Visit <a href="http://www.iosdevcamp.org">http://www.iosdevcamp.org</a> to register.</p>
+
+<p>Look for updates on Meet4Drinks next week, once my head is back above water after the event. Hope to see you there.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_61">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Busy Folks at Big Nerd Ranch!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/05/busy-folks-at-big-nerd-ranch/"/>
+    <updated>2010-05-01T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/05/busy-folks-at-big-nerd-ranch</id>
+    <content type="html"><![CDATA[<div style="float: right;">
+  <a href="http://www.amazon.com/iPhone-Programming-Ranch-Guide-ebook/dp/B003EINO1W/ref=pd_rhf_p_t_1"><img src="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/05/iphone_programming_bnr.jpg" alt="" title="iphone_programming_bnr" width="320" height="320" class="alignleft size-full wp-image-338" /></a>
+</div>
+
+
+<p>The folks over at <a href="http://www.bignerdranch.com">Big Nerd Ranch</a> are really busy these days. In addition to building a new learning center it looks like they are writing no less than three new books to be released this year. If you have ever read through <em>Cocoa Programming for Mac OS X</em> by Aaron Hillegass or had the fortune to attend one of his classes then you already know that these new books will likely become a core part of your programming library in the future.</p>
+
+<p>The first new title is <a href="http://www.bignerdranch.com/book/iphone_programming_the_big_nerd_ranch_guide"><em>iPhone Programming: The Big Nerd Ranch Guide</em>, written by Joe Conway and Aaron Hillegass</a>. According to Amazon this book will be available for purchase on May 4th in paper form and May 6th for the Kindle. You can pre-order it now.</p>
+
+<div style="float: left;">
+  <a href="http://www.amazon.com/More-Cocoa-Programming-Mac-OS/dp/0321706269/ref=pd_rhf_p_t_3"><img src="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/05/more_cocoa_programming_bnr.jpg" alt="" title="more_cocoa_programming_bnr" width="300" height="300" class="alignleft size-full wp-image-386" /></a>
+</div>
+
+
+<p>The second new book is titled <a href="http://www.amazon.com/More-Cocoa-Programming-Mac-OS/dp/0321706269/ref=pd_rhf_p_t_3"><em>More Cocoa Programming for Mac OS X: The Big Nerd Ranch Guide</em></a> and is being written by Aaron Hillegass and Juan Pablo Claude. According to Amazon’s web site this book will be available in mid-July, 2010. At this point it appears the book will only be available in print form. Hopefully this will change and a Kindle version will be made available.</p>
+
+<p>The third new book will be titled <a href="http://www.amazon.com/Objective-C-Programming-Ranch-Guide-Guides/dp/0321706285/ref=pd_sim_b_40"><em>Objective-C Programming: The Big Nerd Ranch Guide</em></a> and is being written by Aaron Hillegass and Mark Fenoglio. Amazon pegs the release of this book sometime in December, 2010. Cover art for this book has not been released yet.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_57">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fbusy-folks-at-big-nerd-ranch%2F&linkname=Busy%20Folks%20at%20Big%20Nerd%20Ranch%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fbusy-folks-at-big-nerd-ranch%2F&linkname=Busy%20Folks%20at%20Big%20Nerd%20Ranch%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fbusy-folks-at-big-nerd-ranch%2F&linkname=Busy%20Folks%20at%20Big%20Nerd%20Ranch%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Setting up Unit Testing in Xcode 3.1]]></title>
+    <link href="http://blog.idevelopsoftware.com/2008/07/setting-up-unit-testing-in-xcode-31/"/>
+    <updated>2008-07-28T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2008/07/setting-up-unit-testing-in-xcode-31</id>
+    <content type="html"><![CDATA[<p>Xcode includes OCUnit, so you don’t need to get a copy. But, you might want to take a look at their website (http://sente.epfl.ch/software/ocunit/) for information and tutorials on how OCUnit is intended to be used.</p>
+
+<p>If you are planning on doing Test Driven Development (TDD) you may also want to get the following packages:</p>
+
+<ul>
+<li>OCMock – OCMock is an Objective-C implementation of mock objects. (<a href="http://www.mulle-kybernetik.com/software/OCMock/">http://www.mulle-kybernetik.com/software/OCMock/</a>)</li>
+<li>Hamcrest – library of matchers for building test expressions (<a href="http://code.google.com/p/hamcrest/">http://code.google.com/p/hamcrest/</a>)</li>
+</ul>
+
+
+<p>Other good articles on Xcode Unit Testing that I came across:</p>
+
+<ul>
+<li>Unit Testing with OCUnit – <a href="http://www.macdevcenter.com/pub/a/mac/2004/04/23/ocunit.html?page=1">http://www.macdevcenter.com/pub/a/mac/2004/04/23/ocunit.html?page=1</a></li>
+<li>Test Driving Your Code with OCUnit – <a href="http://developer.apple.com/tools/unittest.html">http://developer.apple.com/tools/unittest.html</a></li>
+<li>Xcode unit testing articles – <a href="http://chanson.livejournal.com/tag/unit+testing">http://chanson.livejournal.com/tag/unit+testing</a></li>
+<li>Unit Testing with Xcode – <a href="http://www.stiefels.net/2007/05/01/unit-testing-with-xcode/">http://www.stiefels.net/2007/05/01/unit-testing-with-xcode/</a></li>
+</ul>
+
+
+<p>By reading through the documents references above I was able to get OCUnit up and running for one of my projects. It took a bit of experimentation, but in the end it looks like OCUnit will work just fine for doing TDD in Xcode with Objective-C. Anyone wanting to try out TDD should give it a try. The benefits for your project are significant. Go for it!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_39">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fsetting-up-unit-testing-in-xcode-31%2F&linkname=Setting%20up%20Unit%20Testing%20in%20Xcode%203.1" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fsetting-up-unit-testing-in-xcode-31%2F&linkname=Setting%20up%20Unit%20Testing%20in%20Xcode%203.1" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fsetting-up-unit-testing-in-xcode-31%2F&linkname=Setting%20up%20Unit%20Testing%20in%20Xcode%203.1" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Method Swizzling in Safari on Mac OS X]]></title>
+    <link href="http://blog.idevelopsoftware.com/2008/05/method-swizzling-in-safari-on-mac-os-x/"/>
+    <updated>2008-05-09T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2008/05/method-swizzling-in-safari-on-mac-os-x</id>
+    <content type="html"><![CDATA[<p>Recently I have been working on an extension for the Safari web browser. The biggest challenge when developing an extension for Safari is determining how to hook your code into Safari.app. Most browsers these days provide hooks to allow development of extensions, but Safari does not.</p>
+
+<p>A technique that many people use to add functionality to Safari (and other Cocoa applications) is called Method Swizzling. If you want to learn more about this technique there is a <a href="http://www.cocoadev.com/index.pl?MethodSwizzling">terrific article</a> explaining all the details on the CocoaDev site.</p>
+
+<p>When applying the method swizzling technique you may find that the linker complains about <em>unresolved classes</em> and won’t link your bundle. This issue usually crops up when you try swizzling a method that is in a class you learned about by running <a href="http://www.codethecode.com/projects/class-dump/">class-dump</a> or by using <a href="http://www.fscript.org">FScript</a>. If you run into this problem bring up the project properties in Xcode and add <code>-undefined dynamic_lookup</code> to the <strong>Other Linker Flags</strong> section.</p>
+
+<p>Without this extra flag your plug-in will not link, and you will be stuck in the mud! Thanks to Aaron Harnly, author of <a href="http://harnly.net/software/letterbox">Letterbox</a>, for pointing this out to me in an e-mail exchange.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_26">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F05%2Fmethod-swizzling-in-safari-on-mac-os-x%2F&linkname=Method%20Swizzling%20in%20Safari%20on%20Mac%20OS%20X" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F05%2Fmethod-swizzling-in-safari-on-mac-os-x%2F&linkname=Method%20Swizzling%20in%20Safari%20on%20Mac%20OS%20X" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F05%2Fmethod-swizzling-in-safari-on-mac-os-x%2F&linkname=Method%20Swizzling%20in%20Safari%20on%20Mac%20OS%20X" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

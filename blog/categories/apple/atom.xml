@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Apple | iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/blog/categories/apple/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-30T10:42:26-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
+  <author>
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Capturing AirPort Extreme Log with Lion Server Syslog]]></title>
+    <link href="http://blog.idevelopsoftware.com/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/"/>
+    <updated>2011-08-09T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2011/08/capturing-airport-extreme-log-with-lion-server-syslog</id>
+    <content type="html"><![CDATA[<p>Mac OS X Lion Server can be used as a syslog server to capture the log messages from an Apple AirPort Extreme wireless router. The instructions below walk you through setting this up.</p>
+
+<p>Syslog is controlled by a plist file found in the launch daemons directory. The full path to the file is:</p>
+
+<pre>/System/Library/LaunchDaemons/com.apple.syslogd.plist
+</pre>
+
+
+<p>You need to edit this file to add a network listener. The plist is stored in a binary format so you need to use the plutil to convert it to XML using this command:</p>
+
+<pre>$ pushd /System/Library/LaunchDaemons
+$ sudo plutil -convert xml1 /System/Library/LaunchDaemons/com.apple.syslogd.plist
+$ sudo vim /System/Library/LaunchDaemons/com.apple.syslogd.plist
+$ sudo plutil -convert binary1 /System/Library/LaunchDaemons/com.apple.syslogd.plist
+$ sudo launchctl unload /System/Library/LaunchDaemons/com.apple.syslogd.plist
+$ sudo launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist
+</pre>
+
+
+<p>Here is a complete example of the modified plist file. The new key is the NetworkListener. Be sure you add it nested inside the Sockets key or it will not work.</p>
+
+<div id="gist1134216" class="gist">
+  <div class="gist-file">
+    <div class="gist-data gist-syntax">
+      <div class="file-data">
+        <table cellpadding="0" cellspacing="0" class="lines highlight">
+          <tr>
+            <td class="line-numbers">
+              <span class="line-number" id="file-com-apple-syslogd-plist-L1" rel="file-com-apple-syslogd-plist-L1">1</span> <span class="line-number" id="file-com-apple-syslogd-plist-L2" rel="file-com-apple-syslogd-plist-L2">2</span> <span class="line-number" id="file-com-apple-syslogd-plist-L3" rel="file-com-apple-syslogd-plist-L3">3</span> <span class="line-number" id="file-com-apple-syslogd-plist-L4" rel="file-com-apple-syslogd-plist-L4">4</span> <span class="line-number" id="file-com-apple-syslogd-plist-L5" rel="file-com-apple-syslogd-plist-L5">5</span> <span class="line-number" id="file-com-apple-syslogd-plist-L6" rel="file-com-apple-syslogd-plist-L6">6</span> <span class="line-number" id="file-com-apple-syslogd-plist-L7" rel="file-com-apple-syslogd-plist-L7">7</span> <span class="line-number" id="file-com-apple-syslogd-plist-L8" rel="file-com-apple-syslogd-plist-L8">8</span> <span class="line-number" id="file-com-apple-syslogd-plist-L9" rel="file-com-apple-syslogd-plist-L9">9</span> <span class="line-number" id="file-com-apple-syslogd-plist-L10" rel="file-com-apple-syslogd-plist-L10">10</span> <span class="line-number" id="file-com-apple-syslogd-plist-L11" rel="file-com-apple-syslogd-plist-L11">11</span> <span class="line-number" id="file-com-apple-syslogd-plist-L12" rel="file-com-apple-syslogd-plist-L12">12</span> <span class="line-number" id="file-com-apple-syslogd-plist-L13" rel="file-com-apple-syslogd-plist-L13">13</span> <span class="line-number" id="file-com-apple-syslogd-plist-L14" rel="file-com-apple-syslogd-plist-L14">14</span> <span class="line-number" id="file-com-apple-syslogd-plist-L15" rel="file-com-apple-syslogd-plist-L15">15</span> <span class="line-number" id="file-com-apple-syslogd-plist-L16" rel="file-com-apple-syslogd-plist-L16">16</span> <span class="line-number" id="file-com-apple-syslogd-plist-L17" rel="file-com-apple-syslogd-plist-L17">17</span> <span class="line-number" id="file-com-apple-syslogd-plist-L18" rel="file-com-apple-syslogd-plist-L18">18</span> <span class="line-number" id="file-com-apple-syslogd-plist-L19" rel="file-com-apple-syslogd-plist-L19">19</span> <span class="line-number" id="file-com-apple-syslogd-plist-L20" rel="file-com-apple-syslogd-plist-L20">20</span> <span class="line-number" id="file-com-apple-syslogd-plist-L21" rel="file-com-apple-syslogd-plist-L21">21</span> <span class="line-number" id="file-com-apple-syslogd-plist-L22" rel="file-com-apple-syslogd-plist-L22">22</span> <span class="line-number" id="file-com-apple-syslogd-plist-L23" rel="file-com-apple-syslogd-plist-L23">23</span> <span class="line-number" id="file-com-apple-syslogd-plist-L24" rel="file-com-apple-syslogd-plist-L24">24</span> <span class="line-number" id="file-com-apple-syslogd-plist-L25" rel="file-com-apple-syslogd-plist-L25">25</span> <span class="line-number" id="file-com-apple-syslogd-plist-L26" rel="file-com-apple-syslogd-plist-L26">26</span> <span class="line-number" id="file-com-apple-syslogd-plist-L27" rel="file-com-apple-syslogd-plist-L27">27</span> <span class="line-number" id="file-com-apple-syslogd-plist-L28" rel="file-com-apple-syslogd-plist-L28">28</span> <span class="line-number" id="file-com-apple-syslogd-plist-L29" rel="file-com-apple-syslogd-plist-L29">29</span> <span class="line-number" id="file-com-apple-syslogd-plist-L30" rel="file-com-apple-syslogd-plist-L30">30</span> <span class="line-number" id="file-com-apple-syslogd-plist-L31" rel="file-com-apple-syslogd-plist-L31">31</span> <span class="line-number" id="file-com-apple-syslogd-plist-L32" rel="file-com-apple-syslogd-plist-L32">32</span> <span class="line-number" id="file-com-apple-syslogd-plist-L33" rel="file-com-apple-syslogd-plist-L33">33</span> <span class="line-number" id="file-com-apple-syslogd-plist-L34" rel="file-com-apple-syslogd-plist-L34">34</span> <span class="line-number" id="file-com-apple-syslogd-plist-L35" rel="file-com-apple-syslogd-plist-L35">35</span> <span class="line-number" id="file-com-apple-syslogd-plist-L36" rel="file-com-apple-syslogd-plist-L36">36</span> <span class="line-number" id="file-com-apple-syslogd-plist-L37" rel="file-com-apple-syslogd-plist-L37">37</span> <span class="line-number" id="file-com-apple-syslogd-plist-L38" rel="file-com-apple-syslogd-plist-L38">38</span> <span class="line-number" id="file-com-apple-syslogd-plist-L39" rel="file-com-apple-syslogd-plist-L39">39</span> <span class="line-number" id="file-com-apple-syslogd-plist-L40" rel="file-com-apple-syslogd-plist-L40">40</span> <span class="line-number" id="file-com-apple-syslogd-plist-L41" rel="file-com-apple-syslogd-plist-L41">41</span> <span class="line-number" id="file-com-apple-syslogd-plist-L42" rel="file-com-apple-syslogd-plist-L42">42</span> <span class="line-number" id="file-com-apple-syslogd-plist-L43" rel="file-com-apple-syslogd-plist-L43">43</span> <span class="line-number" id="file-com-apple-syslogd-plist-L44" rel="file-com-apple-syslogd-plist-L44">44</span> <span class="line-number" id="file-com-apple-syslogd-plist-L45" rel="file-com-apple-syslogd-plist-L45">45</span> <span class="line-number" id="file-com-apple-syslogd-plist-L46" rel="file-com-apple-syslogd-plist-L46">46</span> <span class="line-number" id="file-com-apple-syslogd-plist-L47" rel="file-com-apple-syslogd-plist-L47">47</span> <span class="line-number" id="file-com-apple-syslogd-plist-L48" rel="file-com-apple-syslogd-plist-L48">48</span> <span class="line-number" id="file-com-apple-syslogd-plist-L49" rel="file-com-apple-syslogd-plist-L49">49</span> <span class="line-number" id="file-com-apple-syslogd-plist-L50" rel="file-com-apple-syslogd-plist-L50">50</span> <span class="line-number" id="file-com-apple-syslogd-plist-L51" rel="file-com-apple-syslogd-plist-L51">51</span> <span class="line-number" id="file-com-apple-syslogd-plist-L52" rel="file-com-apple-syslogd-plist-L52">52</span> <span class="line-number" id="file-com-apple-syslogd-plist-L53" rel="file-com-apple-syslogd-plist-L53">53</span> <span class="line-number" id="file-com-apple-syslogd-plist-L54" rel="file-com-apple-syslogd-plist-L54">54</span> <span class="line-number" id="file-com-apple-syslogd-plist-L55" rel="file-com-apple-syslogd-plist-L55">55</span> <span class="line-number" id="file-com-apple-syslogd-plist-L56" rel="file-com-apple-syslogd-plist-L56">56</span> <span class="line-number" id="file-com-apple-syslogd-plist-L57" rel="file-com-apple-syslogd-plist-L57">57</span> <span class="line-number" id="file-com-apple-syslogd-plist-L58" rel="file-com-apple-syslogd-plist-L58">58</span> <span class="line-number" id="file-com-apple-syslogd-plist-L59" rel="file-com-apple-syslogd-plist-L59">59</span> <span class="line-number" id="file-com-apple-syslogd-plist-L60" rel="file-com-apple-syslogd-plist-L60">60</span> <span class="line-number" id="file-com-apple-syslogd-plist-L61" rel="file-com-apple-syslogd-plist-L61">61</span>
+            </td>
+            
+            <td class="line-data">
+              <pre class="line-pre"><div class="line" id="file-com-apple-syslogd-plist-LC1">
+  <span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC2">
+  <span class="cp">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC3">
+  <span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC4">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC5">
+  <span class="nt">&lt;key&gt;</span>EnableTransactions<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC6">
+  <span class="nt">&lt;true/&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC7">
+  <span class="nt">&lt;key&gt;</span>EnvironmentVariables<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC8">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC9">
+  <span class="nt">&lt;key&gt;</span>ASL_DISABLE<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC10">
+  <span class="nt">&lt;string&gt;</span>1<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC11">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC12">
+  <span class="nt">&lt;key&gt;</span>HopefullyExitsLast<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC13">
+  <span class="nt">&lt;true/&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC14">
+  <span class="nt">&lt;key&gt;</span>JetsamProperties<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC15">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC16">
+  <span class="nt">&lt;key&gt;</span>JetsamMemoryLimit<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC17">
+  <span class="nt">&lt;integer&gt;</span>300<span class="nt">&lt;/integer&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC18">
+  <span class="nt">&lt;key&gt;</span>JetsamPriority<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC19">
+  <span class="nt">&lt;integer&gt;</span>-49<span class="nt">&lt;/integer&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC20">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC21">
+  <span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC22">
+  <span class="nt">&lt;string&gt;</span>com.apple.syslogd<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC23">
+  <span class="nt">&lt;key&gt;</span>MachServices<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC24">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC25">
+  <span class="nt">&lt;key&gt;</span>com.apple.system.logger<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC26">
+  <span class="nt">&lt;true/&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC27">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC28">
+  <span class="nt">&lt;key&gt;</span>OnDemand<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC29">
+  <span class="nt">&lt;false/&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC30">
+  <span class="nt">&lt;key&gt;</span>ProgramArguments<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC31">
+  <span class="nt">&lt;array&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC32">
+  <span class="nt">&lt;string&gt;</span>/usr/sbin/syslogd<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC33">
+  <span class="nt">&lt;/array&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC34">
+  <span class="nt">&lt;key&gt;</span>Sockets<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC35">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC36">
+  <span class="nt">&lt;key&gt;</span>NetworkListener<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC37">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC38">
+  <span class="nt">&lt;key&gt;</span>SockServiceName<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC39">
+  <span class="nt">&lt;string&gt;</span>syslog<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC40">
+  <span class="nt">&lt;key&gt;</span>SockType<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC41">
+  <span class="nt">&lt;string&gt;</span>dgram<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC42">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC43">
+  <span class="nt">&lt;key&gt;</span>AppleSystemLogger<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC44">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC45">
+  <span class="nt">&lt;key&gt;</span>SockPathMode<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC46">
+  <span class="nt">&lt;integer&gt;</span>438<span class="nt">&lt;/integer&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC47">
+  <span class="nt">&lt;key&gt;</span>SockPathName<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC48">
+  <span class="nt">&lt;string&gt;</span>/var/run/asl_input<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC49">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC50">
+  <span class="nt">&lt;key&gt;</span>BSDSystemLogger<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC51">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC52">
+  <span class="nt">&lt;key&gt;</span>SockPathMode<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC53">
+  <span class="nt">&lt;integer&gt;</span>438<span class="nt">&lt;/integer&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC54">
+  <span class="nt">&lt;key&gt;</span>SockPathName<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC55">
+  <span class="nt">&lt;string&gt;</span>/var/run/syslog<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC56">
+  <span class="nt">&lt;key&gt;</span>SockType<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC57">
+  <span class="nt">&lt;string&gt;</span>dgram<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC58">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC59">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC60">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC61">
+  <span class="nt">&lt;/plist&gt;</span>
+</div></pre>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    <div class="gist-meta">
+      <a href="https://gist.github.com/raw/1134216/206305eff1bcd3f621210054620d08d55519251d/com.apple.syslogd.plist" style="float:right">view raw</a> <a href="https://gist.github.com/1134216#file-com-apple-syslogd-plist" style="float:right; margin-right:10px; color:#666;">com.apple.syslogd.plist</a> <a href="https://gist.github.com/1134216">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
+    </div>
+  </div>
+</div>
+
+
+<p>Once you have updated the plist the next step is to update the configuration of your AirPort Extreme. Under Applications => Utilities open the AirPort Utility and connect to your AirPort Extreme. On the Advanced tab select the “Logging &amp; Statistics” panel. Enter the IP address of your Mac OS X Lion Server in “Syslog Destination Address:” and select “6 – Informational” for the “Syslog Level:”. You can see a screenshot of the AirPort Utility settings below. Update the settings on the AirPort Extreme.</p>
+
+<div>
+  <img style="display:block; margin-left:auto; margin-right:auto;" src="http://www.idevelopsoftware.com/wp-content/uploads/2011/08/2011-08-09083214-AirPort-Utility-Focal-Shift-AirPort-Extreme.png" alt="AirPort Extreme Advanced Configuration" title="[2011-08-09083214]  AirPort Utility-Focal Shift AirPort Extreme.png" border="0" width="320" height="318" />
+</div>
+
+
+<p>Now, you probably want to verify that the logging is actually happening. Open Console.app on your server and look at “All Messages”. While looking at the logs go to another machine (I used my MacBook Air with a wireless connection to the AirPort Extreme) and open System Preferences and then Network. Select your network adapter and ask for it to renew the DHCP lease. You should see some activity in the log.</p>
+
+<p>Another way to verify the logging is to turn wifi off on your laptop. You should see a message like this:</p>
+
+<pre>8/9/11 8:43:09.000 AM 80211: Disassociated with station 60:33:4b:2c:de:c0
+</pre>
+
+
+<p>When you turn wifi back on you will see something similar to this:</p>
+
+<pre>8/9/11 8:43:10.000 AM 80211: Rotated TKIP group key.
+8/9/11 8:43:21.000 AM 80211: Associated with station 60:33:4b:2c:de:c0
+8/9/11 8:43:21.000 AM 80211: Authenticating station 60:33:4b:2c:de:c0 to RADIUS.
+8/9/11 8:43:21.000 AM 80211: Installed unicast CCMP key for supplicant 60:33:4b:2c:de:c0
+8/9/11 8:43:21.000 AM natpmp: Binding added for udp, 173.164.164.17:32770 to 10.0.1.104:4500 with lifetime 7200
+8/9/11 8:43:21.000 AM natpmp: Binding added for udp, 173.164.164.17:32771 to 10.0.1.104:5353 with lifetime 7200
+</pre>
+
+
+<p>That’s it. You now have syslog data being captured on your Mac OS X Lion server from your AirPort Extreme base station!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_70">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcapturing-airport-extreme-log-with-lion-server-syslog%2F&linkname=Capturing%20AirPort%20Extreme%20Log%20with%20Lion%20Server%20Syslog" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcapturing-airport-extreme-log-with-lion-server-syslog%2F&linkname=Capturing%20AirPort%20Extreme%20Log%20with%20Lion%20Server%20Syslog" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcapturing-airport-extreme-log-with-lion-server-syslog%2F&linkname=Capturing%20AirPort%20Extreme%20Log%20with%20Lion%20Server%20Syslog" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Heading to Big Nerd Ranch later this month!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/10/heading-to-big-nerd-ranch-later-this-month/"/>
+    <updated>2010-10-03T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/10/heading-to-big-nerd-ranch-later-this-month</id>
+    <content type="html"><![CDATA[<p>One of the podcasts I listen to on a regular basis is called MacBreak. The hosts are Leo Leporte, Alex Lindsay, Andy Ihnatko and a rotating list of other Mac/Apple/iOS luminaries. If you aren’t familiar with it head over to <a href="http://twit.tv/mbw">http://twit.tv/mbw</a> and have a listen. It is highly recommended for anyone interested in <em>all things Macintosh (and iOS too)</em>.</p>
+
+<p>A few episodes ago Alex Lindsay mentioned that his company was going to be hosting a one week <em>Commuter iOS Class</em> at their San Francisco offices so their team could come up to speed developing applications for iOS devices. The class would be taught by the folks from <a href="http://www.bignerdranch.com/">Big Nerd Ranch</a>. Usually the BNR folks teach classes from their <em>monastery</em> at a secret location just outside Atlanta, Georgia. Having them venture out to San Francisco; wow, what an opportunity. Oh, did I mention that Alex Lindsay also announced that there were a limited number of spots open to <em>the unwashed masses</em> to attend and the class would be held from 2:00 p.m. until 10:00 p.m. each day so folks could continue to do at least part of their day jobs.</p>
+
+<p>All in all this just sounded too good to pass up so I fired off an e-mail to the folks at BNR to let them know I wanted to attend. My fingers were crossed because I know how quickly their classes fill up. Needless to say I wouldn’t be writing this post if I didn’t get in. <img src='http://www.idevelopsoftware.com/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /></p>
+
+<p>So, I’m off to the <a href="http://www.pixelcorps.com/">Pixel Corps</a> offices later this month to soak up some more iOS goodness. Hope to see a few of you there too.</p>
+
+<p>BTW: Here is a link to the <a href="http://www.bignerdranch.com/classes/commuter_ios_class_with_macbreak_2pm-10pm">course description</a> for anyone curious.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_63">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MacBook Pro Development Environment]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment/"/>
+    <updated>2010-10-01T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment</id>
+    <content type="html"><![CDATA[<p>This article covers the steps I went through to setup my MacBook Pro for Google App Engine (GAE) development. I am using the Python runtime in GAE so the focus here is on a Python development environment.</p>
+
+<h1>Python</h1>
+
+<h2>Setting Python 2.5 as Default</h2>
+
+<p>My MacBook Pro is running Snow Leopard. I am planning to host my projects on Google App Engine and it requires Python 2.5. Snow Leopard ships with Python 2.6 as the default. You can switch to Python 2.5 using a few simple commands, as follows:</p>
+
+<pre>$ defaults write com.apple.versioner.python Version 2.5
+$ sudo defaults write /Library/Preferences/com.apple.versioner.python Version 2.5
+</pre>
+
+
+<p>After issuing these commands you should logout and login, launch a Terminal window and issue the command</p>
+
+<pre>$ python --version
+</pre>
+
+
+<p>It should report <tt>Python 2.5.4</tt> as the result. If it still says <tt>Python 2.6.1</tt> then your change did not take effect. To troubleshoot the problem start with <tt>man python</tt>. It includes information on how to switch the default version of Python on your system.</p>
+
+<h2>Additional Python Modules</h2>
+
+<p>Google App Engine expects that the ssl module is installed. This is so it can verify the identity of the GAE servers when trying to deploy your projects. Install it like this:</p>
+
+<pre>$ curl http://pypi.python.org/packages/source/s/ssl/ssl-1.15.tar.gz --output ssl-1.15.tar.gz
+$ tar xvf ssl-1.15.tar.gz
+$ cd ssl-1.15
+$ sudo python setup.py install
+</pre>
+
+
+<p>If you want to use the GAE image manipulation classes while running on the local development server you will need to install PIL using the following command.</p>
+
+<pre>$ sudo easy_install pil
+</pre>
+
+
+<p>The following will be necessary for building some other python libraries later in the process.</p>
+
+<pre>$ sudo easy_install docutils
+</pre>
+
+
+<p>The following modules are necessary if you choose to install IPython (see next section). If you are planning on skipping the IPython installation these can be skipped as well.</p>
+
+<pre>$ sudo easy_install readline
+$ sudo easy_install nose
+$ sudo easy_install pexpect
+</pre>
+
+
+<h2>IPython</h2>
+
+<p>The IPython interactive interpreter is a good addition to your Python development environment. It does not come pre-installed on Snow Leopard. You can download the latest stable version using this command:</p>
+
+<pre>$ curl http://ipython.scipy.org/dist/0.10/ipython-0.10.tar.gz --output ipython-0.10.tar.gz
+$ tar -xzf ipython-0.10.tar.gz
+$ cd ipython
+$ sudo python setup.py install
+</pre>
+
+
+<h1>Google App Engine SDK</h1>
+
+<p>The Google App Engine SDK for Python is available at http://code.google.com/appengine/downloads.html. As of this writing you can use the following command to grab the latest version:</p>
+
+<pre>$ curl http://googleappengine.googlecode.com/files/GoogleAppEngineLauncher-1.3.7.dmg --output GoogleAppEngineLauncher-1.3.7.dmg
+</pre>
+
+
+<p>Once you download the <tt>dmg</tt> file open it in Finder and run the installer. It will place all of the necessary files on your machine. Once complete locate the <em>GoogleAppEngineLauncher.app</em> icon in Finder and double-click on it. This application provides a nice UI for managing your GAE projects.</p>
+
+<h1>Source Code Management Tools</h1>
+
+<h2>Git</h2>
+
+<p>I am planning on managing the source code for my projects with <tt>git</tt> and will store my master repositories on <a href="http://github.com">http://github.com</a>. Apple does not include a copy of <tt>git</tt> on the machine by default. An installer is available at <a href="http://help.github.com/mac-git-installation/">http://help.github.com/mac-git-installation/</a>. While you are at it also create an account on github if you don’t already have one. It is useful for <em>social coding</em> in the wider open-source community.</p>
+
+<h2>Mercurial</h2>
+
+<p>Some of the Django open source software I plan on using is maintained using a distributed source control management tool called Mercurial. An installer for this is available at <a href="http://mercurial.selenic.com">http://mercurial.selenic.com</a>. Download and install the software.</p>
+
+<pre>$ curl http://mercurial.selenic.com/release/mercurial-1.6.3.tar.gz --output mercurial-1.6.3.tar.gz
+$ tar xvf mercurial-1.6.3.tar.gz
+$ cd mercurial-1.6.3
+$ make PREFIX=/System/Library/Frameworks/Python.framework/Versions/2.5 all
+$ sudo make PREFIX=/System/Library/Frameworks/Python.framework/Versions/2.5 install
+$ hg version
+</pre>
+
+
+<h1>Django-nonrel</h1>
+
+<p>I plan on implementing my web applications on top of the Django framework. Some modifications are required in order for this framework to run properly on GAE since Google uses <em>Big Table</em> for data storage instead of a relational database. Everything necessary to get Django working in GAE is included as part of the <a href="http://www.allbuttonspressed.com/projects/django-nonrel">Django-nonrel</a> project. Specific instructions for GAE are available at <a href="http://www.allbuttonspressed.com/projects/djangoappengine">http://www.allbuttonspressed.com/projects/djangoappengine</a>.</p>
+
+<p>Use the commands listed below to install copies of all the necessary components onto your machine. Everything will be stored in a folder called <tt>DjangoStuff</tt> under your home directory.</p>
+
+<pre>$ mkdir $HOME/DjangoStuff
+$ cd $HOME/DjangoStuff
+$ hg clone https://bitbucket.org/wkornewald/django-nonrel
+$ hg clone https://bitbucket.org/wkornewald/djangoappengine
+$ hg clone https://bitbucket.org/wkornewald/djangotoolbox
+$ hg clone https://bitbucket.org/wkornewald/django-dbindexer
+$ hg clone https://bitbucket.org/wkornewald/django-testapp
+</pre>
+
+
+<p>Now, pick another folder where you want to setup a practice application. I am calling mine <tt>cs-practice</tt> since this is also the name of my Google App Engine application.</p>
+
+<p>Use the following commands to configure the practice application for Django-nonrel development.</p>
+
+<pre>$ mkdir $HOME/cs-practice
+$ cd $HOME/cs-practice
+$ ln -s $HOME/DjangoStuff/django-nonrel/django django
+$ ln -s $HOME/DjangoStuff/djangoappengine djangoappengine
+$ ln -s $HOME/DjangoStuff/djangotoolbox/djangotoolbox djangotoolbox
+$ ln -s $HOME/DjangoStuff/django-dbindexer/dbindexer dbindexer
+$ cp -r $HOME/DjangoStuff/django-testapp/* .
+</pre>
+
+
+<p>Once you have the practice folder setup you need to edit the <tt>app.yaml</tt> file and change the application name to reflect the Google App Engine application name you selected when registering on <a href="http://appengine.google.com">http://appengine.google.com</a>.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_62">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iMac bluetooth problems gone, but how?]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/08/imac-bluetooth-problems-gone-but-how/"/>
+    <updated>2010-08-01T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/08/imac-bluetooth-problems-gone-but-how</id>
+    <content type="html"><![CDATA[<p>My 27″ iMac has been having some very strange bluetooth problems lately. As mentioned in a recent blog post, all bluetooth devices were <em>unavailable</em> according to the operating system. Reboots didn’t fix the problem. Checking through the console logs turned up messages about the bluetooth drivers not working properly. Fortunately I had a USB keyboard so I was able to make a full backup of the system before scheduling an appointment with the genius at the Apple Store.</p>
+
+<p>Now it has been a couple weeks and I have the machine back and Apple didn’t find anything wrong. In fact, they say the bluetooth works fine. I turned everything on and it works fine here too. I had a hunch that this might be the case. Last week my 13″ MBP had the exact same issue. No bluetooth devices would work with it. In this case a full reboot did correct the problem.</p>
+
+<p>So, what bluetooth devices do I have, and which one is misbehaving and causing all of these problems? I don’t know for sure, but I suspect either the new iPhone 4 or the Plantronics Bluetooth Headset I have. The Apple Bluetooth Keyboard and Magic Mouse seem to be working fine. I have noticed other issues with the bluetooth on the iPhone 4 when it syncs with the Alpine IWA-505 head unit in my truck so my money is on the iPhone 4 being the cause in all of these bluetooth problems. Time will tell.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_60">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fimac-bluetooth-problems-gone-but-how%2F&linkname=iMac%20bluetooth%20problems%20gone%2C%20but%20how%3F" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fimac-bluetooth-problems-gone-but-how%2F&linkname=iMac%20bluetooth%20problems%20gone%2C%20but%20how%3F" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fimac-bluetooth-problems-gone-but-how%2F&linkname=iMac%20bluetooth%20problems%20gone%2C%20but%20how%3F" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Wireless Keyboards and Mice are Great Until&#8230;.]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/07/wireless-keyboards-and-mice-are-great-until/"/>
+    <updated>2010-07-13T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/07/wireless-keyboards-and-mice-are-great-until</id>
+    <content type="html"><![CDATA[<p>Tonight I sat down at my 27″ iMac to get a little work done. The first thing I do is tap the keyboard and move the mouse to wake the machine from sleep mode. The machine awoke and then quickly displayed the <em>Connection Lost</em> graphics in the middle of the screen for both the mouse and keyboard. My first thought; no problem, it’s just the batteries so I replaced them. Still no connection (and it did seem kind of odd for both the mouse and keyboard batteries to be dead at the same time.) Looking up at the system tray I see an odd Bluetooth icon. Here’s a closeup of what I found:</p>
+
+<div style="text-align:center;">
+  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/LittleSnapper.png" alt="LittleSnapper.png" border="0" width="280" height="69" align="center" />
+</div>
+
+
+<p>The <em>Bluetooth: Not Available</em> message in the system tray is not a good sign. Next I opened up <em>Console.app</em> to see if there were any indications of what the root cause for this behavior was. It appears there is truly something wrong with the Bluetooth Module. Here is what it showed:</p>
+
+<div style="text-align:center;">
+  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/Console2.png" alt="[AppleUSBBluetoothHCIController][FindInterfaces] some interface pipes were not found. Device is no good a a transport" border="0" width="730" height="124" align="center" />
+</div>
+
+
+<p>A visit to the support forums at Apple led me to an idea to reset the SMC on the iMac. I tried that and still nothing. At this point I’m not a happy camper. It is looking like the Bluetooth Module in my iMac has given up the ghost.</p>
+
+<p>Next step, the iPhone Apple AppStore application to make a Genius Bar appointment.</p>
+
+<div style="text-align:center;">
+  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/genius.png" alt="genius.png" border="0" width="213" height="320" align="center" />
+</div>
+
+
+<p>If you have read this far then you might be wondering why I’m telling you all of this. The reason is simple. Without a USB keyboard and mouse laying around somewhere none of the troubleshooting above would have been possible. Having a wireless bluetooth keyboard and mouse ship by default with the iMac is a really odd choice on Apple’s part.</p>
+
+<p>Thankfully I have a keyboard and mouse from the Xserve in my garage. In case you forgot what these old fashion beasts look like, here’s a picture of the dynamic duo that saved my bacon tonight!</p>
+
+<div style="txt-align:center;">
+  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/backup_plan.png" alt="backup_plan.png" border="0" width="640" height="478" align="center" />
+</div>
+
+
+
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_59">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

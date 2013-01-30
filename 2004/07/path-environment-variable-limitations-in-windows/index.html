@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>PATH Environment Variable Limitations in Windows - iDevelopSoftware</title>
+  <meta name="author" content="Bennett Smith">
+
+  
+  <meta name="description" content="Environment variables are managed using the System control panel applet in Windows. This user interface leaves much to be desired, but it works. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2004/07/path-environment-variable-limitations-in-windows/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="iDevelopSoftware" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38083118-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">iDevelopSoftware</a></h1>
+  
+    <h2>Simplicity and Clarity by Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.idevelopsoftware.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">PATH Environment Variable Limitations in Windows</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-07-14T00:00:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Environment variables are managed using the System control panel applet in Windows. This user interface leaves much to be desired, but it works. Environment variables are separated into “System” and “User” categories. All users that may login on a machine share the System environment variables. Each user has her own set of User environment variables. User environment variables take precedence over System environment variables. How this precedence rule effects variable definitions is illustrated in the following example:</p>
+
+<p>If the variable TEMP Generally speaking, if an environment variable appears in both categories then the value associated with the User environment variable will be used.</p>
+
+<p>The PATH environment variable controls how the operating system searches for executable (EXE) and dynamic link library (DLL) files when asked to run an application. Some applications are installed for use by all users of the system and others are installed for exclusive use of a particular user.</p>
+
+<p>Microsoft publishes some great human factors guidelines for building Windows applications. I sure wish they would follow some of these guidelines for the Control Panel applets that are provided with Windows. If these applets had to go through the logo certification process I’m sure they would fail!</p>
+
+<p>Take for example the environment variable editing dialog box in the System applet.</p>
+
+<p><a href="http://www.flickr.com/photos/49807087@N00/2319758559" title="View 'EnvironmentVariables-thumb' on Flickr.com"><img src="http://farm3.static.flickr.com/2018/2319758559_8f6f8596b9_o.jpg" alt="EnvironmentVariables-thumb" border="0" width="250" height="231" /></a></p>
+
+<p>This is a prefect example of what not to do when building a user interface. I hate editing environment variables using a one line edit box where you can’t even see the whole definition of the value. You can’t even resize the dialog box!</p>
+
+<p>To make matters worse, there are limits imposed by the operating system that are not checked in the user interface. The PATH environment variable cannot exceed 1024 characters in length, but the user interface happily allows you to define a PATH that is way longer than this.</p>
+
+<p>You can try this for yourself by defining a System PATH that is about 512 bytes in length and define a User PATH that is about 600 bytes long. Because the combine System+User PATH is longer than 1024 bytes the operating system decides to only use the System PATH, leaving out all your User PATH assignments.</p>
+
+<p>A good user environment variable editor would check for this sort of thing. Since Microsoft doesn’t need to get their applications “logo certified” they can freely ignore the UI guidelines they publish. What a shame!</p>
+
+<p>I looked into what it would take to create my own Control Panel Applet to replace this environment variable editor and it looks straight forward. Keep tuned, and maybe I’ll post an improved editor here.</p>
+
+<p>As I dig further into this environment variable issue it seems like there is a lot of inconsistency between versions of Windows.</p>
+
+<p>Microsoft has some <a href="http://technet.microsoft.com/en-us/library/bb490998.aspx">information</a> on the NT command prompt for Windows XP that says the maximum environment variable size is 8192 bytes and that the entire environment cannot exceed 65,536KB (though I think that is supposed to be bytes).</p>
+
+<p>Early versions of MS-DOS had a 128 character limitation on the PATH variable. According to this <a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;97595">article</a>, that limitation was removed in MS-DOS 6.0. In <a href="http://support.microsoft.com/default.aspx?scid=kb;EN-US;169171">KB169171</a> Microsoft talks about how 16-bit applications can still hang when the path exceeds 200 bytes.</p>
+
+<p>The only place I could find that actually states that there is a 1KB limit on the combine length of the System+User path is <a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;216477">here</a>. In the WORKAROUND section of this article it states that the path should “total 1 KB or less of characters”. The article is for Windows NT Server 4.0 Terminal Server Edition, but my experiments on a Windows 2000 Professional system indicate that it is still the case. I haven’t tried Windows XP or Windows Server 2003 yet to determine if the problem exists in those variants of Windows.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_7">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fpath-environment-variable-limitations-in-windows%2F&linkname=PATH%20Environment%20Variable%20Limitations%20in%20Windows" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fpath-environment-variable-limitations-in-windows%2F&linkname=PATH%20Environment%20Variable%20Limitations%20in%20Windows" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fpath-environment-variable-limitations-in-windows%2F&linkname=PATH%20Environment%20Variable%20Limitations%20in%20Windows" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">bsmith</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-07-14T00:00:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2004</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/microsoft/'>Microsoft</a>, <a class='category' href='/blog/categories/software/'>Software</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2004/07/path-environment-variable-limitations-in-windows/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2004/07/path-environment-variable-limitations-in-windows/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2004/01/introduction-to-xml/" title="Previous Post: Introduction to XML">&laquo; Introduction to XML</a>
+      
+      
+        <a class="basic-alignment right" href="/2004/07/environment-variables-provided-by-windows-operating-system/" title="Next Post: Environment Variables Provided by Windows Operating System">Environment Variables Provided by Windows Operating System &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/plugin-experiments/">Plugin Experiments</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/code-blocks/">Code Blocks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+/">Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/">Capturing AirPort Extreme Log with Lion Server Syslog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/BennettSmith">@BennettSmith</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'BennettSmith',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("BennettSmith", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/BennettSmith" class="twitter-follow-button" data-show-count="false">Follow @BennettSmith</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Bennett Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'idevelopsoftware';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

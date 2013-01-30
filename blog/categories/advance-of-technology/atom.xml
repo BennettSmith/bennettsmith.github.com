@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Advance of Technology | iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/blog/categories/advance-of-technology/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-30T10:42:26-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
+  <author>
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Attending iOSDevCamp 2010 &#8211; Building Meet4Drinks]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks/"/>
+    <updated>2010-08-19T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks</id>
+    <content type="html"><![CDATA[<p><a href="http://www.iosdevcamp.org"><img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/08/iosdevcamp2010.png" alt="iosdevcamp2010.png" title="iosdevcamp2010.png" border="0" width="250" height="37"  style="padding: 5px; padding-right: 20px; float:left;" /></a><br/>
+I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is a great event where iPhone/iPad software developers and UI/UX designers come together for a weekend of coding and exploration of ideas around how to use iOS devices. The event organizers hold something called a Hackathon where attendees form ad-hoc teams around shared application ideas and spend two full days designing and coding like crazy to build something cool. Everyone has a great time and meets like-minded folks in the developer community.</p>
+
+<p>Earlier this year, in April the event organizers held a special iPadDevCamp. That was my first exposure to this great event format. You can read more about that experience over on the <a href="http://blog.poweredbyamp.com/marketplace-platform/seller-dashboard-ipad/">Powered By AMP</a> blog. For that event I was on a team with some co-workers from <a href="www.auctiva.com">Auctiva</a>. We built a prototype of an e-commerce sales management tool for AMP sellers.</p>
+
+<p>This time I’m attending solo, without a cadre of other Auctiva designers and developers. I want to explore developing location-aware applications for the iPhone and put together a basic idea for an app. It is called Meet4Drinks, and you can read more about it at <a href="http://www.meet4drinks.net">http://www.meet4drinks.net</a>.</p>
+
+<p>If it sounds like something you would enjoy, it’s not too late to register today. The event starts tomorrow (Friday) evening and goes through Sunday evening. Visit <a href="http://www.iosdevcamp.org">http://www.iosdevcamp.org</a> to register.</p>
+
+<p>Look for updates on Meet4Drinks next week, once my head is back above water after the event. Hope to see you there.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_61">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iPad Review &#8211; First 24 hours]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/04/ipad-review-first-24-hours/"/>
+    <updated>2010-04-05T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/04/ipad-review-first-24-hours</id>
+    <content type="html"><![CDATA[<p>My experience with it so far is mixed. Like you I tried to touch-type on the keyboard and that really didn’t work at all. I have tried to do the two finger plus thumbs approach and am not that fast typing like that. The keyboard is big enough that I find it kind of weird to hold it in one hand and type with the other. My hand has to move too far to get all the keys unlike on the iPhone where everything is much closer together. I have not tried to hook up a bluetooth keyboard yet either. I expect that to work much better for things like typing e-mails.</p>
+
+<p>I ended up purchasing the 64GB version instead of the 16GB version. The change was based on a recommendation I heard on MacBreak Weekly. They mentioned that based on their preview use (had it for about a week before April 3rd) they feel that if you are going to use it to read books then you will easily fill the 16GB and then have to pick/choose which items to sync to your iPad. With the 64GB version you can just dump all the books/PDFs you want on it and not worry about running out of space.</p>
+
+<p>I have the Kindle for iPad application on it and pulled down all my Kindle books. Very cool! It just works! I also downloaded the iBooks application from the App Store. That application reads the ePub format. I have purchased a number of technical books in the past few years from Pragmatic Programmers. All of their books are available in ePub format so I downloaded that version and loaded them into the iPad too.</p>
+
+<p>So far I really like having all of my technical books in one place like this. I have not tried reading out in full sunlight, but expect it will be an issue. For reading indoors it works fine. Not as easy on the eyes as the Kindle, but it shows all of the technical illustrations in the books in full color which is much better.</p>
+
+<p>I purchased the Pages, Numbers and Keynote applications from Apple also. They really show off the sort of things you can accomplish with the iPad, but the crash a lot. I feel more like a beta tester of these apps than just a user. Sort of a let down, but then I have been here before with other Apple products. Eventually these will be great applications.</p>
+
+<p>With the iPad I also purchased the Apple case for the iPad. I was really surprised when I opened it up at home. The quality of the case is really bad. It only cost $39, but it sucks compared to the case that Amazon sells for the Kindle. After about 2 hours of using the iPad in the case I got so annoyed with it that now I am using the iPad without a case. I am shopping for a different case now.</p>
+
+<p>I have had Safari crash on me more than once now on the iPad. It seems like the crashes were always on very long (lots of scrolling) web pages so maybe it is a memory issue. I’m not sure, but the end result is you are just reading along on the page and all of a sudden you are back to the menu of icons wondering how you got there.</p>
+
+<p>Even more surprising than the crashes of apps on the device is the crash I experienced this morning of the Xcode development environment on the desktop. Apple released an update to Xcode that includes all of the iPad development tools yesterday. I was working on a sample application this morning, following the instructions on how to build an app when all of a sudden Xcode just up and crashed on me. This is very unusual. Earlier versions of Xcode have been very stable for years.</p>
+
+<p>Over all I think purchasing one as a developer at this point is a good move, but for basic consumers it is probably more sensible to wait about 3 months before jumping on the iPad bandwagon.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_54">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F04%2Fipad-review-first-24-hours%2F&linkname=iPad%20Review%20%26%238211%3B%20First%2024%20hours" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F04%2Fipad-review-first-24-hours%2F&linkname=iPad%20Review%20%26%238211%3B%20First%2024%20hours" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F04%2Fipad-review-first-24-hours%2F&linkname=iPad%20Review%20%26%238211%3B%20First%2024%20hours" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Nokia places Qt under LGPL License &#8211; Sweet!]]></title>
+    <link href="http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet/"/>
+    <updated>2009-01-14T00:00:00-08:00</updated>
+    <id>http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet</id>
+    <content type="html"><![CDATA[<p>I have been a big fan of the Trolltech Qt Framework for a number of years. It is a fantastic way to build high quality cross-platform desktop applications in C++. For the past six years it seems like every project I work on has included a rich desktop GUI application of some sort. Each time this need would arise I would start the process of <em>selling</em> the idea of using the Qt Framework for the project. The biggest hurdle was always the per-developer cost for the commercial license of the framework. I would hear things like</p>
+
+<blockquote><p>Just use MFC. It’s free and we don’t really see a need for the application to be cross-platform anyway.</p></blockquote>
+
+<p>or sometimes I would hear</p>
+
+<blockquote><p>Use the GPL version of Qt and just <em>keep it under the radar</em> until we are sure the application will be released to our customers.</p></blockquote>
+
+<p>It was always frustrating to try and make the case that Qt was a better solution than MFC for UI, was more comprehensive for general development than other frameworks, and that it was worth planning for the possiblity of releasing the applications for Linux or Mac as well as Windows. In the end each project did adopt the Qt Framework, but it really was a distraction to try and justify the use.</p>
+
+<p>Thankfully with the purchase of Trolltech by Nokia we are seeing a change in the licensing terms for the Qt Framework. Starting with the 4.5 release it looks like the framework will be placed under the LGPL license making it much easier to adopt as part of commercial development efforts.</p>
+
+<p>Here are a couple links that discuss the development further:</p>
+
+<ul>
+<li><a href="http://arstechnica.com/news.ars/post/20090114-nokia-qt-lgpl-switch-huge-win-for-cross-platform-development.html">ARS Technica</a></li>
+<li><a href="http://www.pcworld.com/article/157054/nokia_hopes_to_increase_qt_popularity_with_new_license.html">PC World</a></li>
+</ul>
+
+
+<p>and you can read the news directly from Nokia on the <a href="http://www.qtsoftware.com/about/licensing">Qt Licensing Terms</a> page.</p>
+
+<p>This new development on the licensing front and the recent inclusion of WebKit into the Qt Framework make me very optimistic about a long and prosperous future for developers who know the Qt Framework! <strong>Thank you Nokia!</strong></p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_41">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fnokia-places-qt-under-lgpl-license-sweet%2F&linkname=Nokia%20places%20Qt%20under%20LGPL%20License%20%26%238211%3B%20Sweet%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fnokia-places-qt-under-lgpl-license-sweet%2F&linkname=Nokia%20places%20Qt%20under%20LGPL%20License%20%26%238211%3B%20Sweet%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fnokia-places-qt-under-lgpl-license-sweet%2F&linkname=Nokia%20places%20Qt%20under%20LGPL%20License%20%26%238211%3B%20Sweet%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

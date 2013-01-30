@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Setting up my Snow Leopard Ruby 1.9.2, Ruby on Rails 3.0, Nginx, Passenger development environment
+ - iDevelopSoftware</title>
+  <meta name="author" content="Bennett Smith">
+
+  
+  <meta name="description" content="Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
+/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="iDevelopSoftware" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38083118-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">iDevelopSoftware</a></h1>
+  
+    <h2>Simplicity and Clarity by Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.idevelopsoftware.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Setting Up My Snow Leopard Ruby 1.9.2, Ruby on Rails 3.0, Nginx, Passenger Development Environment</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-14T00:00:00-08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to setup a current environment. My requirements were:</p>
+
+<ul>
+<li>Ruby 1.9.2</li>
+<li>Rails 3.0</li>
+<li>PostgreSQL 9.0</li>
+<li>Nginx</li>
+<li>Passenger</li>
+</ul>
+
+
+<p>You should download and install the Mac version of PostgreSQL 9.0 from the folks at <a href="http://www.enterprisedb.com/products/download.do">EnterpriseDB</a>. You will need to register on the site in order to do the download. Be sure to download PostgreSQL 9.0.1, not one of their <em>Plus</em> packages. It is a nicely packaged installer for the freely available version of Postgres.</p>
+
+<p>Once you install this software you should have a file called <tt>pg_env.sh</tt> in the <tt>/Library/PostgreSQL/9.0/</tt> directory. This file should be added to your <tt>/etc/profile</tt>. Here is an example of what mine looks like:</p>
+
+<pre># System-wide .profile for sh(1)
+
+# This has to be set to something in order for path_helper (below)
+# to update it with paths found in the /etc/manpaths.d directory.
+MANPATH=/usr/local/share/man; export MANPATH
+
+# Setup the PostgreSQL environment.
+. /Library/PostgreSQL/9.0/pg_env.sh
+
+if [ -x /usr/libexec/path_helper ]; then
+    eval `/usr/libexec/path_helper -s`
+fi
+
+if [ "${BASH-no}" != "no" ]; then
+    [ -r /etc/bashrc ] &#038;&#038; . /etc/bashrc
+fi
+</pre>
+
+
+<p>Be sure to log out and log back in before continuing with these instructions. This is important to make sure your PostgreSQL environment variables are set properly.</p>
+
+<p>One of my goals with this setup is to keep everything independent of the default tools that ship with Snow Leopard. To do this I decided that all of my Ruby on Rails setup will be located in the <tt>/usr/local/ror</tt> directory tree. Here is a script I developed to setup my Ruby on Rails development environment.</p>
+
+<pre>#!/bin/bash
+
+# Get and extract a copy of LibYAML
+curl http://pyyaml.org/download/libyaml/yaml-0.1.3.tar.gz > yaml-0.1.3.tar.gz
+tar xvf yaml-0.1.3.tar.gz
+
+# Build LibYAML
+(
+    cd yaml-0.1.3
+    ./configure
+    make
+    sudo make install
+)
+
+# Get and extract a copy of Ruby 1.9.2
+curl ftp://ftp.ruby-lang.org:21//pub/ruby/1.9/ruby-1.9.2-p0.tar.gz > ruby-1.9.2-p0.tar.gz
+tar xvf ruby-1.9.2-p0.tar.gz
+
+# Build Ruby 1.9.2
+(
+    cd ruby-1.9.2-p0
+    ./configure --prefix=/usr/local/ror --with-arch=x86_64 --enable-shared
+    make
+    make test
+    sudo make install
+)
+
+# Update Ruby Gems
+sudo gem update --system
+
+# Install Gems
+sudo gem install rails
+sudo gem install sqlite3-ruby
+sudo gem install pg
+sudo gem install passenger
+
+# Configure Passenger for Nginx (downloads Nginx and PCRE automatically)
+sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --auto
+</pre>
+
+
+<p><a href="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/11/doit.sh.tar" class="s3-link">Download the script</a>, un-tar it and place it in any directory you want. I call the script <tt>doit.sh</tt>, but you can name it anything you like. Run the script using the command shown below.</p>
+
+<pre>$ sh ./doit.sh
+</pre>
+
+
+<p>Once the script completes you need to add <tt>/usr/local/ror/bin</tt> to your path. I did this by editing my <tt>/etc/paths</tt> file. Here is a copy of the file on my machine:</p>
+
+<pre>usr/local/ror/bin
+/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+</pre>
+
+
+<p>One more logout/login and you are done. Have fun playing with Ruby on Rails on your Mac!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_64">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F11%2Fsetting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment%2F&linkname=Setting%20up%20my%20Snow%20Leopard%20Ruby%201.9.2%2C%20Ruby%20on%20Rails%203.0%2C%20Nginx%2C%20Passenger%20development%20environment" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F11%2Fsetting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment%2F&linkname=Setting%20up%20my%20Snow%20Leopard%20Ruby%201.9.2%2C%20Ruby%20on%20Rails%203.0%2C%20Nginx%2C%20Passenger%20development%20environment" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F11%2Fsetting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment%2F&linkname=Setting%20up%20my%20Snow%20Leopard%20Ruby%201.9.2%2C%20Ruby%20on%20Rails%203.0%2C%20Nginx%2C%20Passenger%20development%20environment" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-14T00:00:00-08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2010</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/how-to/'>How To</a>, <a class='category' href='/blog/categories/software/'>Software</a>, <a class='category' href='/blog/categories/tips-from-the-trenches/'>Tips from the Trenches</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
+/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
+/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/10/heading-to-big-nerd-ranch-later-this-month/" title="Previous Post: Heading to Big Nerd Ranch later this month!">&laquo; Heading to Big Nerd Ranch later this month!</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/11/adding-mongodb-to-my-mac-os-x-snow-leopard-ruby-on-rails-environment/" title="Next Post: Adding MongoDB to my Mac OS X Snow Leopard Ruby on Rails Environment">Adding MongoDB to my Mac OS X Snow Leopard Ruby on Rails Environment &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/plugin-experiments/">Plugin Experiments</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/code-blocks/">Code Blocks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+/">Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/">Capturing AirPort Extreme Log with Lion Server Syslog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/BennettSmith">@BennettSmith</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'BennettSmith',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("BennettSmith", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/BennettSmith" class="twitter-follow-button" data-show-count="false">Follow @BennettSmith</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Bennett Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'idevelopsoftware';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

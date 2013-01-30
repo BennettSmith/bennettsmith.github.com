@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Capturing AirPort Extreme Log with Lion Server Syslog - iDevelopSoftware</title>
+  <meta name="author" content="Bennett Smith">
+
+  
+  <meta name="description" content="Mac OS X Lion Server can be used as a syslog server to capture the log messages from an Apple AirPort Extreme wireless router. The instructions below &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="iDevelopSoftware" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38083118-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">iDevelopSoftware</a></h1>
+  
+    <h2>Simplicity and Clarity by Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.idevelopsoftware.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Capturing AirPort Extreme Log With Lion Server Syslog</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-09T00:00:00-07:00" pubdate data-updated="true">Aug 9<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Mac OS X Lion Server can be used as a syslog server to capture the log messages from an Apple AirPort Extreme wireless router. The instructions below walk you through setting this up.</p>
+
+<p>Syslog is controlled by a plist file found in the launch daemons directory. The full path to the file is:</p>
+
+<pre>/System/Library/LaunchDaemons/com.apple.syslogd.plist
+</pre>
+
+
+<p>You need to edit this file to add a network listener. The plist is stored in a binary format so you need to use the plutil to convert it to XML using this command:</p>
+
+<pre>$ pushd /System/Library/LaunchDaemons
+$ sudo plutil -convert xml1 /System/Library/LaunchDaemons/com.apple.syslogd.plist
+$ sudo vim /System/Library/LaunchDaemons/com.apple.syslogd.plist
+$ sudo plutil -convert binary1 /System/Library/LaunchDaemons/com.apple.syslogd.plist
+$ sudo launchctl unload /System/Library/LaunchDaemons/com.apple.syslogd.plist
+$ sudo launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist
+</pre>
+
+
+<p>Here is a complete example of the modified plist file. The new key is the NetworkListener. Be sure you add it nested inside the Sockets key or it will not work.</p>
+
+<div id="gist1134216" class="gist">
+  <div class="gist-file">
+    <div class="gist-data gist-syntax">
+      <div class="file-data">
+        <table cellpadding="0" cellspacing="0" class="lines highlight">
+          <tr>
+            <td class="line-numbers">
+              <span class="line-number" id="file-com-apple-syslogd-plist-L1" rel="file-com-apple-syslogd-plist-L1">1</span> <span class="line-number" id="file-com-apple-syslogd-plist-L2" rel="file-com-apple-syslogd-plist-L2">2</span> <span class="line-number" id="file-com-apple-syslogd-plist-L3" rel="file-com-apple-syslogd-plist-L3">3</span> <span class="line-number" id="file-com-apple-syslogd-plist-L4" rel="file-com-apple-syslogd-plist-L4">4</span> <span class="line-number" id="file-com-apple-syslogd-plist-L5" rel="file-com-apple-syslogd-plist-L5">5</span> <span class="line-number" id="file-com-apple-syslogd-plist-L6" rel="file-com-apple-syslogd-plist-L6">6</span> <span class="line-number" id="file-com-apple-syslogd-plist-L7" rel="file-com-apple-syslogd-plist-L7">7</span> <span class="line-number" id="file-com-apple-syslogd-plist-L8" rel="file-com-apple-syslogd-plist-L8">8</span> <span class="line-number" id="file-com-apple-syslogd-plist-L9" rel="file-com-apple-syslogd-plist-L9">9</span> <span class="line-number" id="file-com-apple-syslogd-plist-L10" rel="file-com-apple-syslogd-plist-L10">10</span> <span class="line-number" id="file-com-apple-syslogd-plist-L11" rel="file-com-apple-syslogd-plist-L11">11</span> <span class="line-number" id="file-com-apple-syslogd-plist-L12" rel="file-com-apple-syslogd-plist-L12">12</span> <span class="line-number" id="file-com-apple-syslogd-plist-L13" rel="file-com-apple-syslogd-plist-L13">13</span> <span class="line-number" id="file-com-apple-syslogd-plist-L14" rel="file-com-apple-syslogd-plist-L14">14</span> <span class="line-number" id="file-com-apple-syslogd-plist-L15" rel="file-com-apple-syslogd-plist-L15">15</span> <span class="line-number" id="file-com-apple-syslogd-plist-L16" rel="file-com-apple-syslogd-plist-L16">16</span> <span class="line-number" id="file-com-apple-syslogd-plist-L17" rel="file-com-apple-syslogd-plist-L17">17</span> <span class="line-number" id="file-com-apple-syslogd-plist-L18" rel="file-com-apple-syslogd-plist-L18">18</span> <span class="line-number" id="file-com-apple-syslogd-plist-L19" rel="file-com-apple-syslogd-plist-L19">19</span> <span class="line-number" id="file-com-apple-syslogd-plist-L20" rel="file-com-apple-syslogd-plist-L20">20</span> <span class="line-number" id="file-com-apple-syslogd-plist-L21" rel="file-com-apple-syslogd-plist-L21">21</span> <span class="line-number" id="file-com-apple-syslogd-plist-L22" rel="file-com-apple-syslogd-plist-L22">22</span> <span class="line-number" id="file-com-apple-syslogd-plist-L23" rel="file-com-apple-syslogd-plist-L23">23</span> <span class="line-number" id="file-com-apple-syslogd-plist-L24" rel="file-com-apple-syslogd-plist-L24">24</span> <span class="line-number" id="file-com-apple-syslogd-plist-L25" rel="file-com-apple-syslogd-plist-L25">25</span> <span class="line-number" id="file-com-apple-syslogd-plist-L26" rel="file-com-apple-syslogd-plist-L26">26</span> <span class="line-number" id="file-com-apple-syslogd-plist-L27" rel="file-com-apple-syslogd-plist-L27">27</span> <span class="line-number" id="file-com-apple-syslogd-plist-L28" rel="file-com-apple-syslogd-plist-L28">28</span> <span class="line-number" id="file-com-apple-syslogd-plist-L29" rel="file-com-apple-syslogd-plist-L29">29</span> <span class="line-number" id="file-com-apple-syslogd-plist-L30" rel="file-com-apple-syslogd-plist-L30">30</span> <span class="line-number" id="file-com-apple-syslogd-plist-L31" rel="file-com-apple-syslogd-plist-L31">31</span> <span class="line-number" id="file-com-apple-syslogd-plist-L32" rel="file-com-apple-syslogd-plist-L32">32</span> <span class="line-number" id="file-com-apple-syslogd-plist-L33" rel="file-com-apple-syslogd-plist-L33">33</span> <span class="line-number" id="file-com-apple-syslogd-plist-L34" rel="file-com-apple-syslogd-plist-L34">34</span> <span class="line-number" id="file-com-apple-syslogd-plist-L35" rel="file-com-apple-syslogd-plist-L35">35</span> <span class="line-number" id="file-com-apple-syslogd-plist-L36" rel="file-com-apple-syslogd-plist-L36">36</span> <span class="line-number" id="file-com-apple-syslogd-plist-L37" rel="file-com-apple-syslogd-plist-L37">37</span> <span class="line-number" id="file-com-apple-syslogd-plist-L38" rel="file-com-apple-syslogd-plist-L38">38</span> <span class="line-number" id="file-com-apple-syslogd-plist-L39" rel="file-com-apple-syslogd-plist-L39">39</span> <span class="line-number" id="file-com-apple-syslogd-plist-L40" rel="file-com-apple-syslogd-plist-L40">40</span> <span class="line-number" id="file-com-apple-syslogd-plist-L41" rel="file-com-apple-syslogd-plist-L41">41</span> <span class="line-number" id="file-com-apple-syslogd-plist-L42" rel="file-com-apple-syslogd-plist-L42">42</span> <span class="line-number" id="file-com-apple-syslogd-plist-L43" rel="file-com-apple-syslogd-plist-L43">43</span> <span class="line-number" id="file-com-apple-syslogd-plist-L44" rel="file-com-apple-syslogd-plist-L44">44</span> <span class="line-number" id="file-com-apple-syslogd-plist-L45" rel="file-com-apple-syslogd-plist-L45">45</span> <span class="line-number" id="file-com-apple-syslogd-plist-L46" rel="file-com-apple-syslogd-plist-L46">46</span> <span class="line-number" id="file-com-apple-syslogd-plist-L47" rel="file-com-apple-syslogd-plist-L47">47</span> <span class="line-number" id="file-com-apple-syslogd-plist-L48" rel="file-com-apple-syslogd-plist-L48">48</span> <span class="line-number" id="file-com-apple-syslogd-plist-L49" rel="file-com-apple-syslogd-plist-L49">49</span> <span class="line-number" id="file-com-apple-syslogd-plist-L50" rel="file-com-apple-syslogd-plist-L50">50</span> <span class="line-number" id="file-com-apple-syslogd-plist-L51" rel="file-com-apple-syslogd-plist-L51">51</span> <span class="line-number" id="file-com-apple-syslogd-plist-L52" rel="file-com-apple-syslogd-plist-L52">52</span> <span class="line-number" id="file-com-apple-syslogd-plist-L53" rel="file-com-apple-syslogd-plist-L53">53</span> <span class="line-number" id="file-com-apple-syslogd-plist-L54" rel="file-com-apple-syslogd-plist-L54">54</span> <span class="line-number" id="file-com-apple-syslogd-plist-L55" rel="file-com-apple-syslogd-plist-L55">55</span> <span class="line-number" id="file-com-apple-syslogd-plist-L56" rel="file-com-apple-syslogd-plist-L56">56</span> <span class="line-number" id="file-com-apple-syslogd-plist-L57" rel="file-com-apple-syslogd-plist-L57">57</span> <span class="line-number" id="file-com-apple-syslogd-plist-L58" rel="file-com-apple-syslogd-plist-L58">58</span> <span class="line-number" id="file-com-apple-syslogd-plist-L59" rel="file-com-apple-syslogd-plist-L59">59</span> <span class="line-number" id="file-com-apple-syslogd-plist-L60" rel="file-com-apple-syslogd-plist-L60">60</span> <span class="line-number" id="file-com-apple-syslogd-plist-L61" rel="file-com-apple-syslogd-plist-L61">61</span>
+            </td>
+            
+            <td class="line-data">
+              <pre class="line-pre"><div class="line" id="file-com-apple-syslogd-plist-LC1">
+  <span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC2">
+  <span class="cp">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC3">
+  <span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC4">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC5">
+  <span class="nt">&lt;key&gt;</span>EnableTransactions<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC6">
+  <span class="nt">&lt;true/&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC7">
+  <span class="nt">&lt;key&gt;</span>EnvironmentVariables<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC8">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC9">
+  <span class="nt">&lt;key&gt;</span>ASL_DISABLE<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC10">
+  <span class="nt">&lt;string&gt;</span>1<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC11">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC12">
+  <span class="nt">&lt;key&gt;</span>HopefullyExitsLast<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC13">
+  <span class="nt">&lt;true/&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC14">
+  <span class="nt">&lt;key&gt;</span>JetsamProperties<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC15">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC16">
+  <span class="nt">&lt;key&gt;</span>JetsamMemoryLimit<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC17">
+  <span class="nt">&lt;integer&gt;</span>300<span class="nt">&lt;/integer&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC18">
+  <span class="nt">&lt;key&gt;</span>JetsamPriority<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC19">
+  <span class="nt">&lt;integer&gt;</span>-49<span class="nt">&lt;/integer&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC20">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC21">
+  <span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC22">
+  <span class="nt">&lt;string&gt;</span>com.apple.syslogd<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC23">
+  <span class="nt">&lt;key&gt;</span>MachServices<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC24">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC25">
+  <span class="nt">&lt;key&gt;</span>com.apple.system.logger<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC26">
+  <span class="nt">&lt;true/&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC27">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC28">
+  <span class="nt">&lt;key&gt;</span>OnDemand<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC29">
+  <span class="nt">&lt;false/&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC30">
+  <span class="nt">&lt;key&gt;</span>ProgramArguments<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC31">
+  <span class="nt">&lt;array&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC32">
+  <span class="nt">&lt;string&gt;</span>/usr/sbin/syslogd<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC33">
+  <span class="nt">&lt;/array&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC34">
+  <span class="nt">&lt;key&gt;</span>Sockets<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC35">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC36">
+  <span class="nt">&lt;key&gt;</span>NetworkListener<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC37">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC38">
+  <span class="nt">&lt;key&gt;</span>SockServiceName<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC39">
+  <span class="nt">&lt;string&gt;</span>syslog<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC40">
+  <span class="nt">&lt;key&gt;</span>SockType<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC41">
+  <span class="nt">&lt;string&gt;</span>dgram<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC42">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC43">
+  <span class="nt">&lt;key&gt;</span>AppleSystemLogger<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC44">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC45">
+  <span class="nt">&lt;key&gt;</span>SockPathMode<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC46">
+  <span class="nt">&lt;integer&gt;</span>438<span class="nt">&lt;/integer&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC47">
+  <span class="nt">&lt;key&gt;</span>SockPathName<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC48">
+  <span class="nt">&lt;string&gt;</span>/var/run/asl_input<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC49">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC50">
+  <span class="nt">&lt;key&gt;</span>BSDSystemLogger<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC51">
+  <span class="nt">&lt;dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC52">
+  <span class="nt">&lt;key&gt;</span>SockPathMode<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC53">
+  <span class="nt">&lt;integer&gt;</span>438<span class="nt">&lt;/integer&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC54">
+  <span class="nt">&lt;key&gt;</span>SockPathName<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC55">
+  <span class="nt">&lt;string&gt;</span>/var/run/syslog<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC56">
+  <span class="nt">&lt;key&gt;</span>SockType<span class="nt">&lt;/key&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC57">
+  <span class="nt">&lt;string&gt;</span>dgram<span class="nt">&lt;/string&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC58">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC59">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC60">
+  <span class="nt">&lt;/dict&gt;</span>
+</div>
+
+<div class="line" id="file-com-apple-syslogd-plist-LC61">
+  <span class="nt">&lt;/plist&gt;</span>
+</div></pre>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    <div class="gist-meta">
+      <a href="https://gist.github.com/raw/1134216/206305eff1bcd3f621210054620d08d55519251d/com.apple.syslogd.plist" style="float:right">view raw</a> <a href="https://gist.github.com/1134216#file-com-apple-syslogd-plist" style="float:right; margin-right:10px; color:#666;">com.apple.syslogd.plist</a> <a href="https://gist.github.com/1134216">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
+    </div>
+  </div>
+</div>
+
+
+<p>Once you have updated the plist the next step is to update the configuration of your AirPort Extreme. Under Applications => Utilities open the AirPort Utility and connect to your AirPort Extreme. On the Advanced tab select the “Logging &amp; Statistics” panel. Enter the IP address of your Mac OS X Lion Server in “Syslog Destination Address:” and select “6 – Informational” for the “Syslog Level:”. You can see a screenshot of the AirPort Utility settings below. Update the settings on the AirPort Extreme.</p>
+
+<div>
+  <img style="display:block; margin-left:auto; margin-right:auto;" src="http://www.idevelopsoftware.com/wp-content/uploads/2011/08/2011-08-09083214-AirPort-Utility-Focal-Shift-AirPort-Extreme.png" alt="AirPort Extreme Advanced Configuration" title="[2011-08-09083214]  AirPort Utility-Focal Shift AirPort Extreme.png" border="0" width="320" height="318" />
+</div>
+
+
+<p>Now, you probably want to verify that the logging is actually happening. Open Console.app on your server and look at “All Messages”. While looking at the logs go to another machine (I used my MacBook Air with a wireless connection to the AirPort Extreme) and open System Preferences and then Network. Select your network adapter and ask for it to renew the DHCP lease. You should see some activity in the log.</p>
+
+<p>Another way to verify the logging is to turn wifi off on your laptop. You should see a message like this:</p>
+
+<pre>8/9/11 8:43:09.000 AM 80211: Disassociated with station 60:33:4b:2c:de:c0
+</pre>
+
+
+<p>When you turn wifi back on you will see something similar to this:</p>
+
+<pre>8/9/11 8:43:10.000 AM 80211: Rotated TKIP group key.
+8/9/11 8:43:21.000 AM 80211: Associated with station 60:33:4b:2c:de:c0
+8/9/11 8:43:21.000 AM 80211: Authenticating station 60:33:4b:2c:de:c0 to RADIUS.
+8/9/11 8:43:21.000 AM 80211: Installed unicast CCMP key for supplicant 60:33:4b:2c:de:c0
+8/9/11 8:43:21.000 AM natpmp: Binding added for udp, 173.164.164.17:32770 to 10.0.1.104:4500 with lifetime 7200
+8/9/11 8:43:21.000 AM natpmp: Binding added for udp, 173.164.164.17:32771 to 10.0.1.104:5353 with lifetime 7200
+</pre>
+
+
+<p>That’s it. You now have syslog data being captured on your Mac OS X Lion server from your AirPort Extreme base station!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_70">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcapturing-airport-extreme-log-with-lion-server-syslog%2F&linkname=Capturing%20AirPort%20Extreme%20Log%20with%20Lion%20Server%20Syslog" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcapturing-airport-extreme-log-with-lion-server-syslog%2F&linkname=Capturing%20AirPort%20Extreme%20Log%20with%20Lion%20Server%20Syslog" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcapturing-airport-extreme-log-with-lion-server-syslog%2F&linkname=Capturing%20AirPort%20Extreme%20Log%20with%20Lion%20Server%20Syslog" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Admin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-09T00:00:00-07:00" pubdate data-updated="true">Aug 9<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/apple/'>Apple</a>, <a class='category' href='/blog/categories/blog/'>Blog</a>, <a class='category' href='/blog/categories/hardware/'>Hardware</a>, <a class='category' href='/blog/categories/how-to/'>How To</a>, <a class='category' href='/blog/categories/system-administration/'>System Administration</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/" title="Previous Post: Cookbook: Snow Leopard, RVM, Ruby on Rails">&laquo; Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+/" title="Next Post: Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss">Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/plugin-experiments/">Plugin Experiments</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/code-blocks/">Code Blocks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+/">Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/">Capturing AirPort Extreme Log with Lion Server Syslog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/BennettSmith">@BennettSmith</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'BennettSmith',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("BennettSmith", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/BennettSmith" class="twitter-follow-button" data-show-count="false">Follow @BennettSmith</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Bennett Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'idevelopsoftware';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

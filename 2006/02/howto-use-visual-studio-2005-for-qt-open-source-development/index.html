@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>HOWTO &#8211; Use Visual Studio 2005 for Qt Open Source Development - iDevelopSoftware</title>
+  <meta name="author" content="Bennett Smith">
+
+  
+  <meta name="description" content="THIS IS A WORK IN PROGRESS. EXPECT UPDATES AND DON’T BE SURPRISED BY INCOMPLETE INFORMATION Trolltech has released Qt 4 under a dual-license for all &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2006/02/howto-use-visual-studio-2005-for-qt-open-source-development/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="iDevelopSoftware" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38083118-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">iDevelopSoftware</a></h1>
+  
+    <h2>Simplicity and Clarity by Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.idevelopsoftware.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">HOWTO &#8211; Use Visual Studio 2005 for Qt Open Source Development</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-02-14T00:00:00-08:00" pubdate data-updated="true">Feb 14<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><em>THIS IS A WORK IN PROGRESS. EXPECT UPDATES AND DON’T BE SURPRISED BY INCOMPLETE INFORMATION</em><span class="alignright"><a target="_blank" href="http://www.trolltech.com"><img src="http://idvlpsw.files.wordpress.com/2008/03/qt.png" alt="qtlogo_feature.png" border="0" /></a></span></p>
+
+<p>Trolltech has released Qt 4 under a dual-license for all supported platforms. In earlier versions of Qt they only released the open source version for Mac and Linux, leaving Windows developers with no choice but to purchase a commercial license. That all changed with the release of Qt 4 when Trolltech started to provide an open source version for Windows development too! The only catch was that Trolltech only supports the MinGW GCC compiler for development using the open source version.</p>
+
+<p>This article describes how to patch Qt 4 open source edition on Windows so you can develop using Visual Studio 2005. You can even develop using the free Express edition of Visual Studio 2005 so long as you also install the latest Platform SDK.</p>
+
+<p>Please keep in mind that these patches and tips are not provided so you can get around the very generous Trolltech dual-license terms of use. If you are developing or intend to develop a commercial application using Qt 4 you must purchase a commercial license for Qt 4. Only use the information provided in this article if you wish to develop open source GPL software for the Windows platform and wish to use the Microsoft Visual C++ 2005 compiler instead of the MinGW GCC compiler.</p>
+
+<h2>Download Qt 4.1 Source Code, Patches, and Notes</h2>
+
+<ul>
+<li>Download the latest open source Windows version of Qt 4.1 from Trolltech at http://www.trolltech.com/download/qt/windows.html. Unzip the file to C:. It will extract all of the files into a sub-directory called qt-win-opensource-src-4.1.0.</li>
+<li>Download the latest patch file used to modify the open source version of Qt 4.1 to support Microsoft Visual Studio 2005 from Source Forge at http://sourceforge.net/projects/qtwin/. Unzip the file to C:\qt-win-opensource-src-4.1.0.</li>
+<li>Download the build script, environment setup and notes from http://www.idevelopsoftware.com/downloads/qt/Qt41WinBuildScript.zip. Unzip the file to C:\qt-win-opensource-src-4.1.0.</li>
+<li><p>If you don’t already have Visual Studio 2005 you can download the Express edition. You will also need to download the Platform SDK.
+http://msdn.microsoft.com/vstudio/express/visualC/default.aspx</p>
+
+<p>http://msdn.microsoft.com/vstudio/express/visualc/usingpsdk/default.aspx</p></li>
+</ul>
+
+
+<h2>Building Qt 4.1 using Visual C++ 2005</h2>
+
+<p>Open C:\qt-win-opensource-src-4.1.0 in Windows Explorer.<br/>
+Double-click on the “Qt 4.1 Command Prompt” shortcut to open a Command Prompt window with the environment setup for Qt 4.1 development. IMPORTANT: You must already have Visual Studio 2005 installed. You may need to edit setenv.cmd if your copy of Visual Studio 2005 is not in the default location.</p>
+
+<p>Run “installpatch41.bat”<br/>
+This will patch the Qt 4.1 source code so it builds properly using the Visual C++ 2005 compiler.</p>
+
+<p>Run “build.cmd”<br/>
+This will build all of the Qt 4.1 libraries, utilities, and sample applications using the Visual C++ 2005 compiler.</p>
+
+<p>To rebuild, if necessary, make sure to first clean up the previous build. Do this by running<br/>
+nmake distclean</p>
+
+<p>from the C:\qt-win-opensource-src-4.1.0 directory.</p>
+
+<p>External Tools Configuration in Visual Studio 2005</p>
+
+<p>Launch Visual Studio 2005 and select the “External Tools…” item from the Tools menu.<br/>
+Use the “Add button to define each of the following external tools:</p>
+
+<p>Title ……………….. QMake (Project File Generation Mode)<br/>
+Command ……………… D:\qt-win-opensource-src-4.1.0\bin\qmake.exe<br/>
+Arguments ……………. -project -spec win32-msvc2005<br/>
+Initial directory …….. $(ProjectDir)<br/>
+Use Output window …….. [X]<br/>
+Treat output as Unicode .. [ ]<br/>
+Prompt for arguments ….. [ ]<br/>
+Close on exit ………… [X]</p>
+
+<p>Title ……………….. QMake (Makefile Generation Mode)<br/>
+Command ……………… D:\qt-win-opensource-src-4.1.0\bin\qmake.exe<br/>
+Arguments ……………. -makefile -spec win32-msvc2005<br/>
+Initial directory …….. $(ProjectDir)<br/>
+Use Output window …….. [X]<br/>
+Treat output as Unicode .. [ ]<br/>
+Prompt for arguments ….. [ ]<br/>
+Close on exit ………… [X]</p>
+
+<p>Title ……………….. Qt Designer<br/>
+Command ……………… D:\qt-win-opensource-src-4.1.0\bin\designer.exe<br/>
+Arguments …………….<br/>
+Initial directory …….. $(ProjectDir)<br/>
+Use Output window …….. [ ]<br/>
+Treat output as Unicode .. [ ]<br/>
+Prompt for arguments ….. [ ]<br/>
+Close on exit ………… [ ]</p>
+
+<p>Title ……………….. Qt Assistant<br/>
+Command ……………… D:\qt-win-opensource-src-4.1.0\bin\assistant.exe<br/>
+Arguments …………….<br/>
+Initial directory …….. $(ProjectDir)<br/>
+Use Output window …….. [ ]<br/>
+Treat output as Unicode .. [ ]<br/>
+Prompt for arguments ….. [ ]<br/>
+Close on exit ………… [ ]<br/>
+Adding a Qt 4.1 Development Toolbar</p>
+
+<p>Add a new toolbar for Qt 4.1 Development by selecting “Customize…” from the Tools menu. Once the “Customize” dialog appears select the “Toolbars” tab and press “New…” For the toolbar name enter “Qt 4.1 Development” and press “OK”.<br/>
+Select the “Commands” tab on the “Customize” dialog. Select “Tools” from the “Categories:” list. Scroll down in the “Commands:” list until you see “External Command 7″. Drag commands 7, 8, 9, and 10 onto the new “Qt 4.1 Development” toolbar.<br/>
+Creating a New Visual Studio 2005 Project</p>
+
+<p>Open the “New Project” dialog by selecting File->New->Project… from the menu. Under “Project types” on the left side of the dialog expand “Visual C++” and then select “General.” The right side of the dialog will display a list of all the general project types. Select “Makefile Project” from the list of project types. Provide a name for the project and set the location on disk where you wish the project to be saved. Be sure not to check “Create directory for solution”, as this will create an extra level of directories that is just confusing. Click the “OK” button and you will be presented with the “Makefile Application Wizard.” Simply press the “Finish” button on the first page of the wizard.</p>
+
+<p>Once the project has been created and opened, set the NMake Configuration Properties for the project as shown below. In the “Solution Explorer” right-click on the name of your project. Select “Properties…” from the context menu. On the property pages dialog select “Configuration Properties” and “NMake” on the left side tree control. On the right side, enter the following information, making sure to set the properties for both the debug and release configurations.</p>
+
+<p>Release Configuration Settings</p>
+
+<p>General<br/>
+——-<br/>
+Build Command Line …………………. nmake release-all<br/>
+Rebuild All Commaond Line …………… nmake release-clean release-all<br/>
+Clean Command Line …………………. nmake release-clean<br/>
+Output ……………………………. foo.exe</p>
+
+<p>IntelliSense<br/>
+————<br/>
+Common Language Runtime Support ……… No Common Language Runtime support<br/>
+Preprocessor Definitions ……………. WIN32;NDEBUG;UNICODE;QT_LARGEFILE_SUPPORT;QT_DLL;<br/>
+QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT<br/>
+Include Search Path ………………… “c:/qt-win-opensource-src-4.1.0/include/QtCore”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include/QtGui”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include/ActiveQt”;<br/>
+“c:/qt-win-opensource-src-4.1.0/mkspecs/win32-msvc2005″<br/>
+Forced Includes …………………….<br/>
+Assembly Search Path ………………..<br/>
+Forced Using Assemblies ……………..<br/>
+Debug Configuration Settings</p>
+
+<p>General<br/>
+——-<br/>
+Build Command Line …………………. nmake debug-all<br/>
+Rebuild All Commaond Line …………… nmake debug-clean debug-all<br/>
+Clean Command Line …………………. nmake debug-clean<br/>
+Output ……………………………. food.exe</p>
+
+<p>IntelliSense<br/>
+————<br/>
+Common Language Runtime Support ……… No Common Language Runtime support<br/>
+Preprocessor Definitions ……………. WIN32;_DEBUG;UNICODE;QT_LARGEFILE_SUPPORT;QT_DLL;<br/>
+QT_GUI_LIB;QT_CORE_LIB;QT_THREAD_SUPPORT<br/>
+Include Search Path ………………… “c:/qt-win-opensource-src-4.1.0/include/QtCore”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include/QtGui”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include”;<br/>
+“c:/qt-win-opensource-src-4.1.0/include/ActiveQt”;<br/>
+“c:/qt-win-opensource-src-4.1.0/mkspecs/win32-msvc2005″<br/>
+Forced Includes …………………….<br/>
+Assembly Search Path ………………..<br/>
+Forced Using Assemblies ……………..<br/>
+QMake Project Settings</p>
+
+<p>Create a project file called “foo.pro” in the directory for your makefile project. Replace the name “foo.pro” with the name of your actual application. Place the file in the directory where your Visual Studio project was created. To start with, the contents might look something like this:</p>
+
+<p>CONFIG += qt<br/>
+TEMPLATE = app<br/>
+SOURCES += foo.cpp<br/>
+HEADERS += foo.h<br/>
+FORMS += foo.ui<br/>
+You should be off and running now. For more detailed information I would suggest reading the qmake reference manual. You might also want to take a look at the Qt 4.1 tutorials in Qt Assistant. Have fun!</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_13">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">bsmith</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-02-14T00:00:00-08:00" pubdate data-updated="true">Feb 14<span>th</span>, 2006</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/how-to/'>How To</a>, <a class='category' href='/blog/categories/microsoft/'>Microsoft</a>, <a class='category' href='/blog/categories/qt/'>Qt</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2006/02/howto-use-visual-studio-2005-for-qt-open-source-development/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2006/02/howto-use-visual-studio-2005-for-qt-open-source-development/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2006/01/working-with-multiple-depots-andor-client-workspaces/" title="Previous Post: Working with Multiple Depots and/or Client Workspaces">&laquo; Working with Multiple Depots and/or Client Workspaces</a>
+      
+      
+        <a class="basic-alignment right" href="/2006/02/perforce-launchd-configuration-on-mac-os-tiger-104/" title="Next Post: Perforce launchd configuration on Mac OS Tiger (10.4)">Perforce launchd configuration on Mac OS Tiger (10.4) &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/plugin-experiments/">Plugin Experiments</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/code-blocks/">Code Blocks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+/">Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/">Capturing AirPort Extreme Log with Lion Server Syslog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/BennettSmith">@BennettSmith</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'BennettSmith',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("BennettSmith", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/BennettSmith" class="twitter-follow-button" data-show-count="false">Follow @BennettSmith</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Bennett Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'idevelopsoftware';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

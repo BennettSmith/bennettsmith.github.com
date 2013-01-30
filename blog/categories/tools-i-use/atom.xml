@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tools I Use | iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/blog/categories/tools-i-use/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-30T10:42:26-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
+  <author>
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MacBook Pro Development Environment]]></title>
+    <link href="http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment/"/>
+    <updated>2010-10-01T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment</id>
+    <content type="html"><![CDATA[<p>This article covers the steps I went through to setup my MacBook Pro for Google App Engine (GAE) development. I am using the Python runtime in GAE so the focus here is on a Python development environment.</p>
+
+<h1>Python</h1>
+
+<h2>Setting Python 2.5 as Default</h2>
+
+<p>My MacBook Pro is running Snow Leopard. I am planning to host my projects on Google App Engine and it requires Python 2.5. Snow Leopard ships with Python 2.6 as the default. You can switch to Python 2.5 using a few simple commands, as follows:</p>
+
+<pre>$ defaults write com.apple.versioner.python Version 2.5
+$ sudo defaults write /Library/Preferences/com.apple.versioner.python Version 2.5
+</pre>
+
+
+<p>After issuing these commands you should logout and login, launch a Terminal window and issue the command</p>
+
+<pre>$ python --version
+</pre>
+
+
+<p>It should report <tt>Python 2.5.4</tt> as the result. If it still says <tt>Python 2.6.1</tt> then your change did not take effect. To troubleshoot the problem start with <tt>man python</tt>. It includes information on how to switch the default version of Python on your system.</p>
+
+<h2>Additional Python Modules</h2>
+
+<p>Google App Engine expects that the ssl module is installed. This is so it can verify the identity of the GAE servers when trying to deploy your projects. Install it like this:</p>
+
+<pre>$ curl http://pypi.python.org/packages/source/s/ssl/ssl-1.15.tar.gz --output ssl-1.15.tar.gz
+$ tar xvf ssl-1.15.tar.gz
+$ cd ssl-1.15
+$ sudo python setup.py install
+</pre>
+
+
+<p>If you want to use the GAE image manipulation classes while running on the local development server you will need to install PIL using the following command.</p>
+
+<pre>$ sudo easy_install pil
+</pre>
+
+
+<p>The following will be necessary for building some other python libraries later in the process.</p>
+
+<pre>$ sudo easy_install docutils
+</pre>
+
+
+<p>The following modules are necessary if you choose to install IPython (see next section). If you are planning on skipping the IPython installation these can be skipped as well.</p>
+
+<pre>$ sudo easy_install readline
+$ sudo easy_install nose
+$ sudo easy_install pexpect
+</pre>
+
+
+<h2>IPython</h2>
+
+<p>The IPython interactive interpreter is a good addition to your Python development environment. It does not come pre-installed on Snow Leopard. You can download the latest stable version using this command:</p>
+
+<pre>$ curl http://ipython.scipy.org/dist/0.10/ipython-0.10.tar.gz --output ipython-0.10.tar.gz
+$ tar -xzf ipython-0.10.tar.gz
+$ cd ipython
+$ sudo python setup.py install
+</pre>
+
+
+<h1>Google App Engine SDK</h1>
+
+<p>The Google App Engine SDK for Python is available at http://code.google.com/appengine/downloads.html. As of this writing you can use the following command to grab the latest version:</p>
+
+<pre>$ curl http://googleappengine.googlecode.com/files/GoogleAppEngineLauncher-1.3.7.dmg --output GoogleAppEngineLauncher-1.3.7.dmg
+</pre>
+
+
+<p>Once you download the <tt>dmg</tt> file open it in Finder and run the installer. It will place all of the necessary files on your machine. Once complete locate the <em>GoogleAppEngineLauncher.app</em> icon in Finder and double-click on it. This application provides a nice UI for managing your GAE projects.</p>
+
+<h1>Source Code Management Tools</h1>
+
+<h2>Git</h2>
+
+<p>I am planning on managing the source code for my projects with <tt>git</tt> and will store my master repositories on <a href="http://github.com">http://github.com</a>. Apple does not include a copy of <tt>git</tt> on the machine by default. An installer is available at <a href="http://help.github.com/mac-git-installation/">http://help.github.com/mac-git-installation/</a>. While you are at it also create an account on github if you don’t already have one. It is useful for <em>social coding</em> in the wider open-source community.</p>
+
+<h2>Mercurial</h2>
+
+<p>Some of the Django open source software I plan on using is maintained using a distributed source control management tool called Mercurial. An installer for this is available at <a href="http://mercurial.selenic.com">http://mercurial.selenic.com</a>. Download and install the software.</p>
+
+<pre>$ curl http://mercurial.selenic.com/release/mercurial-1.6.3.tar.gz --output mercurial-1.6.3.tar.gz
+$ tar xvf mercurial-1.6.3.tar.gz
+$ cd mercurial-1.6.3
+$ make PREFIX=/System/Library/Frameworks/Python.framework/Versions/2.5 all
+$ sudo make PREFIX=/System/Library/Frameworks/Python.framework/Versions/2.5 install
+$ hg version
+</pre>
+
+
+<h1>Django-nonrel</h1>
+
+<p>I plan on implementing my web applications on top of the Django framework. Some modifications are required in order for this framework to run properly on GAE since Google uses <em>Big Table</em> for data storage instead of a relational database. Everything necessary to get Django working in GAE is included as part of the <a href="http://www.allbuttonspressed.com/projects/django-nonrel">Django-nonrel</a> project. Specific instructions for GAE are available at <a href="http://www.allbuttonspressed.com/projects/djangoappengine">http://www.allbuttonspressed.com/projects/djangoappengine</a>.</p>
+
+<p>Use the commands listed below to install copies of all the necessary components onto your machine. Everything will be stored in a folder called <tt>DjangoStuff</tt> under your home directory.</p>
+
+<pre>$ mkdir $HOME/DjangoStuff
+$ cd $HOME/DjangoStuff
+$ hg clone https://bitbucket.org/wkornewald/django-nonrel
+$ hg clone https://bitbucket.org/wkornewald/djangoappengine
+$ hg clone https://bitbucket.org/wkornewald/djangotoolbox
+$ hg clone https://bitbucket.org/wkornewald/django-dbindexer
+$ hg clone https://bitbucket.org/wkornewald/django-testapp
+</pre>
+
+
+<p>Now, pick another folder where you want to setup a practice application. I am calling mine <tt>cs-practice</tt> since this is also the name of my Google App Engine application.</p>
+
+<p>Use the following commands to configure the practice application for Django-nonrel development.</p>
+
+<pre>$ mkdir $HOME/cs-practice
+$ cd $HOME/cs-practice
+$ ln -s $HOME/DjangoStuff/django-nonrel/django django
+$ ln -s $HOME/DjangoStuff/djangoappengine djangoappengine
+$ ln -s $HOME/DjangoStuff/djangotoolbox/djangotoolbox djangotoolbox
+$ ln -s $HOME/DjangoStuff/django-dbindexer/dbindexer dbindexer
+$ cp -r $HOME/DjangoStuff/django-testapp/* .
+</pre>
+
+
+<p>Once you have the practice folder setup you need to edit the <tt>app.yaml</tt> file and change the application name to reflect the Google App Engine application name you selected when registering on <a href="http://appengine.google.com">http://appengine.google.com</a>.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_62">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WS_FTP Professional]]></title>
+    <link href="http://blog.idevelopsoftware.com/2009/06/ws_ftp-professional/"/>
+    <updated>2009-06-09T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2009/06/ws_ftp-professional</id>
+    <content type="html"><![CDATA[<p>WS_FTP Professional delivers industry-leading security, automation, and customization capabilities, offering the highest level of encryption available for files and a superior range of features that enhance productivity and communication.</p>
+
+<p>With more than 40 million users worldwide, the award-winning WS_FTP Professional is the world’s most popular file transfer client. It boasts the fastest transfer speeds and highest level of reliability and security of any file transfer client on the market.</p>
+
+<p><a href="http://www.dpbolvw.net/click-3353376-10572664" target="_blank"><br /> <img src="http://www.lduhtrp.net/image-3353376-10572664" width="300" height="250" alt="USA: NEW! WS_FTP Professional 12 no support" /></a></p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_48">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fws_ftp-professional%2F&linkname=WS_FTP%20Professional" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fws_ftp-professional%2F&linkname=WS_FTP%20Professional" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fws_ftp-professional%2F&linkname=WS_FTP%20Professional" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kindle: Amazon&#8217;s 6&#8243; Wireless Reading Device (Latest Generation)]]></title>
+    <link href="http://blog.idevelopsoftware.com/2009/06/kindle-amazons-6-wireless-reading-device-latest-generation/"/>
+    <updated>2009-06-09T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2009/06/kindle-amazons-6-wireless-reading-device-latest-generation</id>
+    <content type="html"><![CDATA[<p>For a while the idea of a Kindle has intrigued me. In early May I took the plunge and purchased one of the new and improved models from Amazon. The main thing I was looking for was a way to reduce the number of technology books I lug back and forth to work each day.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_50">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fkindle-amazons-6-wireless-reading-device-latest-generation%2F&linkname=Kindle%3A%20Amazon%26%238217%3Bs%206%26%238243%3B%20Wireless%20Reading%20Device%20%28Latest%20Generation%29" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fkindle-amazons-6-wireless-reading-device-latest-generation%2F&linkname=Kindle%3A%20Amazon%26%238217%3Bs%206%26%238243%3B%20Wireless%20Reading%20Device%20%28Latest%20Generation%29" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fkindle-amazons-6-wireless-reading-device-latest-generation%2F&linkname=Kindle%3A%20Amazon%26%238217%3Bs%206%26%238243%3B%20Wireless%20Reading%20Device%20%28Latest%20Generation%29" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

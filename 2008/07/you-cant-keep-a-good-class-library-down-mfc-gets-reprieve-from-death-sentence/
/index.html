@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>You can&#8217;t keep a good class library down &#8230; MFC gets reprieve from death sentence! - iDevelopSoftware</title>
+  <meta name="author" content="Bennett Smith">
+
+  
+  <meta name="description" content="A few years ago I was working at a company where we built applications using Visual Studio 6 and MFC. The applications had been around for about 10- &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/
+/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="iDevelopSoftware" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38083118-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">iDevelopSoftware</a></h1>
+  
+    <h2>Simplicity and Clarity by Design</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.idevelopsoftware.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about/">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">You Can&#8217;t Keep a Good Class Library Down &#8230; MFC Gets Reprieve From Death Sentence!</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-15T00:00:00-07:00" pubdate data-updated="true">Jul 15<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>A few years ago I was working at a company where we built applications using Visual Studio 6 and MFC. The applications had been around for about 10-12 years, and were all showing their age. Customers were beginning to request updated user interface features like they were seeing in <em>modern</em> Microsoft products such as Office and Internet Explorer. Sadly, we could not deliver these user interface enhancements easily because MFC was not getting any attention from Microsoft.</p>
+
+<p>In late 2002 Microsoft was pushing the .NET Framework, C# and WinForms as the heir apparent for Win32, C++ and MFC. Converting a decade of legacy C++ MFC code to .NET and WinForms just wasn’t an option. We all felt like Microsoft had just abandoned us for greener pastures.</p>
+
+<p>Our solution at the time was to start a long difficult process of moving away from MFC toward a cross-platform class library built by <a href="http://www.trolltech.com">Trolltech</a>, called Qt. In many respects this turned out to be a good decision since it meant we could begin to seriously consider offering our applications on Windows, Linux and the Mac instead of just on Windows. Still, it felt like Microsoft had hung us out to dry.</p>
+
+<p>The WinForms classes just were not rich enough to build complex desktop applications at the time. Many of the conveniences we had come to rely upon from the MFC class libraries were missing and it would have been up to us to roll our own alternatives had we gone down the WinForms route. I think Microsoft was too focused on building web applications to devote sufficient resources to WinForms.</p>
+
+<p>Here we are six years later and Microsoft has announced that they are providing a <em>MFC Feature Pack for Visual C++ 2008</em> that will add significantly to the capabilities of the MFC class libraries. I can hear MFC development teams all across the Internet celebrating this change in stance from Microsoft.</p>
+
+<p>Here are a couple links to information from Microsoft on the topic:</p>
+
+<ul>
+<li><a href="http://msdn.microsoft.com/en-us/library/bb982354.aspx">MFC Feature Pack for Visual C++ 2008</a></li>
+<li><a href="http://channel9.msdn.com/posts/Charles/Pat-Brenner-New-Updates-to-MFC-in-Visual-Studio-2008/">Pat Brenner: New Updates to MFC in Visual Studio 2008</a></li>
+</ul>
+
+
+<p>Couple MFC with a good third-party widget library like the toolkit offered by <a href="http://www.codejock.com/">CodeJock Software</a> and you have everything necessary to build some awesome new desktop applications.</p>
+
+<p><strong>Long Live MFC!</strong></p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_37">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fyou-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence%2F&linkname=You%20can%26%238217%3Bt%20keep%20a%20good%20class%20library%20down%20%26%238230%3B%20MFC%20gets%20reprieve%20from%20death%20sentence%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fyou-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence%2F&linkname=You%20can%26%238217%3Bt%20keep%20a%20good%20class%20library%20down%20%26%238230%3B%20MFC%20gets%20reprieve%20from%20death%20sentence%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fyou-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence%2F&linkname=You%20can%26%238217%3Bt%20keep%20a%20good%20class%20library%20down%20%26%238230%3B%20MFC%20gets%20reprieve%20from%20death%20sentence%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">bsmith</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-15T00:00:00-07:00" pubdate data-updated="true">Jul 15<span>th</span>, 2008</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/c-/'>C++</a>, <a class='category' href='/blog/categories/mfc/'>MFC</a>, <a class='category' href='/blog/categories/microsoft/'>Microsoft</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/
+/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/
+/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2008/07/mobileme-mail-error/" title="Previous Post: MobileMe Mail Error">&laquo; MobileMe Mail Error</a>
+      
+      
+        <a class="basic-alignment right" href="/2008/07/what-a-bump/" title="Next Post: What a bump!">What a bump! &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/plugin-experiments/">Plugin Experiments</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/29/code-blocks/">Code Blocks</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+/">Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/">Capturing AirPort Extreme Log with Lion Server Syslog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/BennettSmith">@BennettSmith</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'BennettSmith',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("BennettSmith", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/BennettSmith" class="twitter-follow-button" data-show-count="false">Follow @BennettSmith</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Bennett Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'idevelopsoftware';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

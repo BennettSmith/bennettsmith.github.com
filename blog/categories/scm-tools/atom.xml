@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: SCM Tools | iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/blog/categories/scm-tools/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-30T10:42:26-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
+  <author>
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Git Cheat Sheet]]></title>
+    <link href="http://blog.idevelopsoftware.com/2011/03/git-cheat-sheet/"/>
+    <updated>2011-03-19T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2011/03/git-cheat-sheet</id>
+    <content type="html"><![CDATA[<p>After watching from the side lines for a few years as git gathered a following I finally made the switch out of necessity as a result of doing more projects in Ruby on Rails. The projects I work on are all hosted in the cloud (Heroku, Engine Yard, or directly on Amazon EC2). Many of the tools I use support direct deployment from git. So I now find myself migrating all of my projects from subversion to git.</p>
+
+<p>I tend to write down a lot of notes as I learn a new technology or tool. The migration to git is no different. What is different is how GitHub (the hosted git solution I am using) makes it possible to record just about anything in what they call a <em>gist</em>. This is turning out to be a very useful tool for me. It is a great place to store little bits of code or notes.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_67">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fgit-cheat-sheet%2F&linkname=Git%20Cheat%20Sheet" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fgit-cheat-sheet%2F&linkname=Git%20Cheat%20Sheet" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fgit-cheat-sheet%2F&linkname=Git%20Cheat%20Sheet" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Perforce launchd configuration on Mac OS Tiger (10.4)]]></title>
+    <link href="http://blog.idevelopsoftware.com/2006/02/perforce-launchd-configuration-on-mac-os-tiger-104/"/>
+    <updated>2006-02-20T00:00:00-08:00</updated>
+    <id>http://blog.idevelopsoftware.com/2006/02/perforce-launchd-configuration-on-mac-os-tiger-104</id>
+    <content type="html"><![CDATA[<p>Mac OS Tiger introduced a new daemon control application called launchd. This application is supposed to take the place of rc scripts, xinitd scripts, and cron jobs. The launchd process is configured using XML text files that conform to the Apple plist DTD. Perforce does not provide a sample launchd configuration file for the p4d daemon.</p>
+
+<p>The following is an example of how I configured p4d to run on my Tiger server. Be sure to edit it appropriately for your server configuration.</p>
+
+<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+                        "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+    &lt;key&gt;GroupName&lt;/key&gt;
+    &lt;string&gt;perforce&lt;/string&gt;
+    &lt;key&gt;Label&lt;/key&gt;
+    &lt;string&gt;com.perforce.p4d&lt;/string&gt;
+    &lt;key&gt;OnDemand&lt;/key&gt;
+    &lt;false/&gt;
+    &lt;key&gt;Program&lt;/key&gt;
+    &lt;string&gt;/usr/local/bin/p4d&lt;/string&gt;
+    &lt;key&gt;ProgramArguments&lt;/key&gt;
+    &lt;array&gt;
+        &lt;string&gt;/usr/local/bin/p4d&lt;/string&gt;
+        &lt;string&gt;-r&lt;/string&gt;
+        &lt;string&gt;/Depot&lt;/string&gt;
+        &lt;string&gt;-p&lt;/string&gt;
+        &lt;string&gt;1666&lt;/string&gt;
+        &lt;string&gt;-J&lt;/string&gt;
+        &lt;string&gt;/Depot/journal&lt;/string&gt;
+        &lt;string&gt;-L&lt;/string&gt;
+        &lt;string&gt;/Depot/p4err&lt;/string&gt;
+    &lt;/array&gt;
+    &lt;key&gt;RunAtLoad&lt;/key&gt;
+    &lt;true/&gt;
+    &lt;key&gt;ServiceDescription&lt;/key&gt;
+    &lt;string&gt;Perforce Daemon&lt;/string&gt;
+    &lt;key&gt;StandardErrorPath&lt;/key&gt;
+    &lt;string&gt;/Depot/p4d.stderr.txt&lt;/string&gt;
+    &lt;key&gt;StandardOutPath&lt;/key&gt;
+    &lt;string&gt;/Depot/p4d.stdout.txt&lt;/string&gt;
+    &lt;key&gt;UserName&lt;/key&gt;
+    &lt;string&gt;p4admin&lt;/string&gt;
+    &lt;key&gt;WorkingDirectory&lt;/key&gt;
+    &lt;string&gt;/Depot&lt;/string&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</pre>
+
+
+<p>I place this file in the directory /Library/LaunchDaemons, and is named perforce.plist. The permissions look like this:</p>
+
+<pre>-rw-r-----    1 root  wheel   1012 Jan  5 22:21 perforce.plist
+</pre>
+
+
+<p>You will need to tell launchd about the new plist by running:</p>
+
+<pre>$ sudo launchctl load perforce.plist
+</pre>
+
+
+<p>from the /Library/LaunchDaemons directory. To confirm that the new plist has been loaded correctly you can run this command:</p>
+
+<pre>$ sudo launchctl list
+</pre>
+
+
+<p>The list produced should contain a line that says com.perforce.p4d. That is the name given to the new plist for the p4d application.<br/>
+At this point you should see a p4d process if you run</p>
+
+<pre>$ ps -aux
+</pre>
+
+
+<p>There should only be one of this process running, and it is the daemon controlling your Perforce server installation.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_14">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fperforce-launchd-configuration-on-mac-os-tiger-104%2F&linkname=Perforce%20launchd%20configuration%20on%20Mac%20OS%20Tiger%20%2810.4%29" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fperforce-launchd-configuration-on-mac-os-tiger-104%2F&linkname=Perforce%20launchd%20configuration%20on%20Mac%20OS%20Tiger%20%2810.4%29" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fperforce-launchd-configuration-on-mac-os-tiger-104%2F&linkname=Perforce%20launchd%20configuration%20on%20Mac%20OS%20Tiger%20%2810.4%29" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Working with Multiple Depots and/or Client Workspaces]]></title>
+    <link href="http://blog.idevelopsoftware.com/2006/01/working-with-multiple-depots-andor-client-workspaces/"/>
+    <updated>2006-01-10T00:00:00-08:00</updated>
+    <id>http://blog.idevelopsoftware.com/2006/01/working-with-multiple-depots-andor-client-workspaces</id>
+    <content type="html"><![CDATA[<p>A typical configuration of Perforce is handled by setting the P4PORT, P4USER and P4CLIENT environment variables. These variables point at the desired depot, identify the user and select a client workspace.</p>
+
+<p>To quickly switch between different depots or client workspaces I make sure the P4CONFIG environment variable specifies the name of a configuration file. On my Windows XP system this is done by running the command p4 set P4CONFIG=p4config.txt. The p4 command will recognize that this variable is set and will attempt to locate a configuration file each time it is launched. The search begins in the current directory and searches all parent directories until it reaches the root directory for the current drive.</p>
+
+<p>I place a p4config.txt file in each workspace root directory. The file is formatted as a series of lines where each line contains name=value. For example, one of my p4config.txt files looks like this:</p>
+
+<p>P4CLIENT=bsmith_pc<br/>
+P4EDITOR=C:\Program Files\Vim\vim63\vim.exe<br/>
+P4PORT=perforce.mysite.com:1666<br/>
+P4USER=bsmith</p>
+
+<p>My installation of Perforce is configured to use the ticket-based authentication system so I can login to the depot by issuing the p4 login command from a directory below the workspace root. I will be prompted for the password and a ticket will be issued. From this point on I can simply issue p4 commands and the appropriate depot and workspace will be automatically selected.</p>
+
+<p>This technique can be applied to multiple client workspaces at the same time by setting up multiple p4config.txt files and logging into each depot. Then it is a simple matter of changing directories in my command window to switch between depots and/or client workspaces.</p>
+
+<p>On Unix and Mac OS X I set P4CONFIG to point at a file called @.p4config@. The file contents are similar to the Windows example earlier in this post.</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_12">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fworking-with-multiple-depots-andor-client-workspaces%2F&linkname=Working%20with%20Multiple%20Depots%20and%2For%20Client%20Workspaces" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fworking-with-multiple-depots-andor-client-workspaces%2F&linkname=Working%20with%20Multiple%20Depots%20and%2For%20Client%20Workspaces" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fworking-with-multiple-depots-andor-client-workspaces%2F&linkname=Working%20with%20Multiple%20Depots%20and%2For%20Client%20Workspaces" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Configuring a Perforce Depot on Mac OS X 10.4 (Tiger) Server]]></title>
+    <link href="http://blog.idevelopsoftware.com/2006/01/configuring-a-perforce-depot-on-mac-os-x-104-tiger-server/"/>
+    <updated>2006-01-06T00:00:00-08:00</updated>
+    <id>http://blog.idevelopsoftware.com/2006/01/configuring-a-perforce-depot-on-mac-os-x-104-tiger-server</id>
+    <content type="html"><![CDATA[<p>Download the latest version of Perforce from their web site (http://www.perforce.com). To setup the server you really only need to download the command-line tools p4 and p4d. Here are links to the versions I used when setting up my server in January 2006.</p>
+
+<p>http://www.perforce.com/downloads/perforce/r05.2/bin.macosx102ppc/p4</p>
+
+<p>http://www.perforce.com/downloads/perforce/r05.2/bin.darwin60ppc/p4d</p>
+
+<p>You may also wish to install the graphical tools P4V and P4Merge. These are part of a single disk image.</p>
+
+<p>http://www.perforce.com/downloads/perforce/r05.2/bin.macosx102ppc/P4V.dmg</p>
+
+<p>Perforce recommends that p4d not be run as root so I created a new user account called p4admin. I also created a new group called perforce. I decided to install the software in the /usr/local/bin directory and to place the depot on a separate drive that is mounted under the /Depot directory.</p>
+
+<p>Automatically starting p4d when the system boots is handled through the utility launchd. Configuring this is done by editing a plist file and then loading it with the utility launchctl. Attached is a copy of the plist file I used. I placed the plist file in the directory /Library/LaunchDaemons. The file is called perforce.plist.</p>
+
+<p>Once the file exists use the launchctl application to tell the launchd program about it. The command I used was:</p>
+
+<p>$ sudo launchctl load /Library/LaunchDaemons/perforce.plist</p>
+
+<p>If you make changes to the plist file and want to reload it use the command below to unload the existing one. Then repeat the above command to load the changed plist.</p>
+
+<p>$ sudo launchctl unload /Library/LaunchDaemons/perforce.plist</p>
+
+<p>Perforce recommends setting up a regular job to create a checkpoint and a backup of the depot. The script p4backup illustrates how to handle this. Use the p4backup.plist file to teach launchd about this script so it will run on a regular basis. On my server I run this script every night. The backup is done using a copy from the /Depot directory to the /Depot.Backup directory, which is on a separate filesystem.</p>
+
+<p>perforce.plist GroupName perforce Label com.perforce.p4d OnDemand Program /usr/local/bin/p4d ProgramArguments /usr/local/bin/p4d -r /Depot -p 1666 -J /Depot/journal -L /Depot/p4err RunAtLoad ServiceDescription Perforce Daemon StandardErrorPath /Depot/p4d.stderr.txt StandardOutPath /Depot/p4d.stdout.txt UserName p4admin WorkingDirectory /Depot</p>
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_11">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fconfiguring-a-perforce-depot-on-mac-os-x-104-tiger-server%2F&linkname=Configuring%20a%20Perforce%20Depot%20on%20Mac%20OS%20X%2010.4%20%28Tiger%29%20Server" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fconfiguring-a-perforce-depot-on-mac-os-x-104-tiger-server%2F&linkname=Configuring%20a%20Perforce%20Depot%20on%20Mac%20OS%20X%2010.4%20%28Tiger%29%20Server" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fconfiguring-a-perforce-depot-on-mac-os-x-104-tiger-server%2F&linkname=Configuring%20a%20Perforce%20Depot%20on%20Mac%20OS%20X%2010.4%20%28Tiger%29%20Server" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

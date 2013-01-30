@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: On-line Services | iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/blog/categories/on-line-services/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-30T10:42:26-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
+  <author>
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[HOWTO: Answer the question &#8220;Is {some site} up or down?&#8221;]]></title>
+    <link href="http://blog.idevelopsoftware.com/2009/06/howto-answer-the-question-is-some-site-up-or-down/"/>
+    <updated>2009-06-28T00:00:00-07:00</updated>
+    <id>http://blog.idevelopsoftware.com/2009/06/howto-answer-the-question-is-some-site-up-or-down</id>
+    <content type="html"><![CDATA[<p>I just stumbled on a very cool service that helps you answer the question “Is {some site} up or down?” It couldn’t be simpler. Visit <a href="http://downforeveryoneorjustme.com">http://downforeveryoneorjustme.com</a> and you will see a very simple form that looks like this:</p>
+
+<div style="text-align:center;">
+  <img src="http://wp-media.s3.amazonaws.com/screenshots/downforeveryone-1.jpg" />
+</div>
+
+
+<p>Enter the name of a site and the folks running the site will go check and see if it is possible to visit the site from their location on the net. If the site is reachable you will see something like this:</p>
+
+<div style="text-align:center;">
+  <img src="http://wp-media.s3.amazonaws.com/screenshots/downforeveryone-2.jpg" />
+</div>
+
+
+<p>If it is not reachable you will see something like this:</p>
+
+<div style="text-align:center;">
+  <img src="http://wp-media.s3.amazonaws.com/screenshots/downforeveryone-3.jpg" />
+</div>
+
+
+
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_52">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fhowto-answer-the-question-is-some-site-up-or-down%2F&linkname=HOWTO%3A%20Answer%20the%20question%20%26%238220%3BIs%20%7Bsome%20site%7D%20up%20or%20down%3F%26%238221%3B" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fhowto-answer-the-question-is-some-site-up-or-down%2F&linkname=HOWTO%3A%20Answer%20the%20question%20%26%238220%3BIs%20%7Bsome%20site%7D%20up%20or%20down%3F%26%238221%3B" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fhowto-answer-the-question-is-some-site-up-or-down%2F&linkname=HOWTO%3A%20Answer%20the%20question%20%26%238220%3BIs%20%7Bsome%20site%7D%20up%20or%20down%3F%26%238221%3B" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>
