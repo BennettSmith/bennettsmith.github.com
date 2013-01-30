@@ -1,6 +1,6 @@
 ---
 title: Notes on setting up a Ruby on Rails Environment for Ubuntu 10.04.1 LTS
-author: Admin
+author: Bennett Smith
 layout: post
 permalink: /2011/03/notes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts/
 categories:
@@ -101,8 +101,3 @@ gem install passenger
 <pre>passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --auto
 </pre>
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_66">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fnotes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts%2F&linkname=Notes%20on%20setting%20up%20a%20Ruby%20on%20Rails%20Environment%20for%20Ubuntu%2010.04.1%20LTS" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fnotes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts%2F&linkname=Notes%20on%20setting%20up%20a%20Ruby%20on%20Rails%20Environment%20for%20Ubuntu%2010.04.1%20LTS" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fnotes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts%2F&linkname=Notes%20on%20setting%20up%20a%20Ruby%20on%20Rails%20Environment%20for%20Ubuntu%2010.04.1%20LTS" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>

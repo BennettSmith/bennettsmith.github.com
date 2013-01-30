@@ -1,6 +1,6 @@
 ---
 title: iPad as Technical Book Reader? Absolutely!
-author: Admin
+author: Bennett Smith
 layout: post
 permalink: /2010/05/ipad-as-technical-book-reader-absolutely/
 categories:
@@ -72,8 +72,3 @@ Technical books are often used as references. Neither of the e-book reading appl
 
 If you don’t have an iPad yet, run (don’t walk) to your nearest Apple store and pick one up. You won’t regret it.
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_56">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fipad-as-technical-book-reader-absolutely%2F&linkname=iPad%20as%20Technical%20Book%20Reader%3F%20Absolutely%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fipad-as-technical-book-reader-absolutely%2F&linkname=iPad%20as%20Technical%20Book%20Reader%3F%20Absolutely%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fipad-as-technical-book-reader-absolutely%2F&linkname=iPad%20as%20Technical%20Book%20Reader%3F%20Absolutely%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>

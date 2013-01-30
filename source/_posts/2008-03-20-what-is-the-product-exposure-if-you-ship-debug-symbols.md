@@ -1,6 +1,6 @@
 ---
 title: What is the product exposure if you ship debug symbols?
-author: bsmith
+author: Bennett Smith
 layout: post
 permalink: /2008/03/what-is-the-product-exposure-if-you-ship-debug-symbols/
 categories:
@@ -36,11 +36,6 @@ Further evidence that a lack of debug symbols is no protection against reverse e
 
 In the end, it seems like shipping debug symbols or not is more a “feel good” issue for an organization than it is a way to actually address a security concern.
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_20">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fwhat-is-the-product-exposure-if-you-ship-debug-symbols%2F&linkname=What%20is%20the%20product%20exposure%20if%20you%20ship%20debug%20symbols%3F" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fwhat-is-the-product-exposure-if-you-ship-debug-symbols%2F&linkname=What%20is%20the%20product%20exposure%20if%20you%20ship%20debug%20symbols%3F" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fwhat-is-the-product-exposure-if-you-ship-debug-symbols%2F&linkname=What%20is%20the%20product%20exposure%20if%20you%20ship%20debug%20symbols%3F" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
 
  [1]: http://code.google.com/p/crashrpt/
  [2]: http://msdn2.microsoft.com/en-us/library/aa260783(VS.60).aspx

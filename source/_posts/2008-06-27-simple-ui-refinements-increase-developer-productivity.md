@@ -1,6 +1,6 @@
 ---
 title: Simple UI Refinements Increase Developer Productivity
-author: bsmith
+author: Bennett Smith
 layout: post
 permalink: /2008/06/simple-ui-refinements-increase-developer-productivity/
 categories:
@@ -28,11 +28,6 @@ This is just one small example of how similar user interfaces can be very differ
 
 So, it should be clear that spending time on UI design can pay off. Your users may not recognize the amount of effort that was put into the UI, but they will appreciate the increased productivity that a well though out UI provides.
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_31">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F06%2Fsimple-ui-refinements-increase-developer-productivity%2F&linkname=Simple%20UI%20Refinements%20Increase%20Developer%20Productivity" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F06%2Fsimple-ui-refinements-increase-developer-productivity%2F&linkname=Simple%20UI%20Refinements%20Increase%20Developer%20Productivity" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F06%2Fsimple-ui-refinements-increase-developer-productivity%2F&linkname=Simple%20UI%20Refinements%20Increase%20Developer%20Productivity" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
 
  [1]: http://en.wikipedia.org/wiki/Larry_the_Cable_Guy
  [2]: http://idvlpsw.files.wordpress.com/2008/06/vc2005_properties.png

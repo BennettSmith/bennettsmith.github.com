@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Plugin Experiments"
+author: Bennett Smith
 date: 2013-01-29 22:47
 comments: true
 categories: 

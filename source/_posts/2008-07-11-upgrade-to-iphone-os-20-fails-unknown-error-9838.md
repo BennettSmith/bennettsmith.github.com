@@ -1,6 +1,6 @@
 ---
 title: 'Upgrade to iPhone OS 2.0 Fails &#8211; Unknown Error (-9838)'
-author: bsmith
+author: Bennett Smith
 layout: post
 permalink: /2008/07/upgrade-to-iphone-os-20-fails-unknown-error-9838/
 categories:
@@ -55,10 +55,5 @@ Apple is very fond of reminding people that they build great user interfaces for
 
 Apple, you need to put more engineering resources into this sort of thing. The scale you are dealing with on the iPhone and the iTunes Store and now the App Store is way beyond what .mac ever was. You need to THINK DIFFERENT!
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_34">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fupgrade-to-iphone-os-20-fails-unknown-error-9838%2F&linkname=Upgrade%20to%20iPhone%20OS%202.0%20Fails%20%26%238211%3B%20Unknown%20Error%20%28-9838%29" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fupgrade-to-iphone-os-20-fails-unknown-error-9838%2F&linkname=Upgrade%20to%20iPhone%20OS%202.0%20Fails%20%26%238211%3B%20Unknown%20Error%20%28-9838%29" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fupgrade-to-iphone-os-20-fails-unknown-error-9838%2F&linkname=Upgrade%20to%20iPhone%20OS%202.0%20Fails%20%26%238211%3B%20Unknown%20Error%20%28-9838%29" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
 
  [1]: http://discussions.apple.com/thread.jspa?threadID=1594694&tstart=0

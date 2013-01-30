@@ -1,6 +1,6 @@
 ---
 title: iPhone developers put on hold by Apple
-author: bsmith
+author: Bennett Smith
 layout: post
 permalink: /2008/06/iphone-developers-put-on-hold-by-apple/
 categories:
@@ -26,8 +26,3 @@ Apple and Steve have been positioning the iPhone OS (CocoaTouch) as a new platfo
 
 **The simulator just doesn’t cut it! Give us the ability to run on actual devices, PLEASE!!!!!**
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_30">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F06%2Fiphone-developers-put-on-hold-by-apple%2F&linkname=iPhone%20developers%20put%20on%20hold%20by%20Apple" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F06%2Fiphone-developers-put-on-hold-by-apple%2F&linkname=iPhone%20developers%20put%20on%20hold%20by%20Apple" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F06%2Fiphone-developers-put-on-hold-by-apple%2F&linkname=iPhone%20developers%20put%20on%20hold%20by%20Apple" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>

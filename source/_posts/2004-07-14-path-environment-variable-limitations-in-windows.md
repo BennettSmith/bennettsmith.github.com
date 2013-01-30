@@ -1,6 +1,6 @@
 ---
 title: PATH Environment Variable Limitations in Windows
-author: bsmith
+author: Bennett Smith
 layout: post
 permalink: /2004/07/path-environment-variable-limitations-in-windows/
 categories:
@@ -36,12 +36,6 @@ Microsoft has some [information][2] on the NT command prompt for Windows XP that
 Early versions of MS-DOS had a 128 character limitation on the PATH variable. According to this [article][3], that limitation was removed in MS-DOS 6.0. In [KB169171][4] Microsoft talks about how 16-bit applications can still hang when the path exceeds 200 bytes.
 
 The only place I could find that actually states that there is a 1KB limit on the combine length of the System+User path is [here][5]. In the WORKAROUND section of this article it states that the path should “total 1 KB or less of characters”. The article is for Windows NT Server 4.0 Terminal Server Edition, but my experiments on a Windows 2000 Professional system indicate that it is still the case. I haven’t tried Windows XP or Windows Server 2003 yet to determine if the problem exists in those variants of Windows.
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_7">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fpath-environment-variable-limitations-in-windows%2F&linkname=PATH%20Environment%20Variable%20Limitations%20in%20Windows" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fpath-environment-variable-limitations-in-windows%2F&linkname=PATH%20Environment%20Variable%20Limitations%20in%20Windows" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fpath-environment-variable-limitations-in-windows%2F&linkname=PATH%20Environment%20Variable%20Limitations%20in%20Windows" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
 
  [1]: http://www.flickr.com/photos/49807087@N00/2319758559 "View 'EnvironmentVariables-thumb' on Flickr.com"
  [2]: http://technet.microsoft.com/en-us/library/bb490998.aspx

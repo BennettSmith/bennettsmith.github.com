@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Code Blocks"
+author: Bennett Smith
 date: 2013-01-29 22:39
 comments: true
 categories: 

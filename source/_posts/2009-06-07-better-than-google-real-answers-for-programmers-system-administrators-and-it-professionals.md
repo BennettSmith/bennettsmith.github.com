@@ -1,6 +1,6 @@
 ---
 title: 'Better than Google: Real answers for Programmers, System Administrators and IT Professionals'
-author: bsmith
+author: Bennett Smith
 layout: post
 permalink: >
   /2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/
@@ -31,11 +31,6 @@ Server Fault is a collaboratively edited question and answer site for system
 administrators and IT professionals – regardless of platform. It’s 100% free,  
 no registration required.
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_47">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fbetter-than-google-real-answers-for-programmers-system-administrators-and-it-professionals%2F&linkname=Better%20than%20Google%3A%20Real%20answers%20for%20Programmers%2C%20System%20Administrators%20and%20IT%20Professionals" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fbetter-than-google-real-answers-for-programmers-system-administrators-and-it-professionals%2F&linkname=Better%20than%20Google%3A%20Real%20answers%20for%20Programmers%2C%20System%20Administrators%20and%20IT%20Professionals" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F06%2Fbetter-than-google-real-answers-for-programmers-system-administrators-and-it-professionals%2F&linkname=Better%20than%20Google%3A%20Real%20answers%20for%20Programmers%2C%20System%20Administrators%20and%20IT%20Professionals" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
 
  [1]: http://www.stackoverflow.com
  [2]: http://www.serverfault.com

@@ -1,6 +1,6 @@
 ---
 title: 'Attending iOSDevCamp 2010 &#8211; Building Meet4Drinks'
-author: Admin
+author: Bennett Smith
 layout: post
 permalink: /2010/08/attending-iosdevcamp-2010-building-meet4drinks/
 categories:
@@ -20,11 +20,6 @@ If it sounds like something you would enjoy, it’s not too late to register tod
 
 Look for updates on Meet4Drinks next week, once my head is back above water after the event. Hope to see you there.
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_61">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
 
  [1]: http://www.iosdevcamp.org
  [2]: http://blog.poweredbyamp.com/marketplace-platform/seller-dashboard-ipad/

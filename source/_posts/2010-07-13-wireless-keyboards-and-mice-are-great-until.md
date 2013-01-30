@@ -1,6 +1,6 @@
 ---
 title: 'Wireless Keyboards and Mice are Great Until&#8230;.'
-author: Admin
+author: Bennett Smith
 layout: post
 permalink: /2010/07/wireless-keyboards-and-mice-are-great-until/
 categories:
@@ -36,8 +36,3 @@ Thankfully I have a keyboard and mouse from the Xserve in my garage. In case you
   <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/backup_plan.png" alt="backup_plan.png" border="0" width="640" height="478" align="center" />
 </div>
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_59">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>

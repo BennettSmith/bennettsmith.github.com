@@ -1,6 +1,6 @@
 ---
 title: 'HOWTO &#8211; Use Visual Studio 2005 for Qt Open Source Development'
-author: bsmith
+author: Bennett Smith
 layout: post
 permalink: /2006/02/howto-use-visual-studio-2005-for-qt-open-source-development/
 categories:
@@ -147,8 +147,3 @@ HEADERS += foo.h
 FORMS += foo.ui  
 You should be off and running now. For more detailed information I would suggest reading the qmake reference manual. You might also want to take a look at the Qt 4.1 tutorials in Qt Assistant. Have fun!
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_13">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>

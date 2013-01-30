@@ -1,6 +1,6 @@
 ---
 title: 'Nokia places Qt under LGPL License &#8211; Sweet!'
-author: bsmith
+author: Bennett Smith
 layout: post
 permalink: /2009/01/nokia-places-qt-under-lgpl-license-sweet/
 categories:
@@ -31,11 +31,6 @@ and you can read the news directly from Nokia on the [Qt Licensing Terms][3] pag
 
 This new development on the licensing front and the recent inclusion of WebKit into the Qt Framework make me very optimistic about a long and prosperous future for developers who know the Qt Framework! **Thank you Nokia!**
 
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_41">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fnokia-places-qt-under-lgpl-license-sweet%2F&linkname=Nokia%20places%20Qt%20under%20LGPL%20License%20%26%238211%3B%20Sweet%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fnokia-places-qt-under-lgpl-license-sweet%2F&linkname=Nokia%20places%20Qt%20under%20LGPL%20License%20%26%238211%3B%20Sweet%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fnokia-places-qt-under-lgpl-license-sweet%2F&linkname=Nokia%20places%20Qt%20under%20LGPL%20License%20%26%238211%3B%20Sweet%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
 
  [1]: http://arstechnica.com/news.ars/post/20090114-nokia-qt-lgpl-switch-huge-win-for-cross-platform-development.html
  [2]: http://www.pcworld.com/article/157054/nokia_hopes_to_increase_qt_popularity_with_new_license.html
