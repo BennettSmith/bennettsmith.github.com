@@ -2,9 +2,10 @@
 layout: page
 title: "Who Writes This Stuff Anyway?"
 date: 2013-01-30 07:29
-comments: true
+comments: false
 sharing: true
 footer: true
+sidebar: collapse
 ---
 
 {% img right /about/images/about-main.jpg 380 250 'Me' 'The man in charge!' %}
