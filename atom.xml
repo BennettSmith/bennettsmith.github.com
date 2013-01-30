@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://BennettSmith.github.com/atom.xml" rel="self"/>
-  <link href="http://BennettSmith.github.com/"/>
-  <updated>2013-01-29T21:21:18-08:00</updated>
-  <id>http://BennettSmith.github.com/</id>
+  <title><![CDATA[iDevelopSoftware]]></title>
+  <link href="http://blog.idevelopsoftware.com/atom.xml" rel="self"/>
+  <link href="http://blog.idevelopsoftware.com/"/>
+  <updated>2013-01-29T22:03:25-08:00</updated>
+  <id>http://blog.idevelopsoftware.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Bennett Smith]]></name>
+    <email><![CDATA[bsmith@idevelopsoftware.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 

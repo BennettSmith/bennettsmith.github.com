@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://BennettSmith.github.com/sitemap.xml 
+Sitemap: http://blog.idevelopsoftware.com/sitemap.xml 
