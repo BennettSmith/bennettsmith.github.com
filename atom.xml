@@ -4,7 +4,7 @@
   <title><![CDATA[iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T10:51:28-08:00</updated>
+  <updated>2013-01-30T11:32:56-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -314,15 +314,6 @@ CM certificate  Installed
  No Maintenance Broadcasts for Ranging opportunities received - T2 time-out;CM-MAC=ff:ff:ff:ff:ff:ff;CMTS-MAC=00:01:5c:24:f1:45;CM-QOS=1.0;CM-VER=3.0; 
  <b>No Ranging Response received - T3 time-out</b>    
 </pre>
-
-
-
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_71">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F12%2Fcomcast-support-problems-surfboard-sbg6580-intermittent-connection-loss%2F&linkname=Comcast%20Support%20Problems%20%26%238211%3B%20SURFboard%20SBG6580%20%26%238211%3B%20Intermittent%20Connection%20Loss" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F12%2Fcomcast-support-problems-surfboard-sbg6580-intermittent-connection-loss%2F&linkname=Comcast%20Support%20Problems%20%26%238211%3B%20SURFboard%20SBG6580%20%26%238211%3B%20Intermittent%20Connection%20Loss" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F12%2Fcomcast-support-problems-surfboard-sbg6580-intermittent-connection-loss%2F&linkname=Comcast%20Support%20Problems%20%26%238211%3B%20SURFboard%20SBG6580%20%26%238211%3B%20Intermittent%20Connection%20Loss" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
 
 
 
@@ -649,13 +640,6 @@ $ sudo launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist
 
 
 <p>That’s it. You now have syslog data being captured on your Mac OS X Lion server from your AirPort Extreme base station!</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_70">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcapturing-airport-extreme-log-with-lion-server-syslog%2F&linkname=Capturing%20AirPort%20Extreme%20Log%20with%20Lion%20Server%20Syslog" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcapturing-airport-extreme-log-with-lion-server-syslog%2F&linkname=Capturing%20AirPort%20Extreme%20Log%20with%20Lion%20Server%20Syslog" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcapturing-airport-extreme-log-with-lion-server-syslog%2F&linkname=Capturing%20AirPort%20Extreme%20Log%20with%20Lion%20Server%20Syslog" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
@@ -688,15 +672,6 @@ $ rvm --default 1.8.7
 <li><a href="http://www.commonvision.com.au/tag/readline/">RVM, Mac OSX 10.6 and Ruby 1.8.78 p302 Install Error</a></li>
 <li><a href="http://tim.theenchanter.com/2010/01/getting-ruby-to-use-readline-instead-of.html">getting ruby to use readline instead of libedit</a></li>
 </ul>
-
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_69">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcookbook-snow-leopard-rvm-ruby-on-rails%2F&linkname=Cookbook%3A%20Snow%20Leopard%2C%20RVM%2C%20Ruby%20on%20Rails" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcookbook-snow-leopard-rvm-ruby-on-rails%2F&linkname=Cookbook%3A%20Snow%20Leopard%2C%20RVM%2C%20Ruby%20on%20Rails" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F08%2Fcookbook-snow-leopard-rvm-ruby-on-rails%2F&linkname=Cookbook%3A%20Snow%20Leopard%2C%20RVM%2C%20Ruby%20on%20Rails" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
 
 ]]></content>
   </entry>
@@ -986,13 +961,6 @@ $ rvm --default 1.8.7
 
 
 <p>If all went well you are now finished with building a Vagrant base box. Congratulations!</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_68">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F07%2Fhow-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air%2F&linkname=How%20I%20setup%20Ubuntu%2011.04%20Server%20using%20VirtualBox%20on%20a%20MacBook%20Air" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F07%2Fhow-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air%2F&linkname=How%20I%20setup%20Ubuntu%2011.04%20Server%20using%20VirtualBox%20on%20a%20MacBook%20Air" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F07%2Fhow-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air%2F&linkname=How%20I%20setup%20Ubuntu%2011.04%20Server%20using%20VirtualBox%20on%20a%20MacBook%20Air" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
@@ -1110,13 +1078,6 @@ gem install passenger
 
 
 
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_66">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fnotes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts%2F&linkname=Notes%20on%20setting%20up%20a%20Ruby%20on%20Rails%20Environment%20for%20Ubuntu%2010.04.1%20LTS" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fnotes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts%2F&linkname=Notes%20on%20setting%20up%20a%20Ruby%20on%20Rails%20Environment%20for%20Ubuntu%2010.04.1%20LTS" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fnotes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts%2F&linkname=Notes%20on%20setting%20up%20a%20Ruby%20on%20Rails%20Environment%20for%20Ubuntu%2010.04.1%20LTS" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
@@ -1128,13 +1089,6 @@ gem install passenger
     <content type="html"><![CDATA[<p>After watching from the side lines for a few years as git gathered a following I finally made the switch out of necessity as a result of doing more projects in Ruby on Rails. The projects I work on are all hosted in the cloud (Heroku, Engine Yard, or directly on Amazon EC2). Many of the tools I use support direct deployment from git. So I now find myself migrating all of my projects from subversion to git.</p>
 
 <p>I tend to write down a lot of notes as I learn a new technology or tool. The migration to git is no different. What is different is how GitHub (the hosted git solution I am using) makes it possible to record just about anything in what they call a <em>gist</em>. This is turning out to be a very useful tool for me. It is a great place to store little bits of code or notes.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_67">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fgit-cheat-sheet%2F&linkname=Git%20Cheat%20Sheet" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fgit-cheat-sheet%2F&linkname=Git%20Cheat%20Sheet" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2011%2F03%2Fgit-cheat-sheet%2F&linkname=Git%20Cheat%20Sheet" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
@@ -1173,15 +1127,6 @@ curl http://downloads.mongodb.org/docs/mongodb-docs-2010-09-23.pdf > mongodb-doc
 <p>Download the script tarball (<a href="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/11/mongodb.sh.tar" class="s3-link">mongodb.sh.tar</a>), extract it into a folder like <tt>/tmp</tt> and then run <tt>sh ./mongodb.sh</tt>. This will download the MongoDB binaries and place everything in the <tt>/usr/local/ror</tt> tree.</p>
 
 <p>One final step. Since you are running on a Mac you might want to check out a cool MongoDB client called MongoHub. You can learn more and download it from the official <a href="http://mongohub.todayclose.com/">site</a>.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_65">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F11%2Fadding-mongodb-to-my-mac-os-x-snow-leopard-ruby-on-rails-environment%2F&linkname=Adding%20MongoDB%20to%20my%20Mac%20OS%20X%20Snow%20Leopard%20Ruby%20on%20Rails%20Environment" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F11%2Fadding-mongodb-to-my-mac-os-x-snow-leopard-ruby-on-rails-environment%2F&linkname=Adding%20MongoDB%20to%20my%20Mac%20OS%20X%20Snow%20Leopard%20Ruby%20on%20Rails%20Environment" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F11%2Fadding-mongodb-to-my-mac-os-x-snow-leopard-ruby-on-rails-environment%2F&linkname=Adding%20MongoDB%20to%20my%20Mac%20OS%20X%20Snow%20Leopard%20Ruby%20on%20Rails%20Environment" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -1289,15 +1234,6 @@ sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --au
 
 
 <p>One more logout/login and you are done. Have fun playing with Ruby on Rails on your Mac!</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_64">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F11%2Fsetting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment%2F&linkname=Setting%20up%20my%20Snow%20Leopard%20Ruby%201.9.2%2C%20Ruby%20on%20Rails%203.0%2C%20Nginx%2C%20Passenger%20development%20environment" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F11%2Fsetting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment%2F&linkname=Setting%20up%20my%20Snow%20Leopard%20Ruby%201.9.2%2C%20Ruby%20on%20Rails%203.0%2C%20Nginx%2C%20Passenger%20development%20environment" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F11%2Fsetting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment%2F&linkname=Setting%20up%20my%20Snow%20Leopard%20Ruby%201.9.2%2C%20Ruby%20on%20Rails%203.0%2C%20Nginx%2C%20Passenger%20development%20environment" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -1315,15 +1251,6 @@ sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --au
 <p>So, I’m off to the <a href="http://www.pixelcorps.com/">Pixel Corps</a> offices later this month to soak up some more iOS goodness. Hope to see a few of you there too.</p>
 
 <p>BTW: Here is a link to the <a href="http://www.bignerdranch.com/classes/commuter_ios_class_with_macbreak_2pm-10pm">course description</a> for anyone curious.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_63">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -1455,15 +1382,6 @@ $ cp -r $HOME/DjangoStuff/django-testapp/* .
 
 
 <p>Once you have the practice folder setup you need to edit the <tt>app.yaml</tt> file and change the application name to reflect the Google App Engine application name you selected when registering on <a href="http://appengine.google.com">http://appengine.google.com</a>.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_62">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -1482,15 +1400,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
 <p>If it sounds like something you would enjoy, it’s not too late to register today. The event starts tomorrow (Friday) evening and goes through Sunday evening. Visit <a href="http://www.iosdevcamp.org">http://www.iosdevcamp.org</a> to register.</p>
 
 <p>Look for updates on Meet4Drinks next week, once my head is back above water after the event. Hope to see you there.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_61">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fattending-iosdevcamp-2010-building-meet4drinks%2F&linkname=Attending%20iOSDevCamp%202010%20%26%238211%3B%20Building%20Meet4Drinks" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -1504,13 +1413,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
 <p>Now it has been a couple weeks and I have the machine back and Apple didn’t find anything wrong. In fact, they say the bluetooth works fine. I turned everything on and it works fine here too. I had a hunch that this might be the case. Last week my 13″ MBP had the exact same issue. No bluetooth devices would work with it. In this case a full reboot did correct the problem.</p>
 
 <p>So, what bluetooth devices do I have, and which one is misbehaving and causing all of these problems? I don’t know for sure, but I suspect either the new iPhone 4 or the Plantronics Bluetooth Headset I have. The Apple Bluetooth Keyboard and Magic Mouse seem to be working fine. I have noticed other issues with the bluetooth on the iPhone 4 when it syncs with the Alpine IWA-505 head unit in my truck so my money is on the iPhone 4 being the cause in all of these bluetooth problems. Time will tell.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_60">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fimac-bluetooth-problems-gone-but-how%2F&linkname=iMac%20bluetooth%20problems%20gone%2C%20but%20how%3F" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fimac-bluetooth-problems-gone-but-how%2F&linkname=iMac%20bluetooth%20problems%20gone%2C%20but%20how%3F" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F08%2Fimac-bluetooth-problems-gone-but-how%2F&linkname=iMac%20bluetooth%20problems%20gone%2C%20but%20how%3F" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
@@ -1552,13 +1454,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
 
 
 
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_59">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F07%2Fwireless-keyboards-and-mice-are-great-until%2F&linkname=Wireless%20Keyboards%20and%20Mice%20are%20Great%20Until%26%238230%3B." title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
@@ -1574,15 +1469,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
 <p>This weekend I saw a tweet from the folks over at Parallels that was part of their <a href="http://blogs.parallels.com/consumertech/2010/05/the-luckiest-number-7-day-contest-for-windows-7.html">promotion</a> to get people to upgrade to Windows 7. It was a contest to win a copy of Windows 7. Guess what – yup, I won! Check it out over on the <a href="http://blogs.parallels.com/consumertech/2010/05/they-call-him-smith-bennett-smith-3-days-left-to-win-a-copy-of-windows-7.html">Parallels Consumer Tech Blog</a>.</p>
 
 <p>Don’t forget to send your own tweet to <a href="http://twitter.com/ParallelsMac">@ParallelsMac</a> to enter.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_58">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fone-more-reason-to-love-my-macbook-pro-as-a-windows-development-box%2F&linkname=One%20more%20reason%20to%20love%20my%20MacBook%20Pro%20as%20a%20Windows%20Development%20Box" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fone-more-reason-to-love-my-macbook-pro-as-a-windows-development-box%2F&linkname=One%20more%20reason%20to%20love%20my%20MacBook%20Pro%20as%20a%20Windows%20Development%20Box" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fone-more-reason-to-love-my-macbook-pro-as-a-windows-development-box%2F&linkname=One%20more%20reason%20to%20love%20my%20MacBook%20Pro%20as%20a%20Windows%20Development%20Box" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -1665,13 +1551,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
 <p>Technical books are often used as references. Neither of the e-book reading applications do a good job with letting you keep multiple books open and rapidly switch between them. It would really improve the usefulness of the applications if you could keep more than one book open and use a multi-touch gesture to switch between them.</p>
 
 <p>If you don’t have an iPad yet, run (don’t walk) to your nearest Apple store and pick one up. You won’t regret it.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_56">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fipad-as-technical-book-reader-absolutely%2F&linkname=iPad%20as%20Technical%20Book%20Reader%3F%20Absolutely%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fipad-as-technical-book-reader-absolutely%2F&linkname=iPad%20as%20Technical%20Book%20Reader%3F%20Absolutely%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fipad-as-technical-book-reader-absolutely%2F&linkname=iPad%20as%20Technical%20Book%20Reader%3F%20Absolutely%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
@@ -1697,15 +1576,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
 <p>The second new book is titled <a href="http://www.amazon.com/More-Cocoa-Programming-Mac-OS/dp/0321706269/ref=pd_rhf_p_t_3"><em>More Cocoa Programming for Mac OS X: The Big Nerd Ranch Guide</em></a> and is being written by Aaron Hillegass and Juan Pablo Claude. According to Amazon’s web site this book will be available in mid-July, 2010. At this point it appears the book will only be available in print form. Hopefully this will change and a Kindle version will be made available.</p>
 
 <p>The third new book will be titled <a href="http://www.amazon.com/Objective-C-Programming-Ranch-Guide-Guides/dp/0321706285/ref=pd_sim_b_40"><em>Objective-C Programming: The Big Nerd Ranch Guide</em></a> and is being written by Aaron Hillegass and Mark Fenoglio. Amazon pegs the release of this book sometime in December, 2010. Cover art for this book has not been released yet.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_57">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fbusy-folks-at-big-nerd-ranch%2F&linkname=Busy%20Folks%20at%20Big%20Nerd%20Ranch%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fbusy-folks-at-big-nerd-ranch%2F&linkname=Busy%20Folks%20at%20Big%20Nerd%20Ranch%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fbusy-folks-at-big-nerd-ranch%2F&linkname=Busy%20Folks%20at%20Big%20Nerd%20Ranch%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -1715,13 +1585,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
     <updated>2010-05-01T00:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/05/a-few-small-upgrades-to-the-blog</id>
     <content type="html"><![CDATA[<p>I just installed the Disqus commenting system on the blog and also added the WP Greet Box plugin.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_55">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fa-few-small-upgrades-to-the-blog%2F&linkname=A%20few%20small%20upgrades%20to%20the%20blog%26%238230%3B" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fa-few-small-upgrades-to-the-blog%2F&linkname=A%20few%20small%20upgrades%20to%20the%20blog%26%238230%3B" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F05%2Fa-few-small-upgrades-to-the-blog%2F&linkname=A%20few%20small%20upgrades%20to%20the%20blog%26%238230%3B" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
@@ -1747,13 +1610,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
 <p>Even more surprising than the crashes of apps on the device is the crash I experienced this morning of the Xcode development environment on the desktop. Apple released an update to Xcode that includes all of the iPad development tools yesterday. I was working on a sample application this morning, following the instructions on how to build an app when all of a sudden Xcode just up and crashed on me. This is very unusual. Earlier versions of Xcode have been very stable for years.</p>
 
 <p>Over all I think purchasing one as a developer at this point is a good move, but for basic consumers it is probably more sensible to wait about 3 months before jumping on the iPad bandwagon.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_54">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F04%2Fipad-review-first-24-hours%2F&linkname=iPad%20Review%20%26%238211%3B%20First%2024%20hours" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F04%2Fipad-review-first-24-hours%2F&linkname=iPad%20Review%20%26%238211%3B%20First%2024%20hours" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F04%2Fipad-review-first-24-hours%2F&linkname=iPad%20Review%20%26%238211%3B%20First%2024%20hours" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   

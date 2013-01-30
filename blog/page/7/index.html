@@ -247,13 +247,6 @@ SOURCES += foo.cpp<br/>
 HEADERS += foo.h<br/>
 FORMS += foo.ui<br/>
 You should be off and running now. For more detailed information I would suggest reading the qmake reference manual. You might also want to take a look at the Qt 4.1 tutorials in Qt Assistant. Have fun!</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_13">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F02%2Fhowto-use-visual-studio-2005-for-qt-open-source-development%2F&linkname=HOWTO%20%26%238211%3B%20Use%20Visual%20Studio%202005%20for%20Qt%20Open%20Source%20Development" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 </div>
   
   
@@ -305,13 +298,6 @@ P4USER=bsmith</p>
 <p>This technique can be applied to multiple client workspaces at the same time by setting up multiple p4config.txt files and logging into each depot. Then it is a simple matter of changing directories in my command window to switch between depots and/or client workspaces.</p>
 
 <p>On Unix and Mac OS X I set P4CONFIG to point at a file called @.p4config@. The file contents are similar to the Windows example earlier in this post.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_12">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fworking-with-multiple-depots-andor-client-workspaces%2F&linkname=Working%20with%20Multiple%20Depots%20and%2For%20Client%20Workspaces" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fworking-with-multiple-depots-andor-client-workspaces%2F&linkname=Working%20with%20Multiple%20Depots%20and%2For%20Client%20Workspaces" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fworking-with-multiple-depots-andor-client-workspaces%2F&linkname=Working%20with%20Multiple%20Depots%20and%2For%20Client%20Workspaces" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 </div>
   
   
@@ -372,13 +358,6 @@ P4USER=bsmith</p>
 <p>Perforce recommends setting up a regular job to create a checkpoint and a backup of the depot. The script p4backup illustrates how to handle this. Use the p4backup.plist file to teach launchd about this script so it will run on a regular basis. On my server I run this script every night. The backup is done using a copy from the /Depot directory to the /Depot.Backup directory, which is on a separate filesystem.</p>
 
 <p>perforce.plist GroupName perforce Label com.perforce.p4d OnDemand Program /usr/local/bin/p4d ProgramArguments /usr/local/bin/p4d -r /Depot -p 1666 -J /Depot/journal -L /Depot/p4err RunAtLoad ServiceDescription Perforce Daemon StandardErrorPath /Depot/p4d.stderr.txt StandardOutPath /Depot/p4d.stdout.txt UserName p4admin WorkingDirectory /Depot</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_11">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fconfiguring-a-perforce-depot-on-mac-os-x-104-tiger-server%2F&linkname=Configuring%20a%20Perforce%20Depot%20on%20Mac%20OS%20X%2010.4%20%28Tiger%29%20Server" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fconfiguring-a-perforce-depot-on-mac-os-x-104-tiger-server%2F&linkname=Configuring%20a%20Perforce%20Depot%20on%20Mac%20OS%20X%2010.4%20%28Tiger%29%20Server" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fconfiguring-a-perforce-depot-on-mac-os-x-104-tiger-server%2F&linkname=Configuring%20a%20Perforce%20Depot%20on%20Mac%20OS%20X%2010.4%20%28Tiger%29%20Server" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 </div>
   
   
@@ -1133,13 +1112,6 @@ widgets.</p>
 <p>Q – Does window geometry handle multiple displays well?<br/>
 Q – Does window geometry handle different dpi well? Looks<br/>
 like arguments are specified in pixels.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_10">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2005%2F07%2Fnotes-from-trolltech-developer-days-2005%2F&linkname=Notes%20from%20Trolltech%20Developer%20Days%202005" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2005%2F07%2Fnotes-from-trolltech-developer-days-2005%2F&linkname=Notes%20from%20Trolltech%20Developer%20Days%202005" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2005%2F07%2Fnotes-from-trolltech-developer-days-2005%2F&linkname=Notes%20from%20Trolltech%20Developer%20Days%202005" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 </div>
   
   
@@ -1242,13 +1214,6 @@ c:\mysql\bin\mysqldump --host=localhost --password=password --user=root mtblog &
 
 
 <p>Don’t forget to change the host, password, and user information on the last line of the script. You may also need to change the path to the mysqldump program if it is not under c:\mysql\bin on your system.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_9">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F12%2Fbackup-mysql-database-on-windows-server-2003%2F&linkname=Backup%20MySQL%20database%20on%20Windows%20Server%202003" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F12%2Fbackup-mysql-database-on-windows-server-2003%2F&linkname=Backup%20MySQL%20database%20on%20Windows%20Server%202003" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F12%2Fbackup-mysql-database-on-windows-server-2003%2F&linkname=Backup%20MySQL%20database%20on%20Windows%20Server%202003" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 </div>
   
   
@@ -1657,12 +1622,7 @@ c:\mysql\bin\mysqldump --host=localhost --password=password --user=root mtblog &
       </tr></table>
 
 
-<pre><code>  &lt;div class="addtoany_share_save_container"&gt;
-    &lt;div class="a2a_kit a2a_target addtoany_list" id="wpa2a_8"&gt;
-      &lt;a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fenvironment-variables-provided-by-windows-operating-system%2F&amp;linkname=Environment%20Variables%20Provided%20by%20Windows%20Operating%20System" title="Facebook" rel="nofollow" target="_blank"&gt;&lt;img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /&gt;&lt;/a&gt;&lt;a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fenvironment-variables-provided-by-windows-operating-system%2F&amp;linkname=Environment%20Variables%20Provided%20by%20Windows%20Operating%20System" title="Twitter" rel="nofollow" target="_blank"&gt;&lt;img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /&gt;&lt;/a&gt;&lt;a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fenvironment-variables-provided-by-windows-operating-system%2F&amp;linkname=Environment%20Variables%20Provided%20by%20Windows%20Operating%20System" title="LinkedIn" rel="nofollow" target="_blank"&gt;&lt;img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /&gt;&lt;/a&gt;&lt;a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle"&gt;More options&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-</code></pre>
+
 </div>
   
   
@@ -1727,15 +1687,6 @@ c:\mysql\bin\mysqldump --host=localhost --password=password --user=root mtblog &
 <p>Early versions of MS-DOS had a 128 character limitation on the PATH variable. According to this <a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;97595">article</a>, that limitation was removed in MS-DOS 6.0. In <a href="http://support.microsoft.com/default.aspx?scid=kb;EN-US;169171">KB169171</a> Microsoft talks about how 16-bit applications can still hang when the path exceeds 200 bytes.</p>
 
 <p>The only place I could find that actually states that there is a 1KB limit on the combine length of the System+User path is <a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;216477">here</a>. In the WORKAROUND section of this article it states that the path should “total 1 KB or less of characters”. The article is for Windows NT Server 4.0 Terminal Server Edition, but my experiments on a Windows 2000 Professional system indicate that it is still the case. I haven’t tried Windows XP or Windows Server 2003 yet to determine if the problem exists in those variants of Windows.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_7">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fpath-environment-variable-limitations-in-windows%2F&linkname=PATH%20Environment%20Variable%20Limitations%20in%20Windows" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fpath-environment-variable-limitations-in-windows%2F&linkname=PATH%20Environment%20Variable%20Limitations%20in%20Windows" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F07%2Fpath-environment-variable-limitations-in-windows%2F&linkname=PATH%20Environment%20Variable%20Limitations%20in%20Windows" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 </div>
   
   
@@ -1777,15 +1728,6 @@ c:\mysql\bin\mysqldump --host=localhost --password=password --user=root mtblog &
 <li><a href="http://idvlpsw.files.wordpress.com/2008/03/introduction-to-xml-handout.pdf" title="Introduction to XML - Handout">Introduction to XML - Handout</a></li>
 <li><a href="http://idvlpsw.files.wordpress.com/2008/03/introduction-to-xml-presentation.pdf" title="Introduction to XML - Presentation">Introduction to XML - Presentation</a><a href="http://idvlpsw.files.wordpress.com/2008/03/introduction-to-xml-presentation.pdf" title="Introduction to XML - Presentation"></a></li>
 </ul>
-
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_6">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F01%2Fintroduction-to-xml%2F&linkname=Introduction%20to%20XML" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F01%2Fintroduction-to-xml%2F&linkname=Introduction%20to%20XML" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2004%2F01%2Fintroduction-to-xml%2F&linkname=Introduction%20to%20XML" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
 
 </div>
   

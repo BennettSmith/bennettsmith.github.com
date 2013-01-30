@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Security | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T10:51:28-08:00</updated>
+  <updated>2013-01-30T11:32:56-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -141,15 +141,6 @@ $ cp -r $HOME/DjangoStuff/django-testapp/* .
 
 
 <p>Once you have the practice folder setup you need to edit the <tt>app.yaml</tt> file and change the application name to reflect the Google App Engine application name you selected when registering on <a href="http://appengine.google.com">http://appengine.google.com</a>.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_62">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fmacbook-pro-development-environment%2F&linkname=MacBook%20Pro%20Development%20Environment" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -172,15 +163,6 @@ To meet my goals I am using a piece of software called <a href="http://www.knoxf
 
 
 <p>The card I store my sensitive data on is the Lexar 8GB ExpressCard SSD. It fits in the ExpressCard/34 slot on the left side of my MacBook Pro and is makes for a very convenient place to store all of my Quicken and TurboTax data files. Using Knox I setup the entire Lexar card as an encrypted filesystem.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_17">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fprotect-sensitive-data-on-your-macbook-pro%2F&linkname=Protect%20Sensitive%20Data%20on%20your%20MacBook%20Pro" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fprotect-sensitive-data-on-your-macbook-pro%2F&linkname=Protect%20Sensitive%20Data%20on%20your%20MacBook%20Pro" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fprotect-sensitive-data-on-your-macbook-pro%2F&linkname=Protect%20Sensitive%20Data%20on%20your%20MacBook%20Pro" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -204,13 +186,6 @@ Well, you would be wrong. Companies that repair these drives do exist, and reman
 <p>Also, the repaired drive in your computer may actually be older than the drive you originally had. It may not be new at all. Given that these drives do have a manufacture rated MTBF (mean-time between failures) that seems to be very accurate, you may be in for another repair within a few weeks or months.</p>
 
 <p>All in all, this practice seems unacceptable on many levels. My suggestion is that whenever your hard-drive fails you should destroy it yourself and should replace it with another one from a reputable supplier. And, you should always make sure the drive is new, not remanufactured!</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_18">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fcomputer-repair-vs-auto-repair-why-they-are-very-different%2F&linkname=Computer%20Repair%20vs%20Auto%20Repair%20%26%238212%3B%20Why%20they%20are%20very%20different." title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fcomputer-repair-vs-auto-repair-why-they-are-very-different%2F&linkname=Computer%20Repair%20vs%20Auto%20Repair%20%26%238212%3B%20Why%20they%20are%20very%20different." title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F03%2Fcomputer-repair-vs-auto-repair-why-they-are-very-different%2F&linkname=Computer%20Repair%20vs%20Auto%20Repair%20%26%238212%3B%20Why%20they%20are%20very%20different." title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   

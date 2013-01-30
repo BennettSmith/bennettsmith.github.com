@@ -2,349 +2,349 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://blog.idevelopsoftware.com/2004/01/introduction-to-xml/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:54:04-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2004/07/path-environment-variable-limitations-in-windows/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:54:13-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2004/07/environment-variables-provided-by-windows-operating-system/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:54:22-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2004/12/backup-mysql-database-on-windows-server-2003/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:54:27-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2005/07/notes-from-trolltech-developer-days-2005/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:53:38-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2006/01/configuring-a-perforce-depot-on-mac-os-x-104-tiger-server/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:54:36-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2006/01/working-with-multiple-depots-andor-client-workspaces/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:54:42-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2006/02/howto-use-visual-studio-2005-for-qt-open-source-development/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:54:49-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2006/02/perforce-launchd-configuration-on-mac-os-tiger-104/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:54:55-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/02/generating-a-gdb-log-file-for-xcode-debug-sessions/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:01-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/03/winqual-registration-head-aches/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:08-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/03/computer-repair-vs-auto-repair-why-they-are-very-different/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:15-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/03/protect-sensitive-data-on-your-macbook-pro/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:21-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/ /
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:27-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/03/what-is-the-product-exposure-if-you-ship-debug-symbols/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:33-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/04/separate-interface-and-implementation-in-cc/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:40-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/04/software-managers-dont-forget-to-invest-for-the-future/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:47-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/04/podcasting-gear/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:53-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/05/entrepreneurs/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:55:59-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/05/rubics-cube-solution/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:56:07-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/05/method-swizzling-in-safari-on-mac-os-x/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:56:17-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/05/iphonecatch22/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:56:22-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/05/attention-to-details-required-when-using-getqueuedcompletionstatus/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:56:29-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/06/how-to-enable-msi-logging/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:56:35-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/06/iphone-developers-put-on-hold-by-apple/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:56:45-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/06/simple-ui-refinements-increase-developer-productivity/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:56:53-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/07/building-team-cohesion-quickly/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:56:59-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/07/microsoft-professional-developers-conference-2008-see-you-there/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:57:08-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/07/finally-accepted-into-the-apple-iphone-developer-program/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:57:13-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/07/upgrade-to-iphone-os-20-fails-unknown-error-9838/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:57:19-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/07/mobileme-mail-error/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:57:24-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/ /
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:57:32-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/07/what-a-bump/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:57:39-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/07/setting-up-unit-testing-in-xcode-31/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:57:45-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2009/01/software-design-want-vs-need/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:57:50-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:57:56-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2009/01/mac-market-share-increasing/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:58:06-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2009/01/hike-in-the-east-bay-get-a-commerative-t-shirt/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:58:17-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2009/01/homepage-greeting/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:58:25-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2009/02/191/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:58:32-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2009/05/book-review-restful-web-services-web-services-for-the-real-world/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:58:39-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/ /
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:58:46-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2009/06/adobe-creative-suite-4-web-premium/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:58:52-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2009/06/kindle-amazons-6-wireless-reading-device-latest-generation/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:58:58-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2009/06/restful-net-by-jon-flanders/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:59:04-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2009/06/ws_ftp-professional/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:59:09-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2009/06/howto-answer-the-question-is-some-site-up-or-down/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:59:19-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2009/12/software-developers-are-human-beings/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:59:27-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2010/04/ipad-review-first-24-hours/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:59:34-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2010/05/a-few-small-upgrades-to-the-blog/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:59:40-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2010/05/busy-folks-at-big-nerd-ranch/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:59:47-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2010/05/ipad-as-technical-book-reader-absolutely/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T10:59:52-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2010/05/one-more-reason-to-love-my-macbook-pro-as-a-windows-development-box/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:00-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2010/07/wireless-keyboards-and-mice-are-great-until/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:06-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2010/08/imac-bluetooth-problems-gone-but-how/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:11-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:18-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:24-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2010/10/heading-to-big-nerd-ranch-later-this-month/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:31-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/ /
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:37-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2010/11/adding-mongodb-to-my-mac-os-x-snow-leopard-ruby-on-rails-environment/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:43-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2011/03/git-cheat-sheet/</loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:51-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2011/03/notes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts/
         </loc>
-        <lastmod>2013-01-30T10:40:22-08:00</lastmod>
+        <lastmod>2013-01-30T11:00:58-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2011/07/how-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air/
         </loc>
-        <lastmod>2013-01-30T10:40:24-08:00</lastmod>
+        <lastmod>2013-01-30T11:01:03-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/
         </loc>
-        <lastmod>2013-01-30T10:40:24-08:00</lastmod>
+        <lastmod>2013-01-30T11:01:10-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/
         </loc>
-        <lastmod>2013-01-30T10:40:24-08:00</lastmod>
+        <lastmod>2013-01-30T11:32:33-08:00</lastmod>
     </url>
     <url>
         <loc>
             http://blog.idevelopsoftware.com/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/ /
         </loc>
-        <lastmod>2013-01-30T10:40:24-08:00</lastmod>
+        <lastmod>2013-01-30T11:32:41-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/blog/2013/01/29/code-blocks/</loc>
@@ -360,11 +360,11 @@
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/blog/archives/</loc>
-        <lastmod>2013-01-30T10:40:24-08:00</lastmod>
+        <lastmod>2013-01-30T11:32:41-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/</loc>
-        <lastmod>2013-01-30T10:40:24-08:00</lastmod>
+        <lastmod>2013-01-30T11:32:41-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/robots.txt</loc>

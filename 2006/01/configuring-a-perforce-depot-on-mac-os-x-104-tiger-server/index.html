@@ -128,13 +128,6 @@
 <p>Perforce recommends setting up a regular job to create a checkpoint and a backup of the depot. The script p4backup illustrates how to handle this. Use the p4backup.plist file to teach launchd about this script so it will run on a regular basis. On my server I run this script every night. The backup is done using a copy from the /Depot directory to the /Depot.Backup directory, which is on a separate filesystem.</p>
 
 <p>perforce.plist GroupName perforce Label com.perforce.p4d OnDemand Program /usr/local/bin/p4d ProgramArguments /usr/local/bin/p4d -r /Depot -p 1666 -J /Depot/journal -L /Depot/p4err RunAtLoad ServiceDescription Perforce Daemon StandardErrorPath /Depot/p4d.stderr.txt StandardOutPath /Depot/p4d.stdout.txt UserName p4admin WorkingDirectory /Depot</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_11">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fconfiguring-a-perforce-depot-on-mac-os-x-104-tiger-server%2F&linkname=Configuring%20a%20Perforce%20Depot%20on%20Mac%20OS%20X%2010.4%20%28Tiger%29%20Server" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fconfiguring-a-perforce-depot-on-mac-os-x-104-tiger-server%2F&linkname=Configuring%20a%20Perforce%20Depot%20on%20Mac%20OS%20X%2010.4%20%28Tiger%29%20Server" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2006%2F01%2Fconfiguring-a-perforce-depot-on-mac-os-x-104-tiger-server%2F&linkname=Configuring%20a%20Perforce%20Depot%20on%20Mac%20OS%20X%2010.4%20%28Tiger%29%20Server" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 </div>
 
 

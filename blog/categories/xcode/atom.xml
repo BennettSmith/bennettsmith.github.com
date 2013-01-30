@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Xcode | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/xcode/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T10:51:28-08:00</updated>
+  <updated>2013-01-30T11:32:56-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -27,15 +27,6 @@
 <p>So, I’m off to the <a href="http://www.pixelcorps.com/">Pixel Corps</a> offices later this month to soak up some more iOS goodness. Hope to see a few of you there too.</p>
 
 <p>BTW: Here is a link to the <a href="http://www.bignerdranch.com/classes/commuter_ios_class_with_macbreak_2pm-10pm">course description</a> for anyone curious.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_63">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2010%2F10%2Fheading-to-big-nerd-ranch-later-this-month%2F&linkname=Heading%20to%20Big%20Nerd%20Ranch%20later%20this%20month%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -65,13 +56,6 @@
 
 
 <p>By reading through the documents references above I was able to get OCUnit up and running for one of my projects. It took a bit of experimentation, but in the end it looks like OCUnit will work just fine for doing TDD in Xcode with Objective-C. Anyone wanting to try out TDD should give it a try. The benefits for your project are significant. Go for it!</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_39">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fsetting-up-unit-testing-in-xcode-31%2F&linkname=Setting%20up%20Unit%20Testing%20in%20Xcode%203.1" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fsetting-up-unit-testing-in-xcode-31%2F&linkname=Setting%20up%20Unit%20Testing%20in%20Xcode%203.1" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F07%2Fsetting-up-unit-testing-in-xcode-31%2F&linkname=Setting%20up%20Unit%20Testing%20in%20Xcode%203.1" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
@@ -87,15 +71,6 @@
 <p>When applying the method swizzling technique you may find that the linker complains about <em>unresolved classes</em> and won’t link your bundle. This issue usually crops up when you try swizzling a method that is in a class you learned about by running <a href="http://www.codethecode.com/projects/class-dump/">class-dump</a> or by using <a href="http://www.fscript.org">FScript</a>. If you run into this problem bring up the project properties in Xcode and add <code>-undefined dynamic_lookup</code> to the <strong>Other Linker Flags</strong> section.</p>
 
 <p>Without this extra flag your plug-in will not link, and you will be stuck in the mud! Thanks to Aaron Harnly, author of <a href="http://harnly.net/software/letterbox">Letterbox</a>, for pointing this out to me in an e-mail exchange.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_26">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F05%2Fmethod-swizzling-in-safari-on-mac-os-x%2F&linkname=Method%20Swizzling%20in%20Safari%20on%20Mac%20OS%20X" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F05%2Fmethod-swizzling-in-safari-on-mac-os-x%2F&linkname=Method%20Swizzling%20in%20Safari%20on%20Mac%20OS%20X" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F05%2Fmethod-swizzling-in-safari-on-mac-os-x%2F&linkname=Method%20Swizzling%20in%20Safari%20on%20Mac%20OS%20X" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
-
-
 ]]></content>
   </entry>
   
@@ -115,13 +90,6 @@ $ defaults write com.apple.Xcode PBXGDBDebuggerLogFileName /tmp/gdboutput.log&lt
 This will create a file in the /tmp directory called gdboutput.log, containing everything you see in the GDB command window during your debugging session.</p>
 
 <p>Both of these commands need to be typed into a Terminal.app window. You only need to do this once, as your machine will remember the settings.</p>
-
-<div class="addtoany_share_save_container">
-  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_15">
-    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F02%2Fgenerating-a-gdb-log-file-for-xcode-debug-sessions%2F&linkname=Generating%20a%20GDB%20Log%20File%20for%20Xcode%20Debug%20Sessions" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F02%2Fgenerating-a-gdb-log-file-for-xcode-debug-sessions%2F&linkname=Generating%20a%20GDB%20Log%20File%20for%20Xcode%20Debug%20Sessions" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2008%2F02%2Fgenerating-a-gdb-log-file-for-xcode-debug-sessions%2F&linkname=Generating%20a%20GDB%20Log%20File%20for%20Xcode%20Debug%20Sessions" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
-  </div>
-</div>
-
 ]]></content>
   </entry>
   
