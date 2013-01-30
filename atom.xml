@@ -4,7 +4,7 @@
   <title><![CDATA[iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T08:02:53-08:00</updated>
+  <updated>2013-01-30T08:31:33-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -18,7 +18,23 @@
     <link href="http://blog.idevelopsoftware.com/blog/2013/01/29/plugin-experiments/"/>
     <updated>2013-01-29T22:47:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/blog/2013/01/29/plugin-experiments</id>
-    <content type="html"><![CDATA[<h3>Video Tag</h3>
+    <content type="html"><![CDATA[<h3>SpeakerDeck</h3>
+
+<script async="true" class="speakerdeck-embed" data-id="5112451026bf013092b722000a1d8877" src="http://blog.idevelopsoftware.com//speakerdeck.com/assets/embed.js"> </script>
+
+
+<h3>AppStore</h3>
+
+<p>This plugin does not seem to work. I think the format for the URL in the AppStore may have changed and the plugin needs to be updated.  Need to investigate this one further.</p>
+
+<p><a class='app-widget com-apple-ibooks' href='https://itunes.apple.com/us/app/ibooks/id364709193?mt=8&uo=4' target='_blank'>
+  <i class='app-icon' style='background-image: url(http://a368.phobos.apple.com/us/r1000/110/Purple/v4/a0/93/08/a0930815-e79b-fb7a-8ea0-8793ddba49f9/Icon-iPhone.png)'></i>
+  <b class='app-name'>iBooks</b>
+</a></p>
+
+<h3>Video Tag</h3>
+
+<p>This does not seem to be working right now.  I think the link might be broken.</p>
 
 <p><video width='640' height='320' preload='none' controls poster='http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
 
