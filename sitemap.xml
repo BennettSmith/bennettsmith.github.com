@@ -1,12 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://blog.idevelopsoftware.com/blog/2013/01/29/code-blocks/</loc>
+        <lastmod>2013-01-29T22:44:25-08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.idevelopsoftware.com/blog/2013/01/29/plugin-experiments/</loc>
+        <lastmod>2013-01-30T07:24:38-08:00</lastmod>
+    </url>
+    <url>
         <loc>http://blog.idevelopsoftware.com/blog/archives/</loc>
-        <lastmod>2013-01-29T21:16:52-08:00</lastmod>
+        <lastmod>2013-01-30T07:24:38-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/</loc>
-        <lastmod>2013-01-29T21:16:52-08:00</lastmod>
+        <lastmod>2013-01-30T07:24:38-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/robots.txt</loc>
