@@ -9,7 +9,7 @@
   <meta name="author" content="Bennett Smith">
 
   
-  <meta name="description" content="One of the podcasts I listen to on a regular basis is called MacBreak. The hosts are Leo Leporte, Alex Lindsay, Andy Ihnatko and a rotating list of &hellip;">
+  <meta name="description" content="After watching from the side lines for a few years as git gathered a following I finally made the switch out of necessity as a result of doing more &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -28,6 +28,9 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
   
   <script type="text/javascript">
@@ -77,6 +80,242 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2011/03/git-cheat-sheet/">Git Cheat Sheet</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-19T00:00:00-07:00" pubdate data-updated="true">Mar 19<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After watching from the side lines for a few years as git gathered a following I finally made the switch out of necessity as a result of doing more projects in Ruby on Rails. The projects I work on are all hosted in the cloud (Heroku, Engine Yard, or directly on Amazon EC2). Many of the tools I use support direct deployment from git. So I now find myself migrating all of my projects from subversion to git.</p>
+
+<p>I tend to write down a lot of notes as I learn a new technology or tool. The migration to git is no different. What is different is how GitHub (the hosted git solution I am using) makes it possible to record just about anything in what they call a <em>gist</em>. This is turning out to be a very useful tool for me. It is a great place to store little bits of code or notes.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/11/adding-mongodb-to-my-mac-os-x-snow-leopard-ruby-on-rails-environment/">Adding MongoDB to My Mac OS X Snow Leopard Ruby on Rails Environment</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-15T00:00:00-08:00" pubdate data-updated="true">Nov 15<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Tonight I wanted to add MongoDB to my Mac OS X Snow Leopard Ruby on Rails Environment. Refer to my <a href="http://www.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/">earlier post</a> for details of how I setup my environment. This post assumes your environment is setup according to the instructions found there.</p>
+
+<p>I wrote the following script to handle installation of MongoDB. I decided to grab the pre-built version of MongoDB from the project site and then place the files under the <tt>/usr/local/ror</tt> directory tree.</p>
+
+<pre>#!/bin/bash
+
+# Get and extract a copy of Mongodb
+curl http://fastdl.mongodb.org/osx/mongodb-osx-x86_64-1.6.4.tgz > mongodb-osx-x86_64-1.6.4.tgz
+tar xvf mongodb-osx-x86_64-1.6.4.tgz
+
+curl http://downloads.mongodb.org/docs/mongodb-docs-2010-09-23.pdf > mongodb-docs-2010-09-23.pdf
+
+# Move files into final locations
+(
+    cd mongodb-osx-x86_64-1.6.4
+    sudo cp -R * /usr/local/ror
+    sudo chmod a+r /usr/local/ror/GNU* /usr/local/ror/README* /usr/local/ror/THIRD*
+    sudo gem install mongo
+)
+
+(
+    sudo cp mongodb-docs-2010-09-23.pdf /usr/local/ror/share/doc/mongodb.pdf
+    sudo chmod a+r /usr/local/ror/share/doc/mongodb.pdf
+)
+</pre>
+
+
+<p>Download the script tarball (<a href="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/11/mongodb.sh.tar" class="s3-link">mongodb.sh.tar</a>), extract it into a folder like <tt>/tmp</tt> and then run <tt>sh ./mongodb.sh</tt>. This will download the MongoDB binaries and place everything in the <tt>/usr/local/ror</tt> tree.</p>
+
+<p>One final step. Since you are running on a Mac you might want to check out a cool MongoDB client called MongoHub. You can learn more and download it from the official <a href="http://mongohub.todayclose.com/">site</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
+/">Setting Up My Snow Leopard Ruby 1.9.2, Ruby on Rails 3.0, Nginx, Passenger Development Environment</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-14T00:00:00-08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to setup a current environment. My requirements were:</p>
+
+<ul>
+<li>Ruby 1.9.2</li>
+<li>Rails 3.0</li>
+<li>PostgreSQL 9.0</li>
+<li>Nginx</li>
+<li>Passenger</li>
+</ul>
+
+
+<p>You should download and install the Mac version of PostgreSQL 9.0 from the folks at <a href="http://www.enterprisedb.com/products/download.do">EnterpriseDB</a>. You will need to register on the site in order to do the download. Be sure to download PostgreSQL 9.0.1, not one of their <em>Plus</em> packages. It is a nicely packaged installer for the freely available version of Postgres.</p>
+
+<p>Once you install this software you should have a file called <tt>pg_env.sh</tt> in the <tt>/Library/PostgreSQL/9.0/</tt> directory. This file should be added to your <tt>/etc/profile</tt>. Here is an example of what mine looks like:</p>
+
+<pre># System-wide .profile for sh(1)
+
+# This has to be set to something in order for path_helper (below)
+# to update it with paths found in the /etc/manpaths.d directory.
+MANPATH=/usr/local/share/man; export MANPATH
+
+# Setup the PostgreSQL environment.
+. /Library/PostgreSQL/9.0/pg_env.sh
+
+if [ -x /usr/libexec/path_helper ]; then
+    eval `/usr/libexec/path_helper -s`
+fi
+
+if [ "${BASH-no}" != "no" ]; then
+    [ -r /etc/bashrc ] &#038;&#038; . /etc/bashrc
+fi
+</pre>
+
+
+<p>Be sure to log out and log back in before continuing with these instructions. This is important to make sure your PostgreSQL environment variables are set properly.</p>
+
+<p>One of my goals with this setup is to keep everything independent of the default tools that ship with Snow Leopard. To do this I decided that all of my Ruby on Rails setup will be located in the <tt>/usr/local/ror</tt> directory tree. Here is a script I developed to setup my Ruby on Rails development environment.</p>
+
+<pre>#!/bin/bash
+
+# Get and extract a copy of LibYAML
+curl http://pyyaml.org/download/libyaml/yaml-0.1.3.tar.gz > yaml-0.1.3.tar.gz
+tar xvf yaml-0.1.3.tar.gz
+
+# Build LibYAML
+(
+    cd yaml-0.1.3
+    ./configure
+    make
+    sudo make install
+)
+
+# Get and extract a copy of Ruby 1.9.2
+curl ftp://ftp.ruby-lang.org:21//pub/ruby/1.9/ruby-1.9.2-p0.tar.gz > ruby-1.9.2-p0.tar.gz
+tar xvf ruby-1.9.2-p0.tar.gz
+
+# Build Ruby 1.9.2
+(
+    cd ruby-1.9.2-p0
+    ./configure --prefix=/usr/local/ror --with-arch=x86_64 --enable-shared
+    make
+    make test
+    sudo make install
+)
+
+# Update Ruby Gems
+sudo gem update --system
+
+# Install Gems
+sudo gem install rails
+sudo gem install sqlite3-ruby
+sudo gem install pg
+sudo gem install passenger
+
+# Configure Passenger for Nginx (downloads Nginx and PCRE automatically)
+sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --auto
+</pre>
+
+
+<p><a href="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/11/doit.sh.tar" class="s3-link">Download the script</a>, un-tar it and place it in any directory you want. I call the script <tt>doit.sh</tt>, but you can name it anything you like. Run the script using the command shown below.</p>
+
+<pre>$ sh ./doit.sh
+</pre>
+
+
+<p>Once the script completes you need to add <tt>/usr/local/ror/bin</tt> to your path. I did this by editing my <tt>/etc/paths</tt> file. Here is a copy of the file on my machine:</p>
+
+<pre>usr/local/ror/bin
+/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+</pre>
+
+
+<p>One more logout/login and you are done. Have fun playing with Ruby on Rails on your Mac!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -358,365 +597,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
 <p>Now it has been a couple weeks and I have the machine back and Apple didn’t find anything wrong. In fact, they say the bluetooth works fine. I turned everything on and it works fine here too. I had a hunch that this might be the case. Last week my 13″ MBP had the exact same issue. No bluetooth devices would work with it. In this case a full reboot did correct the problem.</p>
 
 <p>So, what bluetooth devices do I have, and which one is misbehaving and causing all of these problems? I don’t know for sure, but I suspect either the new iPhone 4 or the Plantronics Bluetooth Headset I have. The Apple Bluetooth Keyboard and Magic Mouse seem to be working fine. I have noticed other issues with the bluetooth on the iPhone 4 when it syncs with the Alpine IWA-505 head unit in my truck so my money is on the iPhone 4 being the cause in all of these bluetooth problems. Time will tell.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/07/wireless-keyboards-and-mice-are-great-until/">Wireless Keyboards and Mice Are Great Until&#8230;.</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-13T00:00:00-07:00" pubdate data-updated="true">Jul 13<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Tonight I sat down at my 27″ iMac to get a little work done. The first thing I do is tap the keyboard and move the mouse to wake the machine from sleep mode. The machine awoke and then quickly displayed the <em>Connection Lost</em> graphics in the middle of the screen for both the mouse and keyboard. My first thought; no problem, it’s just the batteries so I replaced them. Still no connection (and it did seem kind of odd for both the mouse and keyboard batteries to be dead at the same time.) Looking up at the system tray I see an odd Bluetooth icon. Here’s a closeup of what I found:</p>
-
-<div style="text-align:center;">
-  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/LittleSnapper.png" alt="LittleSnapper.png" border="0" width="280" height="69" align="center" />
-</div>
-
-
-<p>The <em>Bluetooth: Not Available</em> message in the system tray is not a good sign. Next I opened up <em>Console.app</em> to see if there were any indications of what the root cause for this behavior was. It appears there is truly something wrong with the Bluetooth Module. Here is what it showed:</p>
-
-<div style="text-align:center;">
-  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/Console2.png" alt="[AppleUSBBluetoothHCIController][FindInterfaces] some interface pipes were not found. Device is no good a a transport" border="0" width="730" height="124" align="center" />
-</div>
-
-
-<p>A visit to the support forums at Apple led me to an idea to reset the SMC on the iMac. I tried that and still nothing. At this point I’m not a happy camper. It is looking like the Bluetooth Module in my iMac has given up the ghost.</p>
-
-<p>Next step, the iPhone Apple AppStore application to make a Genius Bar appointment.</p>
-
-<div style="text-align:center;">
-  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/genius.png" alt="genius.png" border="0" width="213" height="320" align="center" />
-</div>
-
-
-<p>If you have read this far then you might be wondering why I’m telling you all of this. The reason is simple. Without a USB keyboard and mouse laying around somewhere none of the troubleshooting above would have been possible. Having a wireless bluetooth keyboard and mouse ship by default with the iMac is a really odd choice on Apple’s part.</p>
-
-<p>Thankfully I have a keyboard and mouse from the Xserve in my garage. In case you forgot what these old fashion beasts look like, here’s a picture of the dynamic duo that saved my bacon tonight!</p>
-
-<div style="txt-align:center;">
-  <img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/07/backup_plan.png" alt="backup_plan.png" border="0" width="640" height="478" align="center" />
-</div>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/05/one-more-reason-to-love-my-macbook-pro-as-a-windows-development-box/">One More Reason to Love My MacBook Pro as a Windows Development Box</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-24T00:00:00-07:00" pubdate data-updated="true">May 24<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>A big <strong><em>Thank You</em></strong> goes out to the folks over at <a href="http://www.parallels.com">Parallels</a>.</p>
-
-<p>For years I have been developing Windows applications on my MacBook Pro. When other developers ask me why my response is usually something like “The best windows development system I have is my MacBook Pro.” It is fast, the hardware build quality is excellent and best of all, with Parallels Desktop I can have the best of both worlds.</p>
-
-<p>This weekend I saw a tweet from the folks over at Parallels that was part of their <a href="http://blogs.parallels.com/consumertech/2010/05/the-luckiest-number-7-day-contest-for-windows-7.html">promotion</a> to get people to upgrade to Windows 7. It was a contest to win a copy of Windows 7. Guess what – yup, I won! Check it out over on the <a href="http://blogs.parallels.com/consumertech/2010/05/they-call-him-smith-bennett-smith-3-days-left-to-win-a-copy-of-windows-7.html">Parallels Consumer Tech Blog</a>.</p>
-
-<p>Don’t forget to send your own tweet to <a href="http://twitter.com/ParallelsMac">@ParallelsMac</a> to enter.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/05/ipad-as-technical-book-reader-absolutely/">iPad as Technical Book Reader? Absolutely!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-01T00:00:00-07:00" pubdate data-updated="true">May 1<span>st</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have been lugging around technical books for the last 20+ years as part of my profession. The pace with which technology changes means there is a constant stream of new topics to study and that usually means buying books. The thing about many of these technology books is you don’t read them like a pleasure book. You tend to use them as a reference while you climb a new learning curve. It goes kind of like this:</p>
-
-<ul>
-<li>Microsoft, Apple or someone else releases a new operating system or application. => More books</li>
-<li>Open source tools like Subversion, Git or whatever gains in popularity. => More books</li>
-<li>Start developing in a new language (Ruby, Python, Objective-C, …) => More books</li>
-</ul>
-
-
-<p>The end result is that my garage is always full of books that either describe out of date technology or are still current but not relavent for the projects I am working on at the moment. Worst still, the books I am currently using usually end up weighing many pounds and take up a lot of room.</p>
-
-<div style="float: right; padding: 8px;">
-  <img src="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/05/leaning_tower_of_books.jpg" alt="" title="leaning_tower_of_books" width="240" height="320" align="right" class="alignright size-full wp-image-343" />
-</div>
-
-
-<p>The difference between carrying around a bunch of paper books and an e-book reader is huge. This stack of books weighs in at 31.8 lbs. Compare that with an iPad that has most of the same books loaded onto it and weights just 1.8 lbs. I know which one I am going to be carrying in my backpack.</p>
-
-<p>Early last year when Amazon released the Kindle2 I purchased one hoping to get rid of this problem by switching to e-books instead of paper books. I did a survey of the technical e-books available and it looked promising. Most of the books I was either currently using or would likely be interested in were now available from Amazon in an e-book version. Amazon made it possible for the Kindle to also read the mobi format so that meant I could also get books from The Pragmatic Programmer and O’Reilly.</p>
-
-<p>You know what they say about the best laid plans and all that. The Kindle worked as advertised. I switched almost exclusively to e-books on the Kindle. The problem was, many of these technical books include figures or illustrations <strong>that are in color</strong> and the Kindle did an awfull job of displaying them. To make matters worse, you couldn’t change the orientation of the Kindle (no landscape mode) so images that didn’t scale well could not be viewed by rotating the device. This was almost enough for me to go back to paper books.</p>
-
-<p>Flash forward about a year and the rumors were flying about Apple building a tablet/slate of some sort. Would it be a book reader, a netbook computer, a movie viewer or what? No one knew for sure but everyone was speculating. Then the announcement came that Apple would hold a special event to announce “Something they have been working on”. My Kindle2 went up on craigslist that day (about a week before the special event was held) and I sold it the next day. I love craigslist; it just works! The ironic part is I sold it to a software engineer who works for Apple.</p>
-
-<p>We all know what happened next. Steve told us all what we needed (an iPad) and when we would be giving him our money. I listened, reserved one for pickup on the release day and the rest is history. Apple ships the iPad with an e-book reader called iBooks and they have an on-line bookstore where you can purchase e-books. Amazon shipped a Kindle reader for the iPad that uses wifi to sync with the Kindle on-line bookstore.</p>
-
-<p>Here is a picture of my new 1.8 lb iPad that makes an excellent technical book reader.</p>
-
-<div style="float: left; padding: 8px;">
-  <img src="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/05/ipad_under_2lbs.jpg" alt="" title="ipad_under_2lbs" width="240" height="320" class="aligncenter size-full wp-image-344" />
-</div>
-
-
-<p>All of my existing Kindle books transfered over to the iPad without any trouble. The Pragmatic Programmer books I had were all in the mobi format which the Kindle software on the iPad cannot read. No problem – I just downloaded the epub format of the same books from the Pragmatic Programmer on-line bookstore.</p>
-
-<p>Publishers sell their e-books in one or more of the following formats:</p>
-
-<ul>
-<li>PDF – Adobe format that permits publishers to lock the content down with DRM. In some cases they can be very restrictive about which applications you are able to read the books in. My advice is to avoid purchasing e-books from publishers who use this format unless they are DRM-free and also offer one of the following formats. There just isn’t any reason for you to be locked into PDF when the iPad is such a great reader.</li>
-<li>mobi – A mobile electronic book format that was very popular when the PocketPC and Palm were in their hayday. You can read mobi files with the Kindle device, but not with the Kindle software on the iPad.</li>
-<li>epub – Modern electronic book format. Supported in the Apple iBooks application. This is the best choice for an open format on the iPad right now. I favor epub over other formats. A very nice feature of the iBooks applications is the ability to search through books.</li>
-<li>Amazon – Proprietary format from Amazon. The Kindle reader software for the iPad is excellent so if a book is only available from the Kindle store I go ahead and purchase it there with no regrets. The only downside right now is the lack of a good search feature in the Kindle software. Hopefully they will be correcting this in an update.</li>
-</ul>
-
-
-<blockquote><p>As an aside, everyone should make their e-books available like the folks at PragProg do. When you buy a book from them you get it in three formats (PDF, mobi and epub). This means you can read your book on basically any electronic device of your choosing. O’Reilly is almost as good.</p></blockquote>
-
-<p>To round things out here are a couple pictures of the user interface of iBooks and Kindle Reader for iPad.</p>
-
-<p>This first two images are of the iBooks software. The image on the left illustrates the support for color and the nice page turn animations help you forget that this is not paper after a while. As is typical of most Apple user interfaces, this one has excellent usability. On the right you have a look at the search feature as implemented in the iBooks application. I have found that it works well, but is a bit slow. I would like to see Apple improve on the performance in an update.</p>
-
-<div width="100%">
-  <div style="float: left; padding: 8px;">
-    <img src="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/05/ibooks_vert_pageturn.jpg" alt="" title="ibooks_vert_pageturn" width="240" height="320" class="aligncenter size-full wp-image-336" />
-  </div>
-  
-  <div style="float: left; padding: 8px;">
-    <img src="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/05/ibooks_vert_serach.jpg" alt="" title="ibooks_vert_serach" width="240" height="320" class="aligncenter size-full wp-image-335" />
-  </div>
-</div>
-
-
-<p>The next image is of the Amazon Kindle for iPad software. Here I am showing you what the controls are like for selecting a font size and adjusting the background color and brightness. As I mentioned earlier, the main thing missing from the Kindle software is a search feature.</p>
-
-<div  style="float: left; padding: 8px;">
-  <img src="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/05/kindle_font.jpg" alt="" title="kindle_font" width="240" height="320" class="aligncenter size-full wp-image-334" />
-</div>
-
-
-<p>I would really like to have all my e-books in a single reader. Being forced to keep some in iBooks and others in the Kindle application really sucks, but I’m not holding my breath for a solution anytime soon.</p>
-
-<p>Technical books are often used as references. Neither of the e-book reading applications do a good job with letting you keep multiple books open and rapidly switch between them. It would really improve the usefulness of the applications if you could keep more than one book open and use a multi-touch gesture to switch between them.</p>
-
-<p>If you don’t have an iPad yet, run (don’t walk) to your nearest Apple store and pick one up. You won’t regret it.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/05/busy-folks-at-big-nerd-ranch/">Busy Folks at Big Nerd Ranch!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-01T00:00:00-07:00" pubdate data-updated="true">May 1<span>st</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div style="float: right;">
-  <a href="http://www.amazon.com/iPhone-Programming-Ranch-Guide-ebook/dp/B003EINO1W/ref=pd_rhf_p_t_1"><img src="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/05/iphone_programming_bnr.jpg" alt="" title="iphone_programming_bnr" width="320" height="320" class="alignleft size-full wp-image-338" /></a>
-</div>
-
-
-<p>The folks over at <a href="http://www.bignerdranch.com">Big Nerd Ranch</a> are really busy these days. In addition to building a new learning center it looks like they are writing no less than three new books to be released this year. If you have ever read through <em>Cocoa Programming for Mac OS X</em> by Aaron Hillegass or had the fortune to attend one of his classes then you already know that these new books will likely become a core part of your programming library in the future.</p>
-
-<p>The first new title is <a href="http://www.bignerdranch.com/book/iphone_programming_the_big_nerd_ranch_guide"><em>iPhone Programming: The Big Nerd Ranch Guide</em>, written by Joe Conway and Aaron Hillegass</a>. According to Amazon this book will be available for purchase on May 4th in paper form and May 6th for the Kindle. You can pre-order it now.</p>
-
-<div style="float: left;">
-  <a href="http://www.amazon.com/More-Cocoa-Programming-Mac-OS/dp/0321706269/ref=pd_rhf_p_t_3"><img src="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/05/more_cocoa_programming_bnr.jpg" alt="" title="more_cocoa_programming_bnr" width="300" height="300" class="alignleft size-full wp-image-386" /></a>
-</div>
-
-
-<p>The second new book is titled <a href="http://www.amazon.com/More-Cocoa-Programming-Mac-OS/dp/0321706269/ref=pd_rhf_p_t_3"><em>More Cocoa Programming for Mac OS X: The Big Nerd Ranch Guide</em></a> and is being written by Aaron Hillegass and Juan Pablo Claude. According to Amazon’s web site this book will be available in mid-July, 2010. At this point it appears the book will only be available in print form. Hopefully this will change and a Kindle version will be made available.</p>
-
-<p>The third new book will be titled <a href="http://www.amazon.com/Objective-C-Programming-Ranch-Guide-Guides/dp/0321706285/ref=pd_sim_b_40"><em>Objective-C Programming: The Big Nerd Ranch Guide</em></a> and is being written by Aaron Hillegass and Mark Fenoglio. Amazon pegs the release of this book sometime in December, 2010. Cover art for this book has not been released yet.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/05/a-few-small-upgrades-to-the-blog/">A Few Small Upgrades to the Blog&#8230;</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-05-01T00:00:00-07:00" pubdate data-updated="true">May 1<span>st</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I just installed the Disqus commenting system on the blog and also added the WP Greet Box plugin.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/04/ipad-review-first-24-hours/">iPad Review &#8211; First 24 Hours</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-04-05T00:00:00-07:00" pubdate data-updated="true">Apr 5<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>My experience with it so far is mixed. Like you I tried to touch-type on the keyboard and that really didn’t work at all. I have tried to do the two finger plus thumbs approach and am not that fast typing like that. The keyboard is big enough that I find it kind of weird to hold it in one hand and type with the other. My hand has to move too far to get all the keys unlike on the iPhone where everything is much closer together. I have not tried to hook up a bluetooth keyboard yet either. I expect that to work much better for things like typing e-mails.</p>
-
-<p>I ended up purchasing the 64GB version instead of the 16GB version. The change was based on a recommendation I heard on MacBreak Weekly. They mentioned that based on their preview use (had it for about a week before April 3rd) they feel that if you are going to use it to read books then you will easily fill the 16GB and then have to pick/choose which items to sync to your iPad. With the 64GB version you can just dump all the books/PDFs you want on it and not worry about running out of space.</p>
-
-<p>I have the Kindle for iPad application on it and pulled down all my Kindle books. Very cool! It just works! I also downloaded the iBooks application from the App Store. That application reads the ePub format. I have purchased a number of technical books in the past few years from Pragmatic Programmers. All of their books are available in ePub format so I downloaded that version and loaded them into the iPad too.</p>
-
-<p>So far I really like having all of my technical books in one place like this. I have not tried reading out in full sunlight, but expect it will be an issue. For reading indoors it works fine. Not as easy on the eyes as the Kindle, but it shows all of the technical illustrations in the books in full color which is much better.</p>
-
-<p>I purchased the Pages, Numbers and Keynote applications from Apple also. They really show off the sort of things you can accomplish with the iPad, but the crash a lot. I feel more like a beta tester of these apps than just a user. Sort of a let down, but then I have been here before with other Apple products. Eventually these will be great applications.</p>
-
-<p>With the iPad I also purchased the Apple case for the iPad. I was really surprised when I opened it up at home. The quality of the case is really bad. It only cost $39, but it sucks compared to the case that Amazon sells for the Kindle. After about 2 hours of using the iPad in the case I got so annoyed with it that now I am using the iPad without a case. I am shopping for a different case now.</p>
-
-<p>I have had Safari crash on me more than once now on the iPad. It seems like the crashes were always on very long (lots of scrolling) web pages so maybe it is a memory issue. I’m not sure, but the end result is you are just reading along on the page and all of a sudden you are back to the menu of icons wondering how you got there.</p>
-
-<p>Even more surprising than the crashes of apps on the device is the crash I experienced this morning of the Xcode development environment on the desktop. Apple released an update to Xcode that includes all of the iPad development tools yesterday. I was working on a sample application this morning, following the instructions on how to build an app when all of a sudden Xcode just up and crashed on me. This is very unusual. Earlier versions of Xcode have been very stable for years.</p>
-
-<p>Over all I think purchasing one as a developer at this point is a good move, but for basic consumers it is probably more sensible to wait about 3 months before jumping on the iPad bandwagon.</p>
 </div>
   
   
