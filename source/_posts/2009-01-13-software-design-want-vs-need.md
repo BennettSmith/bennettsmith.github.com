@@ -1,0 +1,35 @@
+---
+title: 'Software Design: Want vs. Need'
+author: bsmith
+layout: post
+permalink: /2009/01/software-design-want-vs-need/
+categories:
+  - Apple
+  - Death March
+  - Software
+tags:
+  - Architecture
+  - LinkedIn
+  - Software Design
+---
+I am always surprised at how short-sighted some folks are who design software. It seems like there is no shortage of people who feel that you just have to *listen to your customers* to build great software. In my experience, if all you do is build what the customer says he/she wants then your software will likely be obsolete in a year (maybe even less time) and your customers will ultimately be very unhappy with you.
+
+To build great software you have to listen intently to what the customer is saying so you can identify the pain and suffering that usually lies unexpressed just below the surface of comments like “All I need is a widget that does X.”
+
+Check out what BusinessWeek magazine had to say about this phenomenon:
+
+> “It’s really hard to design products by focus groups. A lot of times, people don’t know what they want until you show it to them.”  
+> – BusinessWeek, May 25 1998 
+
+Probably my favorite quote about building great software came from someone on the team that built the NeXT computer. I think they really understood what it takes to build quality systems (software and hardware) that last.
+
+> “It took us three years to build the NeXT computer. If we’d given customers what they said they wanted, we’d have built a computer they’d have been happy with a year after we spoke to them – not something they’d want now.”  
+> – Someone on the NeXT Team 
+
+It all comes down to making a decision to apply your knowledge and understanding of technology to address the immediate problems for the customer and to push beyond so you can give the customer a system they can grow with. The ultimate measure of success is when a user says “Hey, now I need to do Y with the widget.” and you can reply with something like “Okay, this is how you do that with the system we built.” If you find yourself replying with something more like “Hmmm, we could add that to the software but it will cost you.” then you are doing it wrong!
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_40">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fsoftware-design-want-vs-need%2F&linkname=Software%20Design%3A%20Want%20vs.%20Need" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fsoftware-design-want-vs-need%2F&linkname=Software%20Design%3A%20Want%20vs.%20Need" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fsoftware-design-want-vs-need%2F&linkname=Software%20Design%3A%20Want%20vs.%20Need" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>

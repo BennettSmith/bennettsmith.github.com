@@ -1,0 +1,28 @@
+---
+title: 'Hike in the East Bay &#8211; Get a Commerative T-Shirt!'
+author: bsmith
+layout: post
+permalink: /2009/01/hike-in-the-east-bay-get-a-commerative-t-shirt/
+categories:
+  - Hiking
+tags:
+  - LinkedIn
+---
+<div id="attachment_172" class="wp-caption aligncenter" style="width: 478px">
+  <a href="http://www.regionalparksfoundation.org/Page.aspx?pid=255"><img src="http://idvlpsw.files.wordpress.com/2009/01/ebparks-trails-challenge-2009.png" alt="Trails Challenge 2009" title="ebparks-trails-challenge-2009" width="468" height="178" class="size-full wp-image-172" /></a><p class="wp-caption-text">
+    Trails Challenge 2009
+  </p>
+</div>
+
+EBRPD is celebrating its 75th Anniversary and has partnered with Kaiser Permanente and the Regional Parks Foundation to make the Trails Challenge program free* for everyone (while supplies last). In an effort to go “green,” this year’s program will be hosted completely online. Register to receive the 2009 guidebook filled with 20 of the best hikes in the Regional Parks, an organic T-shirt, and commemorative pin for those who complete the challenge.
+
+[Sign up][1] and [Get Out There][2]. See you on the trails!
+
+<div class="addtoany_share_save_container">
+  <div class="a2a_kit a2a_target addtoany_list" id="wpa2a_43">
+    <a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fhike-in-the-east-bay-get-a-commerative-t-shirt%2F&linkname=Hike%20in%20the%20East%20Bay%20%26%238211%3B%20Get%20a%20Commerative%20T-Shirt%21" title="Facebook" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/facebook.png" width="16" height="16" alt="Facebook" /></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fhike-in-the-east-bay-get-a-commerative-t-shirt%2F&linkname=Hike%20in%20the%20East%20Bay%20%26%238211%3B%20Get%20a%20Commerative%20T-Shirt%21" title="Twitter" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/twitter.png" width="16" height="16" alt="Twitter" /></a><a class="a2a_button_linkedin" href="http://www.addtoany.com/add_to/linkedin?linkurl=http%3A%2F%2Fwww.idevelopsoftware.com%2F2009%2F01%2Fhike-in-the-east-bay-get-a-commerative-t-shirt%2F&linkname=Hike%20in%20the%20East%20Bay%20%26%238211%3B%20Get%20a%20Commerative%20T-Shirt%21" title="LinkedIn" rel="nofollow" target="_blank"><img src="http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/icons/linkedin.png" width="16" height="16" alt="LinkedIn" /></a><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save" style="background:url(http://www.idevelopsoftware.com/wp-content/plugins/add-to-any/favicon.png) no-repeat scroll 9px 0px !important;padding:0 0 0 30px;display:inline-block;height:16px;line-height:16px;vertical-align:middle">More options</a>
+  </div>
+</div>
+
+ [1]: http://www.regionalparksfoundation.org/Page.aspx?pid=255
+ [2]: http://www.ebparks.org/parks

@@ -1,0 +1,9 @@
+[submodule "addon-plugins/octopress-appstore"]
+	path = addon-plugins/octopress-appstore
+	url = https://github.com/otaviocc/octopress-appstore.git
+[submodule "addon-plugins/Octopress-SpeakerDeck-Plugin"]
+	path = addon-plugins/Octopress-SpeakerDeck-Plugin
+	url = https://github.com/saxonmatt/Octopress-SpeakerDeck-Plugin.git
+[submodule "addon-plugins/octopress-graphviz"]
+	path = addon-plugins/octopress-graphviz
+	url = https://github.com/kui/octopress-graphviz.git

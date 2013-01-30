@@ -30,7 +30,12 @@ root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
 destination: public
-plugins: plugins
+#plugins: plugins
+plugins: 
+  - plugins
+  - addon-plugins/octopress-appstore
+  - addon-plugins/Octopress-SpeakerDeck-Plugin
+  - addon-plugins/octopress-graphviz
 code_dir: downloads/code
 category_dir: blog/categories
 markdown: rdiscount
@@ -89,7 +94,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: idevelopsoftware
 disqus_show_comment_count: false
 
 # Google Analytics
