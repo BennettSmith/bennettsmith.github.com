@@ -4,7 +4,7 @@
   <title><![CDATA[Category: SCM Tools | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/scm-tools/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Git Cheat Sheet]]></title>
     <link href="http://blog.idevelopsoftware.com/2011/03/git-cheat-sheet/"/>
-    <updated>2011-03-19T00:00:00-07:00</updated>
+    <updated>2011-03-19T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2011/03/git-cheat-sheet</id>
     <content type="html"><![CDATA[<p>After watching from the side lines for a few years as git gathered a following I finally made the switch out of necessity as a result of doing more projects in Ruby on Rails. The projects I work on are all hosted in the cloud (Heroku, Engine Yard, or directly on Amazon EC2). Many of the tools I use support direct deployment from git. So I now find myself migrating all of my projects from subversion to git.</p>
 
@@ -27,7 +27,7 @@
   <entry>
     <title type="html"><![CDATA[Perforce launchd configuration on Mac OS Tiger (10.4)]]></title>
     <link href="http://blog.idevelopsoftware.com/2006/02/perforce-launchd-configuration-on-mac-os-tiger-104/"/>
-    <updated>2006-02-20T00:00:00-08:00</updated>
+    <updated>2006-02-20T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2006/02/perforce-launchd-configuration-on-mac-os-tiger-104</id>
     <content type="html"><![CDATA[<p>Mac OS Tiger introduced a new daemon control application called launchd. This application is supposed to take the place of rc scripts, xinitd scripts, and cron jobs. The launchd process is configured using XML text files that conform to the Apple plist DTD. Perforce does not provide a sample launchd configuration file for the p4d daemon.</p>
 
@@ -107,7 +107,7 @@ At this point you should see a p4d process if you run</p>
   <entry>
     <title type="html"><![CDATA[Working with Multiple Depots and/or Client Workspaces]]></title>
     <link href="http://blog.idevelopsoftware.com/2006/01/working-with-multiple-depots-andor-client-workspaces/"/>
-    <updated>2006-01-10T00:00:00-08:00</updated>
+    <updated>2006-01-10T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2006/01/working-with-multiple-depots-andor-client-workspaces</id>
     <content type="html"><![CDATA[<p>A typical configuration of Perforce is handled by setting the P4PORT, P4USER and P4CLIENT environment variables. These variables point at the desired depot, identify the user and select a client workspace.</p>
 
@@ -131,7 +131,7 @@ P4USER=bsmith</p>
   <entry>
     <title type="html"><![CDATA[Configuring a Perforce Depot on Mac OS X 10.4 (Tiger) Server]]></title>
     <link href="http://blog.idevelopsoftware.com/2006/01/configuring-a-perforce-depot-on-mac-os-x-104-tiger-server/"/>
-    <updated>2006-01-06T00:00:00-08:00</updated>
+    <updated>2006-01-06T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2006/01/configuring-a-perforce-depot-on-mac-os-x-104-tiger-server</id>
     <content type="html"><![CDATA[<p>Download the latest version of Perforce from their web site (http://www.perforce.com). To setup the server you really only need to download the command-line tools p4 and p4d. Here are links to the versions I used when setting up my server in January 2006.</p>
 

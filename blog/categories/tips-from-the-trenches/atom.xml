@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tips from the Trenches | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/tips-from-the-trenches/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -18,7 +18,7 @@
 ]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
 /"/>
-    <updated>2010-11-14T00:00:00-08:00</updated>
+    <updated>2010-11-14T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment</id>
     <content type="html"><![CDATA[<p>Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to setup a current environment. My requirements were:</p>
 
@@ -123,7 +123,7 @@ sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --au
   <entry>
     <title type="html"><![CDATA[MacBook Pro Development Environment]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment/"/>
-    <updated>2010-10-01T00:00:00-07:00</updated>
+    <updated>2010-10-01T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment</id>
     <content type="html"><![CDATA[<p>This article covers the steps I went through to setup my MacBook Pro for Google App Engine (GAE) development. I am using the Python runtime in GAE so the focus here is on a Python development environment.</p>
 
@@ -254,7 +254,7 @@ $ cp -r $HOME/DjangoStuff/django-testapp/* .
   <entry>
     <title type="html"><![CDATA[iPad as Technical Book Reader? Absolutely!]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/05/ipad-as-technical-book-reader-absolutely/"/>
-    <updated>2010-05-01T00:00:00-07:00</updated>
+    <updated>2010-05-01T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/05/ipad-as-technical-book-reader-absolutely</id>
     <content type="html"><![CDATA[<p>I have been lugging around technical books for the last 20+ years as part of my profession. The pace with which technology changes means there is a constant stream of new topics to study and that usually means buying books. The thing about many of these technology books is you don’t read them like a pleasure book. You tend to use them as a reference while you climb a new learning curve. It goes kind of like this:</p>
 
@@ -337,7 +337,7 @@ $ cp -r $HOME/DjangoStuff/django-testapp/* .
     <title type="html"><![CDATA[Better than Google: Real answers for Programmers, System Administrators and IT Professionals]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/
 /"/>
-    <updated>2009-06-07T00:00:00-07:00</updated>
+    <updated>2009-06-07T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals</id>
     <content type="html"><![CDATA[<p>Technology is more complex now than ever. It seems like the diversity of topics a programmer, system administrator or IT professional must have some familiarity with grows exponentially. In the office it is all to common to hear someone say “Did you google it?” or “I found a post that looks like it might be related on google.” when trying to sort out complex technology issues.</p>
 
@@ -368,7 +368,7 @@ no registration required.</p>
   <entry>
     <title type="html"><![CDATA[Setting up Unit Testing in Xcode 3.1]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/07/setting-up-unit-testing-in-xcode-31/"/>
-    <updated>2008-07-28T00:00:00-07:00</updated>
+    <updated>2008-07-28T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/07/setting-up-unit-testing-in-xcode-31</id>
     <content type="html"><![CDATA[<p>Xcode includes OCUnit, so you don’t need to get a copy. But, you might want to take a look at their website (http://sente.epfl.ch/software/ocunit/) for information and tutorials on how OCUnit is intended to be used.</p>
 

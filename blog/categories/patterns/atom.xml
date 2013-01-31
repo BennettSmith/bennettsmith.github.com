@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Patterns | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/patterns/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Separate Interface and Implementation in C/C++]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/04/separate-interface-and-implementation-in-cc/"/>
-    <updated>2008-04-02T00:00:00-07:00</updated>
+    <updated>2008-04-02T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/04/separate-interface-and-implementation-in-cc</id>
     <content type="html"><![CDATA[<p>I spend most of my time developing software in C/C++, and have done so for many years now. One thing that always catches me by surprise is when I find code written by someone who decides to put implementation details of a function or method in a header file. The only reason I can come up with for why developers would do this is pure laziness.</p>
 

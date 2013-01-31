@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/software/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[How I setup Ubuntu 11.04 Server using VirtualBox on a MacBook Air]]></title>
     <link href="http://blog.idevelopsoftware.com/2011/07/how-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air/"/>
-    <updated>2011-07-22T00:00:00-07:00</updated>
+    <updated>2011-07-22T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2011/07/how-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air</id>
     <content type="html"><![CDATA[<p>Download and install the latest version of VirtualBox from http://www.virtualbox.org. As I write this article the current version is 4.1.</p>
 
@@ -306,7 +306,7 @@
 ]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
 /"/>
-    <updated>2010-11-14T00:00:00-08:00</updated>
+    <updated>2010-11-14T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment</id>
     <content type="html"><![CDATA[<p>Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to setup a current environment. My requirements were:</p>
 
@@ -411,7 +411,7 @@ sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --au
   <entry>
     <title type="html"><![CDATA[Attending iOSDevCamp 2010 &#8211; Building Meet4Drinks]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks/"/>
-    <updated>2010-08-19T00:00:00-07:00</updated>
+    <updated>2010-08-19T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks</id>
     <content type="html"><![CDATA[<p><a href="http://www.iosdevcamp.org"><img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/08/iosdevcamp2010.png" alt="iosdevcamp2010.png" title="iosdevcamp2010.png" border="0" width="250" height="37"  style="padding: 5px; padding-right: 20px; float:left;" /></a><br/>
 I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is a great event where iPhone/iPad software developers and UI/UX designers come together for a weekend of coding and exploration of ideas around how to use iOS devices. The event organizers hold something called a Hackathon where attendees form ad-hoc teams around shared application ideas and spend two full days designing and coding like crazy to build something cool. Everyone has a great time and meets like-minded folks in the developer community.</p>
@@ -429,7 +429,7 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
   <entry>
     <title type="html"><![CDATA[Software Developers are Human Beings]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/12/software-developers-are-human-beings/"/>
-    <updated>2009-12-07T00:00:00-08:00</updated>
+    <updated>2009-12-07T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/12/software-developers-are-human-beings</id>
     <content type="html"><![CDATA[<p>Over on the “Shaping Software” site they just posted a short article titled <a href="http://shapingsoftware.com/2009/12/07/lessons-in-software-from-eric-brechner/">“Lessons in Software from Eric Brechner.”</a> Eric is the Director of Development Excellence on the Engineering Excellence team at Microsoft. The article focuses on his insights about what attributes shape developers into software engineers. He suggests that strength and balance attributes are important. Briefly, they are enumerated as follows:</p>
 
@@ -461,7 +461,7 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
     <title type="html"><![CDATA[Better than Google: Real answers for Programmers, System Administrators and IT Professionals]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/
 /"/>
-    <updated>2009-06-07T00:00:00-07:00</updated>
+    <updated>2009-06-07T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals</id>
     <content type="html"><![CDATA[<p>Technology is more complex now than ever. It seems like the diversity of topics a programmer, system administrator or IT professional must have some familiarity with grows exponentially. In the office it is all to common to hear someone say “Did you google it?” or “I found a post that looks like it might be related on google.” when trying to sort out complex technology issues.</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: System Administration | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/system-administration/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Capturing AirPort Extreme Log with Lion Server Syslog]]></title>
     <link href="http://blog.idevelopsoftware.com/2011/08/capturing-airport-extreme-log-with-lion-server-syslog/"/>
-    <updated>2011-08-09T00:00:00-07:00</updated>
+    <updated>2011-08-09T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2011/08/capturing-airport-extreme-log-with-lion-server-syslog</id>
     <content type="html"><![CDATA[<p>Mac OS X Lion Server can be used as a syslog server to capture the log messages from an Apple AirPort Extreme wireless router. The instructions below walk you through setting this up.</p>
 
@@ -39,272 +39,70 @@ $ sudo launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist
 
 <p>Here is a complete example of the modified plist file. The new key is the NetworkListener. Be sure you add it nested inside the Sockets key or it will not work.</p>
 
-<div id="gist1134216" class="gist">
-  <div class="gist-file">
-    <div class="gist-data gist-syntax">
-      <div class="file-data">
-        <table cellpadding="0" cellspacing="0" class="lines highlight">
-          <tr>
-            <td class="line-numbers">
-              <span class="line-number" id="file-com-apple-syslogd-plist-L1" rel="file-com-apple-syslogd-plist-L1">1</span> <span class="line-number" id="file-com-apple-syslogd-plist-L2" rel="file-com-apple-syslogd-plist-L2">2</span> <span class="line-number" id="file-com-apple-syslogd-plist-L3" rel="file-com-apple-syslogd-plist-L3">3</span> <span class="line-number" id="file-com-apple-syslogd-plist-L4" rel="file-com-apple-syslogd-plist-L4">4</span> <span class="line-number" id="file-com-apple-syslogd-plist-L5" rel="file-com-apple-syslogd-plist-L5">5</span> <span class="line-number" id="file-com-apple-syslogd-plist-L6" rel="file-com-apple-syslogd-plist-L6">6</span> <span class="line-number" id="file-com-apple-syslogd-plist-L7" rel="file-com-apple-syslogd-plist-L7">7</span> <span class="line-number" id="file-com-apple-syslogd-plist-L8" rel="file-com-apple-syslogd-plist-L8">8</span> <span class="line-number" id="file-com-apple-syslogd-plist-L9" rel="file-com-apple-syslogd-plist-L9">9</span> <span class="line-number" id="file-com-apple-syslogd-plist-L10" rel="file-com-apple-syslogd-plist-L10">10</span> <span class="line-number" id="file-com-apple-syslogd-plist-L11" rel="file-com-apple-syslogd-plist-L11">11</span> <span class="line-number" id="file-com-apple-syslogd-plist-L12" rel="file-com-apple-syslogd-plist-L12">12</span> <span class="line-number" id="file-com-apple-syslogd-plist-L13" rel="file-com-apple-syslogd-plist-L13">13</span> <span class="line-number" id="file-com-apple-syslogd-plist-L14" rel="file-com-apple-syslogd-plist-L14">14</span> <span class="line-number" id="file-com-apple-syslogd-plist-L15" rel="file-com-apple-syslogd-plist-L15">15</span> <span class="line-number" id="file-com-apple-syslogd-plist-L16" rel="file-com-apple-syslogd-plist-L16">16</span> <span class="line-number" id="file-com-apple-syslogd-plist-L17" rel="file-com-apple-syslogd-plist-L17">17</span> <span class="line-number" id="file-com-apple-syslogd-plist-L18" rel="file-com-apple-syslogd-plist-L18">18</span> <span class="line-number" id="file-com-apple-syslogd-plist-L19" rel="file-com-apple-syslogd-plist-L19">19</span> <span class="line-number" id="file-com-apple-syslogd-plist-L20" rel="file-com-apple-syslogd-plist-L20">20</span> <span class="line-number" id="file-com-apple-syslogd-plist-L21" rel="file-com-apple-syslogd-plist-L21">21</span> <span class="line-number" id="file-com-apple-syslogd-plist-L22" rel="file-com-apple-syslogd-plist-L22">22</span> <span class="line-number" id="file-com-apple-syslogd-plist-L23" rel="file-com-apple-syslogd-plist-L23">23</span> <span class="line-number" id="file-com-apple-syslogd-plist-L24" rel="file-com-apple-syslogd-plist-L24">24</span> <span class="line-number" id="file-com-apple-syslogd-plist-L25" rel="file-com-apple-syslogd-plist-L25">25</span> <span class="line-number" id="file-com-apple-syslogd-plist-L26" rel="file-com-apple-syslogd-plist-L26">26</span> <span class="line-number" id="file-com-apple-syslogd-plist-L27" rel="file-com-apple-syslogd-plist-L27">27</span> <span class="line-number" id="file-com-apple-syslogd-plist-L28" rel="file-com-apple-syslogd-plist-L28">28</span> <span class="line-number" id="file-com-apple-syslogd-plist-L29" rel="file-com-apple-syslogd-plist-L29">29</span> <span class="line-number" id="file-com-apple-syslogd-plist-L30" rel="file-com-apple-syslogd-plist-L30">30</span> <span class="line-number" id="file-com-apple-syslogd-plist-L31" rel="file-com-apple-syslogd-plist-L31">31</span> <span class="line-number" id="file-com-apple-syslogd-plist-L32" rel="file-com-apple-syslogd-plist-L32">32</span> <span class="line-number" id="file-com-apple-syslogd-plist-L33" rel="file-com-apple-syslogd-plist-L33">33</span> <span class="line-number" id="file-com-apple-syslogd-plist-L34" rel="file-com-apple-syslogd-plist-L34">34</span> <span class="line-number" id="file-com-apple-syslogd-plist-L35" rel="file-com-apple-syslogd-plist-L35">35</span> <span class="line-number" id="file-com-apple-syslogd-plist-L36" rel="file-com-apple-syslogd-plist-L36">36</span> <span class="line-number" id="file-com-apple-syslogd-plist-L37" rel="file-com-apple-syslogd-plist-L37">37</span> <span class="line-number" id="file-com-apple-syslogd-plist-L38" rel="file-com-apple-syslogd-plist-L38">38</span> <span class="line-number" id="file-com-apple-syslogd-plist-L39" rel="file-com-apple-syslogd-plist-L39">39</span> <span class="line-number" id="file-com-apple-syslogd-plist-L40" rel="file-com-apple-syslogd-plist-L40">40</span> <span class="line-number" id="file-com-apple-syslogd-plist-L41" rel="file-com-apple-syslogd-plist-L41">41</span> <span class="line-number" id="file-com-apple-syslogd-plist-L42" rel="file-com-apple-syslogd-plist-L42">42</span> <span class="line-number" id="file-com-apple-syslogd-plist-L43" rel="file-com-apple-syslogd-plist-L43">43</span> <span class="line-number" id="file-com-apple-syslogd-plist-L44" rel="file-com-apple-syslogd-plist-L44">44</span> <span class="line-number" id="file-com-apple-syslogd-plist-L45" rel="file-com-apple-syslogd-plist-L45">45</span> <span class="line-number" id="file-com-apple-syslogd-plist-L46" rel="file-com-apple-syslogd-plist-L46">46</span> <span class="line-number" id="file-com-apple-syslogd-plist-L47" rel="file-com-apple-syslogd-plist-L47">47</span> <span class="line-number" id="file-com-apple-syslogd-plist-L48" rel="file-com-apple-syslogd-plist-L48">48</span> <span class="line-number" id="file-com-apple-syslogd-plist-L49" rel="file-com-apple-syslogd-plist-L49">49</span> <span class="line-number" id="file-com-apple-syslogd-plist-L50" rel="file-com-apple-syslogd-plist-L50">50</span> <span class="line-number" id="file-com-apple-syslogd-plist-L51" rel="file-com-apple-syslogd-plist-L51">51</span> <span class="line-number" id="file-com-apple-syslogd-plist-L52" rel="file-com-apple-syslogd-plist-L52">52</span> <span class="line-number" id="file-com-apple-syslogd-plist-L53" rel="file-com-apple-syslogd-plist-L53">53</span> <span class="line-number" id="file-com-apple-syslogd-plist-L54" rel="file-com-apple-syslogd-plist-L54">54</span> <span class="line-number" id="file-com-apple-syslogd-plist-L55" rel="file-com-apple-syslogd-plist-L55">55</span> <span class="line-number" id="file-com-apple-syslogd-plist-L56" rel="file-com-apple-syslogd-plist-L56">56</span> <span class="line-number" id="file-com-apple-syslogd-plist-L57" rel="file-com-apple-syslogd-plist-L57">57</span> <span class="line-number" id="file-com-apple-syslogd-plist-L58" rel="file-com-apple-syslogd-plist-L58">58</span> <span class="line-number" id="file-com-apple-syslogd-plist-L59" rel="file-com-apple-syslogd-plist-L59">59</span> <span class="line-number" id="file-com-apple-syslogd-plist-L60" rel="file-com-apple-syslogd-plist-L60">60</span> <span class="line-number" id="file-com-apple-syslogd-plist-L61" rel="file-com-apple-syslogd-plist-L61">61</span>
-            </td>
-            
-            <td class="line-data">
-              <pre class="line-pre"><div class="line" id="file-com-apple-syslogd-plist-LC1">
-  <span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC2">
-  <span class="cp">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC3">
-  <span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC4">
-  <span class="nt">&lt;dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC5">
-  <span class="nt">&lt;key&gt;</span>EnableTransactions<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC6">
-  <span class="nt">&lt;true/&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC7">
-  <span class="nt">&lt;key&gt;</span>EnvironmentVariables<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC8">
-  <span class="nt">&lt;dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC9">
-  <span class="nt">&lt;key&gt;</span>ASL_DISABLE<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC10">
-  <span class="nt">&lt;string&gt;</span>1<span class="nt">&lt;/string&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC11">
-  <span class="nt">&lt;/dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC12">
-  <span class="nt">&lt;key&gt;</span>HopefullyExitsLast<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC13">
-  <span class="nt">&lt;true/&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC14">
-  <span class="nt">&lt;key&gt;</span>JetsamProperties<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC15">
-  <span class="nt">&lt;dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC16">
-  <span class="nt">&lt;key&gt;</span>JetsamMemoryLimit<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC17">
-  <span class="nt">&lt;integer&gt;</span>300<span class="nt">&lt;/integer&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC18">
-  <span class="nt">&lt;key&gt;</span>JetsamPriority<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC19">
-  <span class="nt">&lt;integer&gt;</span>-49<span class="nt">&lt;/integer&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC20">
-  <span class="nt">&lt;/dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC21">
-  <span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC22">
-  <span class="nt">&lt;string&gt;</span>com.apple.syslogd<span class="nt">&lt;/string&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC23">
-  <span class="nt">&lt;key&gt;</span>MachServices<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC24">
-  <span class="nt">&lt;dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC25">
-  <span class="nt">&lt;key&gt;</span>com.apple.system.logger<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC26">
-  <span class="nt">&lt;true/&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC27">
-  <span class="nt">&lt;/dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC28">
-  <span class="nt">&lt;key&gt;</span>OnDemand<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC29">
-  <span class="nt">&lt;false/&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC30">
-  <span class="nt">&lt;key&gt;</span>ProgramArguments<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC31">
-  <span class="nt">&lt;array&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC32">
-  <span class="nt">&lt;string&gt;</span>/usr/sbin/syslogd<span class="nt">&lt;/string&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC33">
-  <span class="nt">&lt;/array&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC34">
-  <span class="nt">&lt;key&gt;</span>Sockets<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC35">
-  <span class="nt">&lt;dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC36">
-  <span class="nt">&lt;key&gt;</span>NetworkListener<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC37">
-  <span class="nt">&lt;dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC38">
-  <span class="nt">&lt;key&gt;</span>SockServiceName<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC39">
-  <span class="nt">&lt;string&gt;</span>syslog<span class="nt">&lt;/string&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC40">
-  <span class="nt">&lt;key&gt;</span>SockType<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC41">
-  <span class="nt">&lt;string&gt;</span>dgram<span class="nt">&lt;/string&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC42">
-  <span class="nt">&lt;/dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC43">
-  <span class="nt">&lt;key&gt;</span>AppleSystemLogger<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC44">
-  <span class="nt">&lt;dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC45">
-  <span class="nt">&lt;key&gt;</span>SockPathMode<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC46">
-  <span class="nt">&lt;integer&gt;</span>438<span class="nt">&lt;/integer&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC47">
-  <span class="nt">&lt;key&gt;</span>SockPathName<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC48">
-  <span class="nt">&lt;string&gt;</span>/var/run/asl_input<span class="nt">&lt;/string&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC49">
-  <span class="nt">&lt;/dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC50">
-  <span class="nt">&lt;key&gt;</span>BSDSystemLogger<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC51">
-  <span class="nt">&lt;dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC52">
-  <span class="nt">&lt;key&gt;</span>SockPathMode<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC53">
-  <span class="nt">&lt;integer&gt;</span>438<span class="nt">&lt;/integer&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC54">
-  <span class="nt">&lt;key&gt;</span>SockPathName<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC55">
-  <span class="nt">&lt;string&gt;</span>/var/run/syslog<span class="nt">&lt;/string&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC56">
-  <span class="nt">&lt;key&gt;</span>SockType<span class="nt">&lt;/key&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC57">
-  <span class="nt">&lt;string&gt;</span>dgram<span class="nt">&lt;/string&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC58">
-  <span class="nt">&lt;/dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC59">
-  <span class="nt">&lt;/dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC60">
-  <span class="nt">&lt;/dict&gt;</span>
-</div>
-
-<div class="line" id="file-com-apple-syslogd-plist-LC61">
-  <span class="nt">&lt;/plist&gt;</span>
-</div></pre>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    
-    <div class="gist-meta">
-      <a href="https://gist.github.com/raw/1134216/206305eff1bcd3f621210054620d08d55519251d/com.apple.syslogd.plist" style="float:right">view raw</a> <a href="https://gist.github.com/1134216#file-com-apple-syslogd-plist" style="float:right; margin-right:10px; color:#666;">com.apple.syslogd.plist</a> <a href="https://gist.github.com/1134216">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
-    </div>
-  </div>
-</div>
-
+<p><div><script src='https://gist.github.com/1134216.js'></script>
+<noscript><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+	&lt;key&gt;EnableTransactions&lt;/key&gt;
+	&lt;true/&gt;
+	&lt;key&gt;EnvironmentVariables&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;ASL_DISABLE&lt;/key&gt;
+		&lt;string&gt;1&lt;/string&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;HopefullyExitsLast&lt;/key&gt;
+	&lt;true/&gt;
+	&lt;key&gt;JetsamProperties&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;JetsamMemoryLimit&lt;/key&gt;
+		&lt;integer&gt;300&lt;/integer&gt;
+		&lt;key&gt;JetsamPriority&lt;/key&gt;
+		&lt;integer&gt;-49&lt;/integer&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;Label&lt;/key&gt;
+	&lt;string&gt;com.apple.syslogd&lt;/string&gt;
+	&lt;key&gt;MachServices&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;com.apple.system.logger&lt;/key&gt;
+		&lt;true/&gt;
+	&lt;/dict&gt;
+	&lt;key&gt;OnDemand&lt;/key&gt;
+	&lt;false/&gt;
+	&lt;key&gt;ProgramArguments&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;/usr/sbin/syslogd&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;Sockets&lt;/key&gt;
+	&lt;dict&gt;
+		&lt;key&gt;NetworkListener&lt;/key&gt;
+		&lt;dict&gt;
+			&lt;key&gt;SockServiceName&lt;/key&gt;
+			&lt;string&gt;syslog&lt;/string&gt;
+			&lt;key&gt;SockType&lt;/key&gt;
+			&lt;string&gt;dgram&lt;/string&gt;
+		&lt;/dict&gt;
+		&lt;key&gt;AppleSystemLogger&lt;/key&gt;
+		&lt;dict&gt;
+			&lt;key&gt;SockPathMode&lt;/key&gt;
+			&lt;integer&gt;438&lt;/integer&gt;
+			&lt;key&gt;SockPathName&lt;/key&gt;
+			&lt;string&gt;/var/run/asl_input&lt;/string&gt;
+		&lt;/dict&gt;
+		&lt;key&gt;BSDSystemLogger&lt;/key&gt;
+		&lt;dict&gt;
+			&lt;key&gt;SockPathMode&lt;/key&gt;
+			&lt;integer&gt;438&lt;/integer&gt;
+			&lt;key&gt;SockPathName&lt;/key&gt;
+			&lt;string&gt;/var/run/syslog&lt;/string&gt;
+			&lt;key&gt;SockType&lt;/key&gt;
+			&lt;string&gt;dgram&lt;/string&gt;
+		&lt;/dict&gt;
+	&lt;/dict&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre></noscript></div>
+</p>
 
 <p>Once you have updated the plist the next step is to update the configuration of your AirPort Extreme. Under Applications => Utilities open the AirPort Utility and connect to your AirPort Extreme. On the Advanced tab select the “Logging &amp; Statistics” panel. Enter the IP address of your Mac OS X Lion Server in “Syslog Destination Address:” and select “6 – Informational” for the “Syslog Level:”. You can see a screenshot of the AirPort Utility settings below. Update the settings on the AirPort Extreme.</p>
 

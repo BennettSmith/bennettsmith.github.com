@@ -4,7 +4,7 @@
   <title><![CDATA[Category: C++ | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/c-/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Nokia places Qt under LGPL License &#8211; Sweet!]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet/"/>
-    <updated>2009-01-14T00:00:00-08:00</updated>
+    <updated>2009-01-14T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet</id>
     <content type="html"><![CDATA[<p>I have been a big fan of the Trolltech Qt Framework for a number of years. It is a fantastic way to build high quality cross-platform desktop applications in C++. For the past six years it seems like every project I work on has included a rich desktop GUI application of some sort. Each time this need would arise I would start the process of <em>selling</em> the idea of using the Qt Framework for the project. The biggest hurdle was always the per-developer cost for the commercial license of the framework. I would hear things like</p>
 
@@ -48,7 +48,7 @@
     <title type="html"><![CDATA[You can&#8217;t keep a good class library down &#8230; MFC gets reprieve from death sentence!]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/
 /"/>
-    <updated>2008-07-15T00:00:00-07:00</updated>
+    <updated>2008-07-15T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence</id>
     <content type="html"><![CDATA[<p>A few years ago I was working at a company where we built applications using Visual Studio 6 and MFC. The applications had been around for about 10-12 years, and were all showing their age. Customers were beginning to request updated user interface features like they were seeing in <em>modern</em> Microsoft products such as Office and Internet Explorer. Sadly, we could not deliver these user interface enhancements easily because MFC was not getting any attention from Microsoft.</p>
 
@@ -77,7 +77,7 @@
   <entry>
     <title type="html"><![CDATA[GetQueuedCompletionStatus() &#8211; Devil in the Details!]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/05/attention-to-details-required-when-using-getqueuedcompletionstatus/"/>
-    <updated>2008-05-22T00:00:00-07:00</updated>
+    <updated>2008-05-22T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/05/attention-to-details-required-when-using-getqueuedcompletionstatus</id>
     <content type="html"><![CDATA[<p>One of the projects I work on makes use of the Win32 asynchronous I/O model for managing network traffic between a Windows Service and a custom-built network device.</p>
 
@@ -117,7 +117,7 @@
   <entry>
     <title type="html"><![CDATA[Separate Interface and Implementation in C/C++]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/04/separate-interface-and-implementation-in-cc/"/>
-    <updated>2008-04-02T00:00:00-07:00</updated>
+    <updated>2008-04-02T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/04/separate-interface-and-implementation-in-cc</id>
     <content type="html"><![CDATA[<p>I spend most of my time developing software in C/C++, and have done so for many years now. One thing that always catches me by surprise is when I find code written by someone who decides to put implementation details of a function or method in a header file. The only reason I can come up with for why developers would do this is pure laziness.</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Qt | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/qt/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Nokia places Qt under LGPL License &#8211; Sweet!]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet/"/>
-    <updated>2009-01-14T00:00:00-08:00</updated>
+    <updated>2009-01-14T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet</id>
     <content type="html"><![CDATA[<p>I have been a big fan of the Trolltech Qt Framework for a number of years. It is a fantastic way to build high quality cross-platform desktop applications in C++. For the past six years it seems like every project I work on has included a rich desktop GUI application of some sort. Each time this need would arise I would start the process of <em>selling</em> the idea of using the Qt Framework for the project. The biggest hurdle was always the per-developer cost for the commercial license of the framework. I would hear things like</p>
 
@@ -49,7 +49,7 @@
 ]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/
 /"/>
-    <updated>2008-03-19T00:00:00-07:00</updated>
+    <updated>2008-03-19T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it</id>
     <content type="html"><![CDATA[<p><span class="alignright"><a target="_blank" href="http://www.trolltech.com"><img src="http://idvlpsw.files.wordpress.com/2008/03/qt.png" alt="qt.png" border="0" width="48" height="48" /></a></span>Today I wanted to combine two images of similar size to create a new image. The new image was going to be used for a toolbar button. I have purchased a set of commercial images in the PNG format for use on application toolbars. The set came with a bunch of overlay images that could be used to modify each of the base images. The overlays included things like arrows, warning signs, arrows, people, etc. My first though for using these images was to fire up Adobe Illustrator and just create a new icon by merging the base and overlay together. Then I realized that Qt could do the job for me at runtime, and with a little work I could dynamically overlay different badges on a base icon.</p>
 
@@ -103,7 +103,7 @@
   <entry>
     <title type="html"><![CDATA[HOWTO &#8211; Use Visual Studio 2005 for Qt Open Source Development]]></title>
     <link href="http://blog.idevelopsoftware.com/2006/02/howto-use-visual-studio-2005-for-qt-open-source-development/"/>
-    <updated>2006-02-14T00:00:00-08:00</updated>
+    <updated>2006-02-14T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2006/02/howto-use-visual-studio-2005-for-qt-open-source-development</id>
     <content type="html"><![CDATA[<p><em>THIS IS A WORK IN PROGRESS. EXPECT UPDATES AND DON’T BE SURPRISED BY INCOMPLETE INFORMATION</em><span class="alignright"><a target="_blank" href="http://www.trolltech.com"><img src="http://idvlpsw.files.wordpress.com/2008/03/qt.png" alt="qtlogo_feature.png" border="0" /></a></span></p>
 

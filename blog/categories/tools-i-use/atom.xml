@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tools I Use | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/tools-i-use/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[MacBook Pro Development Environment]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment/"/>
-    <updated>2010-10-01T00:00:00-07:00</updated>
+    <updated>2010-10-01T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment</id>
     <content type="html"><![CDATA[<p>This article covers the steps I went through to setup my MacBook Pro for Google App Engine (GAE) development. I am using the Python runtime in GAE so the focus here is on a Python development environment.</p>
 
@@ -147,7 +147,7 @@ $ cp -r $HOME/DjangoStuff/django-testapp/* .
   <entry>
     <title type="html"><![CDATA[WS_FTP Professional]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/06/ws_ftp-professional/"/>
-    <updated>2009-06-09T00:00:00-07:00</updated>
+    <updated>2009-06-09T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/06/ws_ftp-professional</id>
     <content type="html"><![CDATA[<p>WS_FTP Professional delivers industry-leading security, automation, and customization capabilities, offering the highest level of encryption available for files and a superior range of features that enhance productivity and communication.</p>
 
@@ -160,7 +160,7 @@ $ cp -r $HOME/DjangoStuff/django-testapp/* .
   <entry>
     <title type="html"><![CDATA[Kindle: Amazon&#8217;s 6&#8243; Wireless Reading Device (Latest Generation)]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/06/kindle-amazons-6-wireless-reading-device-latest-generation/"/>
-    <updated>2009-06-09T00:00:00-07:00</updated>
+    <updated>2009-06-09T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/06/kindle-amazons-6-wireless-reading-device-latest-generation</id>
     <content type="html"><![CDATA[<p>For a while the idea of a Kindle has intrigued me. In early May I took the plunge and purchased one of the new and improved models from Amazon. The main thing I was looking for was a way to reduce the number of technology books I lug back and forth to work each day.</p>
 ]]></content>

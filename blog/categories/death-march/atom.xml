@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Death March | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/death-march/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Software Design: Want vs. Need]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/01/software-design-want-vs-need/"/>
-    <updated>2009-01-13T00:00:00-08:00</updated>
+    <updated>2009-01-13T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/01/software-design-want-vs-need</id>
     <content type="html"><![CDATA[<p>I am always surprised at how short-sighted some folks are who design software. It seems like there is no shortage of people who feel that you just have to <em>listen to your customers</em> to build great software. In my experience, if all you do is build what the customer says he/she wants then your software will likely be obsolete in a year (maybe even less time) and your customers will ultimately be very unhappy with you.</p>
 

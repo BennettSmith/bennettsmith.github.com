@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Advance of Technology | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/advance-of-technology/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Attending iOSDevCamp 2010 &#8211; Building Meet4Drinks]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks/"/>
-    <updated>2010-08-19T00:00:00-07:00</updated>
+    <updated>2010-08-19T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/08/attending-iosdevcamp-2010-building-meet4drinks</id>
     <content type="html"><![CDATA[<p><a href="http://www.iosdevcamp.org"><img src="http://www.idevelopsoftware.com/wp-content/uploads/2010/08/iosdevcamp2010.png" alt="iosdevcamp2010.png" title="iosdevcamp2010.png" border="0" width="250" height="37"  style="padding: 5px; padding-right: 20px; float:left;" /></a><br/>
 I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is a great event where iPhone/iPad software developers and UI/UX designers come together for a weekend of coding and exploration of ideas around how to use iOS devices. The event organizers hold something called a Hackathon where attendees form ad-hoc teams around shared application ideas and spend two full days designing and coding like crazy to build something cool. Everyone has a great time and meets like-minded folks in the developer community.</p>
@@ -34,7 +34,7 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
   <entry>
     <title type="html"><![CDATA[iPad Review &#8211; First 24 hours]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/04/ipad-review-first-24-hours/"/>
-    <updated>2010-04-05T00:00:00-07:00</updated>
+    <updated>2010-04-05T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/04/ipad-review-first-24-hours</id>
     <content type="html"><![CDATA[<p>My experience with it so far is mixed. Like you I tried to touch-type on the keyboard and that really didn’t work at all. I have tried to do the two finger plus thumbs approach and am not that fast typing like that. The keyboard is big enough that I find it kind of weird to hold it in one hand and type with the other. My hand has to move too far to get all the keys unlike on the iPhone where everything is much closer together. I have not tried to hook up a bluetooth keyboard yet either. I expect that to work much better for things like typing e-mails.</p>
 
@@ -59,7 +59,7 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
   <entry>
     <title type="html"><![CDATA[Nokia places Qt under LGPL License &#8211; Sweet!]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet/"/>
-    <updated>2009-01-14T00:00:00-08:00</updated>
+    <updated>2009-01-14T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/01/nokia-places-qt-under-lgpl-license-sweet</id>
     <content type="html"><![CDATA[<p>I have been a big fan of the Trolltech Qt Framework for a number of years. It is a fantastic way to build high quality cross-platform desktop applications in C++. For the past six years it seems like every project I work on has included a rich desktop GUI application of some sort. Each time this need would arise I would start the process of <em>selling</em> the idea of using the Qt Framework for the project. The biggest hurdle was always the per-developer cost for the commercial license of the framework. I would hear things like</p>
 

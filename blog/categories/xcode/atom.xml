@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Xcode | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/xcode/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Heading to Big Nerd Ranch later this month!]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/10/heading-to-big-nerd-ranch-later-this-month/"/>
-    <updated>2010-10-03T00:00:00-07:00</updated>
+    <updated>2010-10-03T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/10/heading-to-big-nerd-ranch-later-this-month</id>
     <content type="html"><![CDATA[<p>One of the podcasts I listen to on a regular basis is called MacBreak. The hosts are Leo Leporte, Alex Lindsay, Andy Ihnatko and a rotating list of other Mac/Apple/iOS luminaries. If you aren’t familiar with it head over to <a href="http://twit.tv/mbw">http://twit.tv/mbw</a> and have a listen. It is highly recommended for anyone interested in <em>all things Macintosh (and iOS too)</em>.</p>
 
@@ -33,7 +33,7 @@
   <entry>
     <title type="html"><![CDATA[Setting up Unit Testing in Xcode 3.1]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/07/setting-up-unit-testing-in-xcode-31/"/>
-    <updated>2008-07-28T00:00:00-07:00</updated>
+    <updated>2008-07-28T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/07/setting-up-unit-testing-in-xcode-31</id>
     <content type="html"><![CDATA[<p>Xcode includes OCUnit, so you don’t need to get a copy. But, you might want to take a look at their website (http://sente.epfl.ch/software/ocunit/) for information and tutorials on how OCUnit is intended to be used.</p>
 
@@ -62,7 +62,7 @@
   <entry>
     <title type="html"><![CDATA[Method Swizzling in Safari on Mac OS X]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/05/method-swizzling-in-safari-on-mac-os-x/"/>
-    <updated>2008-05-09T00:00:00-07:00</updated>
+    <updated>2008-05-09T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/05/method-swizzling-in-safari-on-mac-os-x</id>
     <content type="html"><![CDATA[<p>Recently I have been working on an extension for the Safari web browser. The biggest challenge when developing an extension for Safari is determining how to hook your code into Safari.app. Most browsers these days provide hooks to allow development of extensions, but Safari does not.</p>
 
@@ -77,7 +77,7 @@
   <entry>
     <title type="html"><![CDATA[Generating a GDB Log File for Xcode Debug Sessions]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/02/generating-a-gdb-log-file-for-xcode-debug-sessions/"/>
-    <updated>2008-02-02T00:00:00-08:00</updated>
+    <updated>2008-02-02T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/02/generating-a-gdb-log-file-for-xcode-debug-sessions</id>
     <content type="html"><![CDATA[<p>If you would like to capture a log of everything that GDB displays during a debugging session you can do the following:<br/>
 <code>&lt;br /&gt;

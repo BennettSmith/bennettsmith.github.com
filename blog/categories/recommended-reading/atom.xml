@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Recommended Reading | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/recommended-reading/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[RESTful .NET by Jon Flanders]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/06/restful-net-by-jon-flanders/"/>
-    <updated>2009-06-09T00:00:00-07:00</updated>
+    <updated>2009-06-09T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/06/restful-net-by-jon-flanders</id>
     <content type="html"><![CDATA[<p>RESTful .NET is the first book that teaches Windows developers to build RESTful web services using the latest Microsoft tools. Written by WFC expert Jon Flanders, this hands-on tutorial demonstrates how you can use WCF and other components of the .NET 3.5 Framework to build, deploy and use REST-based web services in a variety of application scenarios. No prior knowledge of REST or WCF is required to get started.</p>
 ]]></content>

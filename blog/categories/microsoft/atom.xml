@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Microsoft | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/microsoft/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Mac Market Share Increasing!]]></title>
     <link href="http://blog.idevelopsoftware.com/2009/01/mac-market-share-increasing/"/>
-    <updated>2009-01-17T00:00:00-08:00</updated>
+    <updated>2009-01-17T08:00:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/2009/01/mac-market-share-increasing</id>
     <content type="html"><![CDATA[<p>I was at the local library today to do a couple hours programming in a quiet environment without the normal distractions of my home office. To my surprise when I looked around I saw a sea of Apple MacBook and MacBook Pro laptops. Sure, there were a few Toshiba or HP laptops too, but the majority of the machines in the room had shinning bright Apple logos on the screens.</p>
 
@@ -127,7 +127,7 @@
     <title type="html"><![CDATA[You can&#8217;t keep a good class library down &#8230; MFC gets reprieve from death sentence!]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/
 /"/>
-    <updated>2008-07-15T00:00:00-07:00</updated>
+    <updated>2008-07-15T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence</id>
     <content type="html"><![CDATA[<p>A few years ago I was working at a company where we built applications using Visual Studio 6 and MFC. The applications had been around for about 10-12 years, and were all showing their age. Customers were beginning to request updated user interface features like they were seeing in <em>modern</em> Microsoft products such as Office and Internet Explorer. Sadly, we could not deliver these user interface enhancements easily because MFC was not getting any attention from Microsoft.</p>
 
@@ -156,7 +156,7 @@
   <entry>
     <title type="html"><![CDATA[Microsoft Professional Developers Conference 2008 &#8211; See you there?]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/07/microsoft-professional-developers-conference-2008-see-you-there/"/>
-    <updated>2008-07-03T00:00:00-07:00</updated>
+    <updated>2008-07-03T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/07/microsoft-professional-developers-conference-2008-see-you-there</id>
     <content type="html"><![CDATA[<p><a href="http://www.microsoftpdc.com/Default.aspx"><img src="http://www.microsoftpdc.com/Images/logo-flat.png" alt="logo-flat.png" border="0" width="249" height="54" align="right" /></a></p>
 
@@ -183,7 +183,7 @@
   <entry>
     <title type="html"><![CDATA[How to enable MSI Logging]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/06/how-to-enable-msi-logging/"/>
-    <updated>2008-06-09T00:00:00-07:00</updated>
+    <updated>2008-06-09T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/06/how-to-enable-msi-logging</id>
     <content type="html"><![CDATA[<p>If you are trying to debug an installer problem it is probably worth having MSI logging turned on. This will produce a file in your %TEMP% directory that contains a detailed trace of the activities that took place in MSIEXEC. This can be very helpful when an install or uninstall fails without any clear indication as to why it failed.</p>
 
@@ -211,7 +211,7 @@
   <entry>
     <title type="html"><![CDATA[GetQueuedCompletionStatus() &#8211; Devil in the Details!]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/05/attention-to-details-required-when-using-getqueuedcompletionstatus/"/>
-    <updated>2008-05-22T00:00:00-07:00</updated>
+    <updated>2008-05-22T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/05/attention-to-details-required-when-using-getqueuedcompletionstatus</id>
     <content type="html"><![CDATA[<p>One of the projects I work on makes use of the Win32 asynchronous I/O model for managing network traffic between a Windows Service and a custom-built network device.</p>
 

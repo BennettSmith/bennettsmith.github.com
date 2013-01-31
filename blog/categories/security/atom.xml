@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Security | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T13:20:12-08:00</updated>
+  <updated>2013-01-30T20:32:59-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[MacBook Pro Development Environment]]></title>
     <link href="http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment/"/>
-    <updated>2010-10-01T00:00:00-07:00</updated>
+    <updated>2010-10-01T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/10/macbook-pro-development-environment</id>
     <content type="html"><![CDATA[<p>This article covers the steps I went through to setup my MacBook Pro for Google App Engine (GAE) development. I am using the Python runtime in GAE so the focus here is on a Python development environment.</p>
 
@@ -147,7 +147,7 @@ $ cp -r $HOME/DjangoStuff/django-testapp/* .
   <entry>
     <title type="html"><![CDATA[Protect Sensitive Data on your MacBook Pro]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/03/protect-sensitive-data-on-your-macbook-pro/"/>
-    <updated>2008-03-13T00:00:00-07:00</updated>
+    <updated>2008-03-13T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/03/protect-sensitive-data-on-your-macbook-pro</id>
     <content type="html"><![CDATA[<p>One thing I am always nervous about is storing sensitive data on my MacBook Pro. Over the past few years it seems like there are stories popping up in the news about some organization loosing sensitive customer data when a laptop is misplaced. As someone who makes a conscious effort to have only one computer, I am concerned about storing my banking and tax information on a portable computer. <span class="alignleft"><br /> <a target="_blank" href="http://www.amazon.com/gp/product/B000VKQ8VE?ie=UTF8&tag=idevelop-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=B000VKQ8VE"><img border="0" src="http://idvlpsw.files.wordpress.com/2008/03/41my62mkrll-sl160.jpg" /></a><img src="http://www.assoc-amazon.com/e/ir?t=idevelop-20&l=as2&o=1&a=B000VKQ8VE" width="1" height="1" border="0" alt="" style="border:none !important;margin:0 !important;" /><br /> </span></p>
 
@@ -169,7 +169,7 @@ To meet my goals I am using a piece of software called <a href="http://www.knoxf
   <entry>
     <title type="html"><![CDATA[Computer Repair vs Auto Repair &#8212; Why they are very different.]]></title>
     <link href="http://blog.idevelopsoftware.com/2008/03/computer-repair-vs-auto-repair-why-they-are-very-different/"/>
-    <updated>2008-03-13T00:00:00-07:00</updated>
+    <updated>2008-03-13T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2008/03/computer-repair-vs-auto-repair-why-they-are-very-different</id>
     <content type="html"><![CDATA[<p>Computer repair agreements may not always guarantee that you get the old parts back. They also may not guarantee that the replacement parts are new.</p>
 
