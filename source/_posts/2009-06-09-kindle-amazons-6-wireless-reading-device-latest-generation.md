@@ -2,6 +2,7 @@
 title: 'Kindle: Amazon&#8217;s 6&#8243; Wireless Reading Device (Latest Generation)'
 author: Bennett Smith
 layout: post
+date: 2009-06-09 08:00
 permalink: /2009/06/kindle-amazons-6-wireless-reading-device-latest-generation/
 categories:
   - Tools I Use

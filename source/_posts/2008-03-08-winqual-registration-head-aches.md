@@ -2,6 +2,7 @@
 title: WinQual Registration Head Aches
 author: Bennett Smith
 layout: post
+date: 2008-03-08 08:00
 permalink: /2008/03/winqual-registration-head-aches/
 categories:
   - Digital Certificates

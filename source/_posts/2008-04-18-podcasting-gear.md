@@ -2,6 +2,7 @@
 title: Podcasting Gear
 author: Bennett Smith
 layout: post
+date: 2008-04-18 08:00
 permalink: /2008/04/podcasting-gear/
 categories:
   - Hardware

@@ -2,6 +2,7 @@
 title: 'Software Design: Want vs. Need'
 author: Bennett Smith
 layout: post
+date: 2009-01-13 08:00
 permalink: /2009/01/software-design-want-vs-need/
 categories:
   - Apple

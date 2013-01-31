@@ -2,6 +2,7 @@
 title: 'Microsoft Professional Developers Conference 2008 &#8211; See you there?'
 author: Bennett Smith
 layout: post
+date: 2008-07-03 08:00
 permalink: /2008/07/microsoft-professional-developers-conference-2008-see-you-there/
 categories:
   - Microsoft

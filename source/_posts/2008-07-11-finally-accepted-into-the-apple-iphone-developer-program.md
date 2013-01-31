@@ -2,6 +2,7 @@
 title: Finally, accepted into the Apple iPhone Developer Program!
 author: Bennett Smith
 layout: post
+date: 2008-07-11 08:00
 permalink: /2008/07/finally-accepted-into-the-apple-iphone-developer-program/
 categories:
   - Apple

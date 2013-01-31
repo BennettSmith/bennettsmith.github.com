@@ -2,6 +2,7 @@
 title: Generating a GDB Log File for Xcode Debug Sessions
 author: Bennett Smith
 layout: post
+date: 2008-02-02 08:00
 permalink: /2008/02/generating-a-gdb-log-file-for-xcode-debug-sessions/
 categories:
   - Apple

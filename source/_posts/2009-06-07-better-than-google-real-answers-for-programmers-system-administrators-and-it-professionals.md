@@ -2,8 +2,8 @@
 title: 'Better than Google: Real answers for Programmers, System Administrators and IT Professionals'
 author: Bennett Smith
 layout: post
-permalink: >
-  /2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/
+date: 2009-06-07 08:00
+permalink: /2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/
 categories:
   - Blog
   - Software

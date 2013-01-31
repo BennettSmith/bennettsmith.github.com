@@ -2,6 +2,7 @@
 title: Perforce launchd configuration on Mac OS Tiger (10.4)
 author: Bennett Smith
 layout: post
+date: 2006-02-20 08:00
 permalink: /2006/02/perforce-launchd-configuration-on-mac-os-tiger-104/
 categories:
   - SCM Tools

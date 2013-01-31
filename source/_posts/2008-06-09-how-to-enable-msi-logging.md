@@ -2,6 +2,7 @@
 title: How to enable MSI Logging
 author: Bennett Smith
 layout: post
+date: 2008-06-09 08:00
 permalink: /2008/06/how-to-enable-msi-logging/
 categories:
   - Microsoft

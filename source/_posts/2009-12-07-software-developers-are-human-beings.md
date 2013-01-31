@@ -2,6 +2,7 @@
 title: Software Developers are Human Beings
 author: Bennett Smith
 layout: post
+date: 2009-12-07 08:00
 permalink: /2009/12/software-developers-are-human-beings/
 categories:
   - Software

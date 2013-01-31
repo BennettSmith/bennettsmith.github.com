@@ -2,6 +2,7 @@
 title: 'Adobe Creative Suite 4 &#8211; Web Premium'
 author: Bennett Smith
 layout: post
+date: 2009-06-09 08:00
 permalink: /2009/06/adobe-creative-suite-4-web-premium/
 categories:
   - Technology Deals

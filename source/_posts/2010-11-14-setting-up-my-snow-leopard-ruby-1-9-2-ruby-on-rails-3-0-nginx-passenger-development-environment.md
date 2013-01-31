@@ -4,8 +4,8 @@ title: >
   development environment
 author: Bennett Smith
 layout: post
-permalink: >
-  /2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
+date: 2010-11-14 08:00
+permalink: /2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
 categories:
   - How To
   - Software

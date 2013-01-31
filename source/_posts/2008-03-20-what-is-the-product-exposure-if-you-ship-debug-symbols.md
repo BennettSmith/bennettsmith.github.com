@@ -2,6 +2,7 @@
 title: What is the product exposure if you ship debug symbols?
 author: Bennett Smith
 layout: post
+date: 2008-03-20 08:00
 permalink: /2008/03/what-is-the-product-exposure-if-you-ship-debug-symbols/
 categories:
   - Software

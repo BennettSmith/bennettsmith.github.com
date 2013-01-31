@@ -2,6 +2,7 @@
 title: Setting up Unit Testing in Xcode 3.1
 author: Bennett Smith
 layout: post
+date: 2008-07-28 08:00
 permalink: /2008/07/setting-up-unit-testing-in-xcode-31/
 categories:
   - Cocoa

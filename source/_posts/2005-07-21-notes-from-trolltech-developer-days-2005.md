@@ -2,6 +2,7 @@
 title: Notes from Trolltech Developer Days 2005
 author: Bennett Smith
 layout: post
+date: 2005-07-21 08:00
 permalink: /2005/07/notes-from-trolltech-developer-days-2005/
 categories:
   - Software

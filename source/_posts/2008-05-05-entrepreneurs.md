@@ -2,6 +2,7 @@
 title: Young Entrepreneurs ship File Manager for Atari 800
 author: Bennett Smith
 layout: post
+date: 2008-05-05 08:00
 permalink: /2008/05/entrepreneurs/
 categories:
   - Software

@@ -2,6 +2,7 @@
 title: Separate Interface and Implementation in C/C++
 author: Bennett Smith
 layout: post
+date: 2008-04-02 08:00
 permalink: /2008/04/separate-interface-and-implementation-in-cc/
 categories:
   - C++

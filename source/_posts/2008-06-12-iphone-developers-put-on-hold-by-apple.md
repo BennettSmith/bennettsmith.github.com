@@ -2,6 +2,7 @@
 title: iPhone developers put on hold by Apple
 author: Bennett Smith
 layout: post
+date: 2008-06-12 08:00
 permalink: /2008/06/iphone-developers-put-on-hold-by-apple/
 categories:
   - Apple

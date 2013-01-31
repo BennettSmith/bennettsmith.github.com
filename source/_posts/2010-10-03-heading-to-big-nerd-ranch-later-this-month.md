@@ -2,6 +2,7 @@
 title: Heading to Big Nerd Ranch later this month!
 author: Bennett Smith
 layout: post
+date: 2010-10-03 08:00
 permalink: /2010/10/heading-to-big-nerd-ranch-later-this-month/
 categories:
   - Apple

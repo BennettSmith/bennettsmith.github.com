@@ -2,6 +2,7 @@
 title: Method Swizzling in Safari on Mac OS X
 author: Bennett Smith
 layout: post
+date: 2008-05-09 08:00
 permalink: /2008/05/method-swizzling-in-safari-on-mac-os-x/
 categories:
   - Apple

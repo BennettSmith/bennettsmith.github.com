@@ -2,6 +2,7 @@
 title: How I setup Ubuntu 11.04 Server using VirtualBox on a MacBook Air
 author: Bennett Smith
 layout: post
+date: 2011-07-22 08:00
 permalink: /2011/07/how-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air/
 categories:
   - Linux

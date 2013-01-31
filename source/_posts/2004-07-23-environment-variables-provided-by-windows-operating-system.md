@@ -2,6 +2,7 @@
 title: Environment Variables Provided by Windows Operating System
 author: Bennett Smith
 layout: post
+date: 2004-07-23 08:00
 permalink: /2004/07/environment-variables-provided-by-windows-operating-system/
 categories:
   - Microsoft

@@ -2,6 +2,7 @@
 title: 'Computer Repair vs Auto Repair &#8212; Why they are very different.'
 author: Bennett Smith
 layout: post
+date: 2008-03-13 08:00
 permalink: /2008/03/computer-repair-vs-auto-repair-why-they-are-very-different/
 categories:
   - Hardware

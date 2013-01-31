@@ -2,6 +2,7 @@
 title: 'Rubic&#8217;s Cube Solution'
 author: Bennett Smith
 layout: post
+date: 2008-05-05 08:00
 permalink: /2008/05/rubics-cube-solution/
 categories:
   - Blog

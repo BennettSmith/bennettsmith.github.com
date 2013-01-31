@@ -2,6 +2,7 @@
 title: 'Book Review: RESTful Web Services &#8211; Web services for the real world'
 author: Bennett Smith
 layout: post
+date: 2009-05-17 08:00
 permalink: /2009/05/book-review-restful-web-services-web-services-for-the-real-world/
 categories:
   - Software

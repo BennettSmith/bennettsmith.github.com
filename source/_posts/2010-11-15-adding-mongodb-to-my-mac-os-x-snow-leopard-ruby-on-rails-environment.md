@@ -2,6 +2,7 @@
 title: Adding MongoDB to my Mac OS X Snow Leopard Ruby on Rails Environment
 author: Bennett Smith
 layout: post
+date: 2010-11-15 08:00
 permalink: /2010/11/adding-mongodb-to-my-mac-os-x-snow-leopard-ruby-on-rails-environment/
 categories:
   - Blog

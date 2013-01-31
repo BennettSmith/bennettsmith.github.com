@@ -2,6 +2,7 @@
 title: Configuring a Perforce Depot on Mac OS X 10.4 (Tiger) Server
 author: Bennett Smith
 layout: post
+date: 2006-01-06 08:00
 permalink: /2006/01/configuring-a-perforce-depot-on-mac-os-x-104-tiger-server/
 categories:
   - SCM Tools

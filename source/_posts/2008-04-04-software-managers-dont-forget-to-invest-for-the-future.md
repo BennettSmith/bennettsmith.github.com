@@ -2,6 +2,7 @@
 title: 'Software Managers, don&#8217;t forget to invest for the future!'
 author: Bennett Smith
 layout: post
+date: 2008-04-04 08:00
 permalink: /2008/04/software-managers-dont-forget-to-invest-for-the-future/
 categories:
   - Software

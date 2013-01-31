@@ -2,6 +2,7 @@
 title: 'HOWTO: Answer the question &#8220;Is {some site} up or down?&#8221;'
 author: Bennett Smith
 layout: post
+date: 2009-06-28 08:00
 permalink: /2009/06/howto-answer-the-question-is-some-site-up-or-down/
 categories:
   - How To

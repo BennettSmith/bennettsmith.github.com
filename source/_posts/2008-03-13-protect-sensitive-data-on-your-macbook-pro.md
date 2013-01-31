@@ -2,6 +2,7 @@
 title: Protect Sensitive Data on your MacBook Pro
 author: Bennett Smith
 layout: post
+date: 2008-03-13 08:00
 permalink: /2008/03/protect-sensitive-data-on-your-macbook-pro/
 categories:
   - Apple

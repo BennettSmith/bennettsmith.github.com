@@ -2,6 +2,7 @@
 title: 'Cookbook: Snow Leopard, RVM, Ruby on Rails'
 author: Bennett Smith
 layout: post
+date: 2011-08-01 08:00
 permalink: /2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/
 categories:
   - Blog

@@ -2,6 +2,7 @@
 title: Backup MySQL database on Windows Server 2003
 author: Bennett Smith
 layout: post
+date: 2004-12-04 08:00
 permalink: /2004/12/backup-mysql-database-on-windows-server-2003/
 categories:
   - Software

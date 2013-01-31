@@ -2,6 +2,7 @@
 title: 'Attending iOSDevCamp 2010 &#8211; Building Meet4Drinks'
 author: Bennett Smith
 layout: post
+date: 2010-08-19 08:00
 permalink: /2010/08/attending-iosdevcamp-2010-building-meet4drinks/
 categories:
   - Advance of Technology

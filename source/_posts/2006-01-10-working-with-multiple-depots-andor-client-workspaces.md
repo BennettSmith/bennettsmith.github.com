@@ -2,6 +2,7 @@
 title: Working with Multiple Depots and/or Client Workspaces
 author: Bennett Smith
 layout: post
+date: 2006-01-10 08:00
 permalink: /2006/01/working-with-multiple-depots-andor-client-workspaces/
 categories:
   - SCM Tools

@@ -2,6 +2,7 @@
 title: 'Hike in the East Bay &#8211; Get a Commerative T-Shirt!'
 author: Bennett Smith
 layout: post
+date: 2009-01-15 08:00
 permalink: /2009/01/hike-in-the-east-bay-get-a-commerative-t-shirt/
 categories:
   - Hiking

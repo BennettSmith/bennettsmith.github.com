@@ -2,6 +2,7 @@
 title: WS_FTP Professional
 author: Bennett Smith
 layout: post
+date: 2009-06-09 08:00
 permalink: /2009/06/ws_ftp-professional/
 categories:
   - Technology Deals

@@ -2,6 +2,7 @@
 title: Notes on setting up a Ruby on Rails Environment for Ubuntu 10.04.1 LTS
 author: Bennett Smith
 layout: post
+date: 2011-03-19 08:00
 permalink: /2011/03/notes-on-setting-up-a-ruby-on-rails-environment-for-ubuntu-10-04-1-lts/
 categories:
   - Blog

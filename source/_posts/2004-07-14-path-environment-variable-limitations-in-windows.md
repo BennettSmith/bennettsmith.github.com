@@ -2,6 +2,7 @@
 title: PATH Environment Variable Limitations in Windows
 author: Bennett Smith
 layout: post
+date: 2004-07-14 08:00
 permalink: /2004/07/path-environment-variable-limitations-in-windows/
 categories:
   - Microsoft

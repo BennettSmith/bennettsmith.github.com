@@ -2,6 +2,7 @@
 title: 'HOWTO &#8211; Use Visual Studio 2005 for Qt Open Source Development'
 author: Bennett Smith
 layout: post
+date: 2006-02-14 08:00
 permalink: /2006/02/howto-use-visual-studio-2005-for-qt-open-source-development/
 categories:
   - How To

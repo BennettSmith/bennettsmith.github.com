@@ -2,6 +2,7 @@
 title: 'GetQueuedCompletionStatus() &#8211; Devil in the Details!'
 author: Bennett Smith
 layout: post
+date: 2008-05-22 08:00
 permalink: /2008/05/attention-to-details-required-when-using-getqueuedcompletionstatus/
 categories:
   - C++

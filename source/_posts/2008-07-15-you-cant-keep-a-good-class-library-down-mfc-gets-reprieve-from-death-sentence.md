@@ -1,9 +1,9 @@
 ---
 title: 'You can&#8217;t keep a good class library down &#8230; MFC gets reprieve from death sentence!'
 author: Bennett Smith
+date: 2008-07-15 08:00
 layout: post
-permalink: >
-  /2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/
+permalink: /2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/
 categories:
   - C++
   - MFC

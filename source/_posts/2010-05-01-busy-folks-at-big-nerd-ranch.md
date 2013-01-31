@@ -2,6 +2,7 @@
 title: Busy Folks at Big Nerd Ranch!
 author: Bennett Smith
 layout: post
+date: 2010-05-01 08:00
 permalink: /2010/05/busy-folks-at-big-nerd-ranch/
 categories:
   - Apple

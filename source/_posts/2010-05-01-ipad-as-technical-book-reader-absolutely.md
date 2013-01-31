@@ -2,6 +2,7 @@
 title: iPad as Technical Book Reader? Absolutely!
 author: Bennett Smith
 layout: post
+date: 2010-05-01 08:00
 permalink: /2010/05/ipad-as-technical-book-reader-absolutely/
 categories:
   - Blog

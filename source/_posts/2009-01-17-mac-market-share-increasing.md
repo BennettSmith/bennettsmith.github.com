@@ -2,6 +2,7 @@
 title: Mac Market Share Increasing!
 author: Bennett Smith
 layout: post
+date: 2009-01-17 08:00
 permalink: /2009/01/mac-market-share-increasing/
 categories:
   - Apple

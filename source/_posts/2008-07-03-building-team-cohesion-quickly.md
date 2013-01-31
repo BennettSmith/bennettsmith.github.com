@@ -2,6 +2,7 @@
 title: Building Team Cohesion Quickly
 author: Bennett Smith
 layout: post
+date: 2008-07-03 08:00
 permalink: /2008/07/building-team-cohesion-quickly/
 categories:
   - Software

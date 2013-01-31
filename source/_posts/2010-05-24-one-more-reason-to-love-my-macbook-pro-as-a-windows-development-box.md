@@ -2,6 +2,7 @@
 title: One more reason to love my MacBook Pro as a Windows Development Box
 author: Bennett Smith
 layout: post
+date: 2010-05-24 08:00
 permalink: /2010/05/one-more-reason-to-love-my-macbook-pro-as-a-windows-development-box/
 categories:
   - Blog

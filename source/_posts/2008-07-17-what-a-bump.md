@@ -2,6 +2,7 @@
 title: What a bump!
 author: Bennett Smith
 layout: post
+date: 2008-07-17 08:00
 permalink: /2008/07/what-a-bump/
 categories:
   - iPhone

@@ -2,6 +2,7 @@
 title: Git Cheat Sheet
 author: Bennett Smith
 layout: post
+date: 2011-03-19 08:00
 permalink: /2011/03/git-cheat-sheet/
 categories:
   - Blog

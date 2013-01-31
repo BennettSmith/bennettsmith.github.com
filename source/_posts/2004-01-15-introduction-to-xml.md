@@ -2,6 +2,7 @@
 title: Introduction to XML
 author: Bennett Smith
 layout: post
+date: 2004-01-15 08:00
 permalink: /2004/01/introduction-to-xml/
 categories:
   - Software

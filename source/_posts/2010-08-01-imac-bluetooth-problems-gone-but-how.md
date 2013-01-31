@@ -2,6 +2,7 @@
 title: iMac bluetooth problems gone, but how?
 author: Bennett Smith
 layout: post
+date: 2010-08-01 08:00
 permalink: /2010/08/imac-bluetooth-problems-gone-but-how/
 categories:
   - Apple

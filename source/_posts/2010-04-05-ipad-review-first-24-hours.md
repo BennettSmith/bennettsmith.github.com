@@ -2,6 +2,7 @@
 title: 'iPad Review &#8211; First 24 hours'
 author: Bennett Smith
 layout: post
+date: 2010-04-05 08:00
 permalink: /2010/04/ipad-review-first-24-hours/
 categories:
   - Advance of Technology

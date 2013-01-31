@@ -2,6 +2,7 @@
 title: 'Here&#8217;s A Place to Welcome Visitors'
 author: Bennett Smith
 layout: post
+date: 2009-01-25 08:00
 permalink: /2009/01/homepage-greeting/
 categories:
   - Uncategorized

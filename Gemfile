@@ -13,6 +13,9 @@ group :development do
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
   gem 'liquid', '~> 2.3.0'
+  gem 'gnuplot', '~> 2.6.2'
+  gem 'ruby-aaws', '~> 0.7.0'
 end
 
 gem 'sinatra', '~> 1.3.3'
+

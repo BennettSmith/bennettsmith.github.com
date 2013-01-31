@@ -2,6 +2,7 @@
 title: 'Upgrade to iPhone OS 2.0 Fails &#8211; Unknown Error (-9838)'
 author: Bennett Smith
 layout: post
+date: 2008-07-11 08:00
 permalink: /2008/07/upgrade-to-iphone-os-20-fails-unknown-error-9838/
 categories:
   - Apple

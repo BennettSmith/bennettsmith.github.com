@@ -2,6 +2,7 @@
 title: MobileMe Mail Error
 author: Bennett Smith
 layout: post
+date: 2008-07-12 08:00
 permalink: /2008/07/mobileme-mail-error/
 categories:
   - Apple

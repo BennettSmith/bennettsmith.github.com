@@ -2,6 +2,7 @@
 title: RESTful .NET by Jon Flanders
 author: Bennett Smith
 layout: post
+date: 2009-06-09 08:00
 permalink: /2009/06/restful-net-by-jon-flanders/
 categories:
   - Recommended Reading

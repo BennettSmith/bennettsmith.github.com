@@ -2,6 +2,7 @@
 title: 'Apple iPhone SDK &#8212; Catch-22 for Developers'
 author: Bennett Smith
 layout: post
+date: 2008-05-11 08:00
 permalink: /2008/05/iphonecatch22/
 categories:
   - Apple

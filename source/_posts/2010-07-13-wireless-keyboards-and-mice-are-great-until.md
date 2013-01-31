@@ -2,6 +2,7 @@
 title: 'Wireless Keyboards and Mice are Great Until&#8230;.'
 author: Bennett Smith
 layout: post
+date: 2010-07-13 08:00
 permalink: /2010/07/wireless-keyboards-and-mice-are-great-until/
 categories:
   - Apple

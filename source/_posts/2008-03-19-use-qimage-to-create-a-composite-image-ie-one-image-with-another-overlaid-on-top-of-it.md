@@ -4,8 +4,8 @@ title: >
   top of it.)
 author: Bennett Smith
 layout: post
-permalink: >
-  /2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/
+date: 2008-03-19 08:00
+permalink: /2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/
 categories:
   - How To
   - Qt

@@ -2,6 +2,7 @@
 title: MacBook Pro Development Environment
 author: Bennett Smith
 layout: post
+date: 2010-10-01 08:00
 permalink: /2010/10/macbook-pro-development-environment/
 categories:
   - Apple

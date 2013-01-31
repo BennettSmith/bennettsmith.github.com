@@ -2,6 +2,7 @@
 title: Simple UI Refinements Increase Developer Productivity
 author: Bennett Smith
 layout: post
+date: 2008-06-27 08:00
 permalink: /2008/06/simple-ui-refinements-increase-developer-productivity/
 categories:
   - Software

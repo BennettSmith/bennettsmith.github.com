@@ -1,9 +1,9 @@
 ---
-title: 'Comcast Support Problems &#8211; SURFboard SBG6580 &#8211; Intermittent Connection Loss'
+title: 'Comcast Support Problems - SURFboard SBG6580 - Intermittent Connection Loss'
 author: Bennett Smith
 layout: post
-permalink: >
-  /2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
+date: 2011-12-03 08:00
+permalink: /2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
 categories:
   - Hardware
 ---
