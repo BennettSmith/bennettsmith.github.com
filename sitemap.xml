@@ -76,9 +76,9 @@
     </url>
     <url>
         <loc>
-            http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/ /
+            http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/
         </loc>
-        <lastmod>2013-01-30T20:09:50-08:00</lastmod>
+        <lastmod>2013-01-30T20:44:52-08:00</lastmod>
     </url>
     <url>
         <loc>
@@ -170,9 +170,9 @@
     </url>
     <url>
         <loc>
-            http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/ /
+            http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/
         </loc>
-        <lastmod>2013-01-30T20:12:24-08:00</lastmod>
+        <lastmod>2013-01-30T20:44:55-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2008/07/what-a-bump/</loc>
@@ -214,9 +214,9 @@
     </url>
     <url>
         <loc>
-            http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/ /
+            http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/
         </loc>
-        <lastmod>2013-01-30T20:14:01-08:00</lastmod>
+        <lastmod>2013-01-30T20:45:00-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/2009/06/adobe-creative-suite-4-web-premium/</loc>
@@ -298,9 +298,9 @@
     </url>
     <url>
         <loc>
-            http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/ /
+            http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
         </loc>
-        <lastmod>2013-01-30T20:17:54-08:00</lastmod>
+        <lastmod>2013-01-30T20:44:16-08:00</lastmod>
     </url>
     <url>
         <loc>
@@ -338,9 +338,9 @@
     </url>
     <url>
         <loc>
-            http://blog.idevelopsoftware.com/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/ /
+            http://blog.idevelopsoftware.com/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
         </loc>
-        <lastmod>2013-01-30T20:26:21-08:00</lastmod>
+        <lastmod>2013-01-30T20:42:34-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/blog/2013/01/29/code-blocks/</loc>
@@ -348,7 +348,7 @@
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/blog/2013/01/29/plugin-experiments/</loc>
-        <lastmod>2013-01-30T11:39:52-08:00</lastmod>
+        <lastmod>2013-01-31T06:33:22-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/about/</loc>
@@ -356,11 +356,15 @@
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/blog/archives/</loc>
-        <lastmod>2013-01-30T20:29:13-08:00</lastmod>
+        <lastmod>2013-01-31T06:33:22-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/</loc>
-        <lastmod>2013-01-30T20:29:13-08:00</lastmod>
+        <lastmod>2013-01-31T06:33:22-08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.idevelopsoftware.com/resources/</loc>
+        <lastmod>2013-01-30T22:32:02-08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.idevelopsoftware.com/robots.txt</loc>

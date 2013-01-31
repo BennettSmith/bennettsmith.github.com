@@ -4,7 +4,7 @@
   <title><![CDATA[Category: How To | iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/blog/categories/how-to/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-01-30T20:32:59-08:00</updated>
+  <updated>2013-01-31T06:33:25-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -137,10 +137,9 @@ $ sudo launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist
   <entry>
     <title type="html"><![CDATA[Setting up my Snow Leopard Ruby 1.9.2, Ruby on Rails 3.0, Nginx, Passenger development environment
 ]]></title>
-    <link href="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
-/"/>
+    <link href="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/"/>
     <updated>2010-11-14T08:00:00-08:00</updated>
-    <id>http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment</id>
+    <id>http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment</id>
     <content type="html"><![CDATA[<p>Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to setup a current environment. My requirements were:</p>
 
 <ul>

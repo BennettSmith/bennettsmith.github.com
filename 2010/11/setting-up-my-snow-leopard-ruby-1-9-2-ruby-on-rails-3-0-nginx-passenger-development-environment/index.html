@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Microsoft Professional Developers Conference 2008 &#8211; See you there? - iDevelopSoftware</title>
+  <title>Setting up my Snow Leopard Ruby 1.9.2, Ruby on Rails 3.0, Nginx, Passenger development environment
+ - iDevelopSoftware</title>
   <meta name="author" content="Bennett Smith">
 
   
-  <meta name="description" content="The last time I attended the Microsoft Professional Developer Conference was back in 2001, shortly after the attacks of September 11th, 2001. Just &hellip;">
+  <meta name="description" content="Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.idevelopsoftware.com/2008/07/microsoft-professional-developers-conference-2008-see-you-there/">
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -84,7 +85,7 @@
   
   <header>
     
-      <h1 class="entry-title">Microsoft Professional Developers Conference 2008 &#8211; See You There?</h1>
+      <h1 class="entry-title">Setting Up My Snow Leopard Ruby 1.9.2, Ruby on Rails 3.0, Nginx, Passenger Development Environment</h1>
     
     
       <p class="meta">
@@ -100,32 +101,110 @@
   
 
 
-<time datetime="2008-07-03T08:00:00-07:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2008</time>
+<time datetime="2010-11-14T08:00:00-08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2010</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><a href="http://www.microsoftpdc.com/Default.aspx"><img src="http://www.microsoftpdc.com/Images/logo-flat.png" alt="logo-flat.png" border="0" width="249" height="54" align="right" /></a></p>
-
-<p>The last time I attended the Microsoft Professional Developer Conference was back in 2001, shortly after the attacks of September 11th, 2001. Just over 6000 people made the trip to Los Angeles to learn about the latest technologies from Microsoft, as they were in the midst of rolling out the .NET Framework. They were pushing Hailstorm (I still have the free book they gave everyone with the Hailstorm API in it. I never did get a chance to use it though.). Everyone was excited about building new web services using .NET and C#.</p>
-
-<p>A lot has changed since then. Vista and Windows Server 2008 are here, the .NET Framework has gone through three major revisions, Visual Studio has seen major improvements supporting team development, Intel has delivered multi-core processors and Microsoft still hasn’t delivered on the promise that was Hailstorm.</p>
-
-<p>The preliminary agenda for PDC 2008 has some interesting sessions listed. Topics I am hoping to learn more about this year include:</p>
+<div class="entry-content"><p>Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to setup a current environment. My requirements were:</p>
 
 <ul>
-<li>Silverlight</li>
-<li>Visual Studio 10</li>
-<li>Windows 7</li>
-<li>Multi-core Programming Techniques</li>
+<li>Ruby 1.9.2</li>
+<li>Rails 3.0</li>
+<li>PostgreSQL 9.0</li>
+<li>Nginx</li>
+<li>Passenger</li>
 </ul>
 
 
-<p>Even though Bill Gates is now officially retired it looks like he is scheduled to speak at the conference as well. For a geeky college dropout with a whiny voice he does a great job delivering keynotes to developers. He doesn’t have the stage presence of a Steve Jobs, but he isn’t running Apple either. I look forward to hearing what his message for Microsoft developers is this year.</p>
+<p>You should download and install the Mac version of PostgreSQL 9.0 from the folks at <a href="http://www.enterprisedb.com/products/download.do">EnterpriseDB</a>. You will need to register on the site in order to do the download. Be sure to download PostgreSQL 9.0.1, not one of their <em>Plus</em> packages. It is a nicely packaged installer for the freely available version of Postgres.</p>
 
-<p>The dates for the conference are October 26 – 30, and the event is being held at the Los Angeles Convention Center once again. I hope to see you there.</p>
+<p>Once you install this software you should have a file called <tt>pg_env.sh</tt> in the <tt>/Library/PostgreSQL/9.0/</tt> directory. This file should be added to your <tt>/etc/profile</tt>. Here is an example of what mine looks like:</p>
+
+<pre># System-wide .profile for sh(1)
+
+# This has to be set to something in order for path_helper (below)
+# to update it with paths found in the /etc/manpaths.d directory.
+MANPATH=/usr/local/share/man; export MANPATH
+
+# Setup the PostgreSQL environment.
+. /Library/PostgreSQL/9.0/pg_env.sh
+
+if [ -x /usr/libexec/path_helper ]; then
+    eval `/usr/libexec/path_helper -s`
+fi
+
+if [ "${BASH-no}" != "no" ]; then
+    [ -r /etc/bashrc ] &#038;&#038; . /etc/bashrc
+fi
+</pre>
+
+
+<p>Be sure to log out and log back in before continuing with these instructions. This is important to make sure your PostgreSQL environment variables are set properly.</p>
+
+<p>One of my goals with this setup is to keep everything independent of the default tools that ship with Snow Leopard. To do this I decided that all of my Ruby on Rails setup will be located in the <tt>/usr/local/ror</tt> directory tree. Here is a script I developed to setup my Ruby on Rails development environment.</p>
+
+<pre>#!/bin/bash
+
+# Get and extract a copy of LibYAML
+curl http://pyyaml.org/download/libyaml/yaml-0.1.3.tar.gz > yaml-0.1.3.tar.gz
+tar xvf yaml-0.1.3.tar.gz
+
+# Build LibYAML
+(
+    cd yaml-0.1.3
+    ./configure
+    make
+    sudo make install
+)
+
+# Get and extract a copy of Ruby 1.9.2
+curl ftp://ftp.ruby-lang.org:21//pub/ruby/1.9/ruby-1.9.2-p0.tar.gz > ruby-1.9.2-p0.tar.gz
+tar xvf ruby-1.9.2-p0.tar.gz
+
+# Build Ruby 1.9.2
+(
+    cd ruby-1.9.2-p0
+    ./configure --prefix=/usr/local/ror --with-arch=x86_64 --enable-shared
+    make
+    make test
+    sudo make install
+)
+
+# Update Ruby Gems
+sudo gem update --system
+
+# Install Gems
+sudo gem install rails
+sudo gem install sqlite3-ruby
+sudo gem install pg
+sudo gem install passenger
+
+# Configure Passenger for Nginx (downloads Nginx and PCRE automatically)
+sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --auto
+</pre>
+
+
+<p><a href="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/11/doit.sh.tar" class="s3-link">Download the script</a>, un-tar it and place it in any directory you want. I call the script <tt>doit.sh</tt>, but you can name it anything you like. Run the script using the command shown below.</p>
+
+<pre>$ sh ./doit.sh
+</pre>
+
+
+<p>Once the script completes you need to add <tt>/usr/local/ror/bin</tt> to your path. I did this by editing my <tt>/etc/paths</tt> file. Here is a copy of the file on my machine:</p>
+
+<pre>usr/local/ror/bin
+/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+</pre>
+
+
+<p>One more logout/login and you are done. Have fun playing with Ruby on Rails on your Mac!</p>
 </div>
 
 
@@ -148,12 +227,12 @@
   
 
 
-<time datetime="2008-07-03T08:00:00-07:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2008</time>
+<time datetime="2010-11-14T08:00:00-08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2010</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/microsoft/'>Microsoft</a>, <a class='category' href='/blog/categories/software/'>Software</a>
+    <a class='category' href='/blog/categories/how-to/'>How To</a>, <a class='category' href='/blog/categories/software/'>Software</a>, <a class='category' href='/blog/categories/tips-from-the-trenches/'>Tips from the Trenches</a>
   
 </span>
 
@@ -162,7 +241,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2008/07/microsoft-professional-developers-conference-2008-see-you-there/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2008/07/microsoft-professional-developers-conference-2008-see-you-there/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -173,10 +252,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/2008/07/building-team-cohesion-quickly/" title="Previous Post: Building Team Cohesion Quickly">&laquo; Building Team Cohesion Quickly</a>
+        <a class="basic-alignment left" href="/2010/10/heading-to-big-nerd-ranch-later-this-month/" title="Previous Post: Heading to Big Nerd Ranch later this month!">&laquo; Heading to Big Nerd Ranch later this month!</a>
       
       
-        <a class="basic-alignment right" href="/2008/07/finally-accepted-into-the-apple-iphone-developer-program/" title="Next Post: Finally, accepted into the Apple iPhone Developer Program!">Finally, accepted into the Apple iPhone Developer Program! &raquo;</a>
+        <a class="basic-alignment right" href="/2010/11/adding-mongodb-to-my-mac-os-x-snow-leopard-ruby-on-rails-environment/" title="Next Post: Adding MongoDB to my Mac OS X Snow Leopard Ruby on Rails Environment">Adding MongoDB to my Mac OS X Snow Leopard Ruby on Rails Environment &raquo;</a>
       
     </p>
   </footer>

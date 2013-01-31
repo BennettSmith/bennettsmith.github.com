@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Use QImage to create a composite image (i.e. One image with another overlaid on top of it.)
- - iDevelopSoftware</title>
+  <title>Better than Google: Real answers for Programmers, System Administrators and IT Professionals - iDevelopSoftware</title>
   <meta name="author" content="Bennett Smith">
 
   
-  <meta name="description" content="Today I wanted to combine two images of similar size to create a new image. The new image was going to be used for a toolbar button. I have purchased &hellip;">
+  <meta name="description" content="Technology is more complex now than ever. It seems like the diversity of topics a programmer, system administrator or IT professional must have some &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,8 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/
-/">
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -74,6 +72,7 @@
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/resources/">Resources</a></li>
   <li><a href="/about/">About</a></li>
 </ul>
 
@@ -85,7 +84,7 @@
   
   <header>
     
-      <h1 class="entry-title">Use QImage to Create a Composite Image (i.e. One Image With Another Overlaid on Top of It.)</h1>
+      <h1 class="entry-title">Better Than Google: Real Answers for Programmers, System Administrators and IT Professionals</h1>
     
     
       <p class="meta">
@@ -101,59 +100,36 @@
   
 
 
-<time datetime="2008-03-19T08:00:00-07:00" pubdate data-updated="true">Mar 19<span>th</span>, 2008</time>
+<time datetime="2009-06-07T08:00:00-07:00" pubdate data-updated="true">Jun 7<span>th</span>, 2009</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><span class="alignright"><a target="_blank" href="http://www.trolltech.com"><img src="http://idvlpsw.files.wordpress.com/2008/03/qt.png" alt="qt.png" border="0" width="48" height="48" /></a></span>Today I wanted to combine two images of similar size to create a new image. The new image was going to be used for a toolbar button. I have purchased a set of commercial images in the PNG format for use on application toolbars. The set came with a bunch of overlay images that could be used to modify each of the base images. The overlays included things like arrows, warning signs, arrows, people, etc. My first though for using these images was to fire up Adobe Illustrator and just create a new icon by merging the base and overlay together. Then I realized that Qt could do the job for me at runtime, and with a little work I could dynamically overlay different badges on a base icon.</p>
+<div class="entry-content"><p>Technology is more complex now than ever. It seems like the diversity of topics a programmer, system administrator or IT professional must have some familiarity with grows exponentially. In the office it is all to common to hear someone say “Did you google it?” or “I found a post that looks like it might be related on google.” when trying to sort out complex technology issues.</p>
 
-<p>The code below can be used to construct a composite image. You pass in references to a base image and an overlay image. These images are used to construct a third image, and that is returned to the caller.</p>
+<p>Google is good, but real people working together, sharing their experience with each other and documenting the results for others to take advantage of works even better. Two sites that should be in every technologists bookmark list are <a href="http://www.stackoverflow.com">stackoverflow</a> and <a href="http://www.serverfault.com">serverfault</a>.</p>
 
-<pre>QImage createImageWithOverlay(const QImage& baseImage, const QImage& overlayImage)
-{
-    QImage imageWithOverlay = QImage(baseImage.size(), QImage::Format_ARGB32_Premultiplied);
-    QPainter painter(&imageWithOverlay);
+<p>You can think of these sites as <em>social networking communities</em> with very focused areas of interest. Anyone can post a question to a site, anyone can provide an answer, and everyone votes on the best answers. Comments can be added to questions or answers, folks develop “street cred” by providing useful answers and eventually become recognized by their peers as knowledgeable on specific topics.</p>
 
-    painter.setCompositionMode(QPainter::CompositionMode_Source);
-    painter.fillRect(imageWithOverlay.rect(), Qt::transparent);
-
-    painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
-    painter.drawImage(0, 0, baseImage);
-
-    painter.setCompositionMode(QPainter::CompositionMode_SourceOver);
-    painter.drawImage(0, 0, overlayImage);
-
-    painter.end();
-
-    return imageWithOverlay;
-}
-</pre>
+<div style="text-align-left;">
+  <a href="http://www.stackoverflow.com"><br /> <img src="http://wp-media.s3.amazonaws.com/logos/stackoverflow_logo.png" alt="stackoverflow logo" border="0" /><br /> </a>
+</div>
 
 
-<p></p></p>
+<p>Stack Overflow is a collaboratively edited question and answer site for<br/>
+programmers – regardless of platform or language. It’s 100% free, no<br/>
+registration required.</p>
 
-<p>Here is an example of using this routine to create an image that might be used to represent something being transfered from a network attached machine.</p>
-
-<pre>QImage baseImage(":/Resources/connect_pc_64.png");
-    QImage overlayLogoff(":/Resources/overlay_arrow_east_64.png");
-    QImage logoffImage = createImageWithOverlay(baseImage, overlayLogoff)
-</pre>
+<div style="text-align-left;">
+  <a href="http://www.serverfault.com"><br /> <img src="http://wp-media.s3.amazonaws.com/logos/serverfault_logo.png" alt="serverfault logo" border="0" /><br /> </a>
+</div>
 
 
-<p>The two source images and resulting composite are shown below.</p>
-
-<ol>
-<li><p>:/Resources/connect_pc_64.png
-<img src="http://idvlpsw.files.wordpress.com/2008/03/connect-pc-64.png" border="0" width="64" height="64" /></p></li>
-<li><p>:/Resources/overlay_arrow_east_64.png
-<img src="http://idvlpsw.files.wordpress.com/2008/03/arrow-east-64.png" border="0" width="64" height="64" /></p></li>
-<li><p>Generated Composite Image
-<img src="http://idvlpsw.files.wordpress.com/2008/03/logoffimage.png" border="0" width="64" height="64" /></p></li>
-</ol>
-
+<p>Server Fault is a collaboratively edited question and answer site for system<br/>
+administrators and IT professionals – regardless of platform. It’s 100% free,<br/>
+no registration required.</p>
 </div>
 
 
@@ -176,12 +152,12 @@
   
 
 
-<time datetime="2008-03-19T08:00:00-07:00" pubdate data-updated="true">Mar 19<span>th</span>, 2008</time>
+<time datetime="2009-06-07T08:00:00-07:00" pubdate data-updated="true">Jun 7<span>th</span>, 2009</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/how-to/'>How To</a>, <a class='category' href='/blog/categories/qt/'>Qt</a>
+    <a class='category' href='/blog/categories/blog/'>Blog</a>, <a class='category' href='/blog/categories/software/'>Software</a>, <a class='category' href='/blog/categories/tips-from-the-trenches/'>Tips from the Trenches</a>
   
 </span>
 
@@ -190,9 +166,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/
-/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2008/03/use-qimage-to-create-a-composite-image-ie-one-image-with-another-overlaid-on-top-of-it/
-/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2009/06/better-than-google-real-answers-for-programmers-system-administrators-and-it-professionals/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -203,10 +177,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/2008/03/protect-sensitive-data-on-your-macbook-pro/" title="Previous Post: Protect Sensitive Data on your MacBook Pro">&laquo; Protect Sensitive Data on your MacBook Pro</a>
+        <a class="basic-alignment left" href="/2009/05/book-review-restful-web-services-web-services-for-the-real-world/" title="Previous Post: Book Review: RESTful Web Services &#8211; Web services for the real world">&laquo; Book Review: RESTful Web Services &#8211; Web services for the real world</a>
       
       
-        <a class="basic-alignment right" href="/2008/03/what-is-the-product-exposure-if-you-ship-debug-symbols/" title="Next Post: What is the product exposure if you ship debug symbols?">What is the product exposure if you ship debug symbols? &raquo;</a>
+        <a class="basic-alignment right" href="/2009/06/adobe-creative-suite-4-web-premium/" title="Next Post: Adobe Creative Suite 4 &#8211; Web Premium">Adobe Creative Suite 4 &#8211; Web Premium &raquo;</a>
       
     </p>
   </footer>
@@ -229,8 +203,7 @@
       </li>
     
       <li class="post">
-        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
-/">Comcast Support Problems - SURFboard SBG6580 - Intermittent Connection Loss</a>
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/">Comcast Support Problems - SURFboard SBG6580 - Intermittent Connection Loss</a>
       </li>
     
       <li class="post">

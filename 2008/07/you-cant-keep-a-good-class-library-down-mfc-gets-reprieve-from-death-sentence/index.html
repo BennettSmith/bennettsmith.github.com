@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Setting up my Snow Leopard Ruby 1.9.2, Ruby on Rails 3.0, Nginx, Passenger development environment
- - iDevelopSoftware</title>
+  <title>You can&#8217;t keep a good class library down &#8230; MFC gets reprieve from death sentence! - iDevelopSoftware</title>
   <meta name="author" content="Bennett Smith">
 
   
-  <meta name="description" content="Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to &hellip;">
+  <meta name="description" content="A few years ago I was working at a company where we built applications using Visual Studio 6 and MFC. The applications had been around for about 10- &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,8 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
-/">
+  <link rel="canonical" href="http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -74,6 +72,7 @@
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/resources/">Resources</a></li>
   <li><a href="/about/">About</a></li>
 </ul>
 
@@ -85,7 +84,7 @@
   
   <header>
     
-      <h1 class="entry-title">Setting Up My Snow Leopard Ruby 1.9.2, Ruby on Rails 3.0, Nginx, Passenger Development Environment</h1>
+      <h1 class="entry-title">You Can&#8217;t Keep a Good Class Library Down &#8230; MFC Gets Reprieve From Death Sentence!</h1>
     
     
       <p class="meta">
@@ -101,110 +100,34 @@
   
 
 
-<time datetime="2010-11-14T08:00:00-08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2010</time>
+<time datetime="2008-07-15T08:00:00-07:00" pubdate data-updated="true">Jul 15<span>th</span>, 2008</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Snow Leopard ships with Ruby 1.8.7 installed and an older version of Ruby Gems. I am planning on doing some projects with Ruby on Rails and wanted to setup a current environment. My requirements were:</p>
+<div class="entry-content"><p>A few years ago I was working at a company where we built applications using Visual Studio 6 and MFC. The applications had been around for about 10-12 years, and were all showing their age. Customers were beginning to request updated user interface features like they were seeing in <em>modern</em> Microsoft products such as Office and Internet Explorer. Sadly, we could not deliver these user interface enhancements easily because MFC was not getting any attention from Microsoft.</p>
+
+<p>In late 2002 Microsoft was pushing the .NET Framework, C# and WinForms as the heir apparent for Win32, C++ and MFC. Converting a decade of legacy C++ MFC code to .NET and WinForms just wasn’t an option. We all felt like Microsoft had just abandoned us for greener pastures.</p>
+
+<p>Our solution at the time was to start a long difficult process of moving away from MFC toward a cross-platform class library built by <a href="http://www.trolltech.com">Trolltech</a>, called Qt. In many respects this turned out to be a good decision since it meant we could begin to seriously consider offering our applications on Windows, Linux and the Mac instead of just on Windows. Still, it felt like Microsoft had hung us out to dry.</p>
+
+<p>The WinForms classes just were not rich enough to build complex desktop applications at the time. Many of the conveniences we had come to rely upon from the MFC class libraries were missing and it would have been up to us to roll our own alternatives had we gone down the WinForms route. I think Microsoft was too focused on building web applications to devote sufficient resources to WinForms.</p>
+
+<p>Here we are six years later and Microsoft has announced that they are providing a <em>MFC Feature Pack for Visual C++ 2008</em> that will add significantly to the capabilities of the MFC class libraries. I can hear MFC development teams all across the Internet celebrating this change in stance from Microsoft.</p>
+
+<p>Here are a couple links to information from Microsoft on the topic:</p>
 
 <ul>
-<li>Ruby 1.9.2</li>
-<li>Rails 3.0</li>
-<li>PostgreSQL 9.0</li>
-<li>Nginx</li>
-<li>Passenger</li>
+<li><a href="http://msdn.microsoft.com/en-us/library/bb982354.aspx">MFC Feature Pack for Visual C++ 2008</a></li>
+<li><a href="http://channel9.msdn.com/posts/Charles/Pat-Brenner-New-Updates-to-MFC-in-Visual-Studio-2008/">Pat Brenner: New Updates to MFC in Visual Studio 2008</a></li>
 </ul>
 
 
-<p>You should download and install the Mac version of PostgreSQL 9.0 from the folks at <a href="http://www.enterprisedb.com/products/download.do">EnterpriseDB</a>. You will need to register on the site in order to do the download. Be sure to download PostgreSQL 9.0.1, not one of their <em>Plus</em> packages. It is a nicely packaged installer for the freely available version of Postgres.</p>
+<p>Couple MFC with a good third-party widget library like the toolkit offered by <a href="http://www.codejock.com/">CodeJock Software</a> and you have everything necessary to build some awesome new desktop applications.</p>
 
-<p>Once you install this software you should have a file called <tt>pg_env.sh</tt> in the <tt>/Library/PostgreSQL/9.0/</tt> directory. This file should be added to your <tt>/etc/profile</tt>. Here is an example of what mine looks like:</p>
-
-<pre># System-wide .profile for sh(1)
-
-# This has to be set to something in order for path_helper (below)
-# to update it with paths found in the /etc/manpaths.d directory.
-MANPATH=/usr/local/share/man; export MANPATH
-
-# Setup the PostgreSQL environment.
-. /Library/PostgreSQL/9.0/pg_env.sh
-
-if [ -x /usr/libexec/path_helper ]; then
-    eval `/usr/libexec/path_helper -s`
-fi
-
-if [ "${BASH-no}" != "no" ]; then
-    [ -r /etc/bashrc ] &#038;&#038; . /etc/bashrc
-fi
-</pre>
-
-
-<p>Be sure to log out and log back in before continuing with these instructions. This is important to make sure your PostgreSQL environment variables are set properly.</p>
-
-<p>One of my goals with this setup is to keep everything independent of the default tools that ship with Snow Leopard. To do this I decided that all of my Ruby on Rails setup will be located in the <tt>/usr/local/ror</tt> directory tree. Here is a script I developed to setup my Ruby on Rails development environment.</p>
-
-<pre>#!/bin/bash
-
-# Get and extract a copy of LibYAML
-curl http://pyyaml.org/download/libyaml/yaml-0.1.3.tar.gz > yaml-0.1.3.tar.gz
-tar xvf yaml-0.1.3.tar.gz
-
-# Build LibYAML
-(
-    cd yaml-0.1.3
-    ./configure
-    make
-    sudo make install
-)
-
-# Get and extract a copy of Ruby 1.9.2
-curl ftp://ftp.ruby-lang.org:21//pub/ruby/1.9/ruby-1.9.2-p0.tar.gz > ruby-1.9.2-p0.tar.gz
-tar xvf ruby-1.9.2-p0.tar.gz
-
-# Build Ruby 1.9.2
-(
-    cd ruby-1.9.2-p0
-    ./configure --prefix=/usr/local/ror --with-arch=x86_64 --enable-shared
-    make
-    make test
-    sudo make install
-)
-
-# Update Ruby Gems
-sudo gem update --system
-
-# Install Gems
-sudo gem install rails
-sudo gem install sqlite3-ruby
-sudo gem install pg
-sudo gem install passenger
-
-# Configure Passenger for Nginx (downloads Nginx and PCRE automatically)
-sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --auto
-</pre>
-
-
-<p><a href="http://wp-media.s3.amazonaws.com/wp-content/uploads/2010/11/doit.sh.tar" class="s3-link">Download the script</a>, un-tar it and place it in any directory you want. I call the script <tt>doit.sh</tt>, but you can name it anything you like. Run the script using the command shown below.</p>
-
-<pre>$ sh ./doit.sh
-</pre>
-
-
-<p>Once the script completes you need to add <tt>/usr/local/ror/bin</tt> to your path. I did this by editing my <tt>/etc/paths</tt> file. Here is a copy of the file on my machine:</p>
-
-<pre>usr/local/ror/bin
-/usr/local/bin
-/usr/bin
-/bin
-/usr/sbin
-/sbin
-</pre>
-
-
-<p>One more logout/login and you are done. Have fun playing with Ruby on Rails on your Mac!</p>
+<p><strong>Long Live MFC!</strong></p>
 </div>
 
 
@@ -227,12 +150,12 @@ sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --au
   
 
 
-<time datetime="2010-11-14T08:00:00-08:00" pubdate data-updated="true">Nov 14<span>th</span>, 2010</time>
+<time datetime="2008-07-15T08:00:00-07:00" pubdate data-updated="true">Jul 15<span>th</span>, 2008</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/how-to/'>How To</a>, <a class='category' href='/blog/categories/software/'>Software</a>, <a class='category' href='/blog/categories/tips-from-the-trenches/'>Tips from the Trenches</a>
+    <a class='category' href='/blog/categories/c-/'>C++</a>, <a class='category' href='/blog/categories/mfc/'>MFC</a>, <a class='category' href='/blog/categories/microsoft/'>Microsoft</a>
   
 </span>
 
@@ -241,9 +164,7 @@ sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --au
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
-/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2010/11/setting-up-my-snow-leopard-ruby-1-9-2-ruby-on-rails-3-0-nginx-passenger-development-environment/
-/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/" data-via="BennettSmith" data-counturl="http://blog.idevelopsoftware.com/2008/07/you-cant-keep-a-good-class-library-down-mfc-gets-reprieve-from-death-sentence/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -254,10 +175,10 @@ sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --au
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/2010/10/heading-to-big-nerd-ranch-later-this-month/" title="Previous Post: Heading to Big Nerd Ranch later this month!">&laquo; Heading to Big Nerd Ranch later this month!</a>
+        <a class="basic-alignment left" href="/2008/07/mobileme-mail-error/" title="Previous Post: MobileMe Mail Error">&laquo; MobileMe Mail Error</a>
       
       
-        <a class="basic-alignment right" href="/2010/11/adding-mongodb-to-my-mac-os-x-snow-leopard-ruby-on-rails-environment/" title="Next Post: Adding MongoDB to my Mac OS X Snow Leopard Ruby on Rails Environment">Adding MongoDB to my Mac OS X Snow Leopard Ruby on Rails Environment &raquo;</a>
+        <a class="basic-alignment right" href="/2008/07/what-a-bump/" title="Next Post: What a bump!">What a bump! &raquo;</a>
       
     </p>
   </footer>
@@ -280,8 +201,7 @@ sudo passenger-install-nginx-module --prefix=/usr/local/ror --auto-download --au
       </li>
     
       <li class="post">
-        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/
-/">Comcast Support Problems - SURFboard SBG6580 - Intermittent Connection Loss</a>
+        <a href="/2011/12/comcast-support-problems-surfboard-sbg6580-intermittent-connection-loss/">Comcast Support Problems - SURFboard SBG6580 - Intermittent Connection Loss</a>
       </li>
     
       <li class="post">
