@@ -9,7 +9,7 @@
   <meta name="author" content="Bennett Smith">
 
   
-  <meta name="description" content="Recently a friend and I started talking about possibly doing some technology podcasts. Our general concept is to have a podcast that talks about how &hellip;">
+  <meta name="description" content="The following was seen recently, buried in the responsibilities list of an employment advertisement seeking a skilled Director of Software &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -81,68 +81,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/04/podcasting-gear/">Podcasting Gear</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-04-18T08:00:00-07:00" pubdate data-updated="true">Apr 18<span>th</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Recently a friend and I started talking about possibly doing some technology podcasts. Our general concept is to have a podcast that talks about how developers keep current with the never ending sea of new technologies, languages and developer kits (SDKs). It is both daunting and exciting to always be learning new technologies. The structure of a weekly or bi-weekly podcast that dives into a new technology or concept each time will give us a means for exploring new things that interest us, and might also be useful to other developers.</p>
-
-<p>Well, if we are going to do a podcast we need gear. I didn’t have anything at all, but my friend already had a good microphone and preamp from other audio work he does. I spent a few weeks educating myself about the various alternatives and finally settled on the following setup to get started.</p>
-
-<ul>
-<li>Sennheiser HD280 Professional headphones for monitoring the audio.</li>
-<li>Edirol UA-25 USB audio capture and MIDI interface.</li>
-<li>Rode NT1-A Studio/Live Performance Condenser Microphone.</li>
-<li>Atlas Sound DS7E desktop mic stand.</li>
-<li>Shure Studio Mic Pop Filter.</li>
-<li>ProCo StageMASTER 10′ mic/audio cable, XLR.</li>
-</ul>
-
-
-<p>I ordered everything from the folks at <a target="_blank" href="http://www.bswusa.com">BSW</a> since they sponsored the <a target="_blank" href="http://gearmediatech.libsyn.com">Gear Media Tech</a> podcast which was very helpful as I figured out what to purchase. Here are a couple pictures of the initial setup.</p>
-
-<p>As you can see in the first picture, the Rode NT1-A fits nicely in the Atlas desktop mic stand. The Shure pop filter attached to the mic stand at the base and was easily positioned in front of the mic. The only issue I have noticed with this setup so far is that unless the pop filter bracket is swung to the side it causes the whole stand to tip forward a bit due to the weight of the mic and pop filter. With a little adjusting I found a position for the pop filter that seemed to keep the weight distribution in check.</p>
-
-<p><a href="http://idvlpsw.files.wordpress.com/2008/04/microphone-large.png" target="_blank"><img src="http://idvlpsw.files.wordpress.com/2008/04/microphone1.png" alt="Microphone.png" border="0" width="150" height="200" /></a></p>
-
-<p>I had considered a more professional desktop swing-arm mic stand, but figured that I would only be recording about once a week. I didn’t really like the idea of having that swing-arm attached to my desk all the time. It just seemed like that would become a distraction. The desktop mic stand is very portable and I think that will make it easy to move it out of the way when not in use. My friend went the other route, getting a desktop swing-arm, in part because he has a limited amount of desktop space.</p>
-
-<p>It only took about 15 minutes from the time I opened the BSW box of goodies until I had the whole setup running with me MacBook Pro. The Edirol UA-25 was recognized by the MacBook Pro right away. Here is a picture of the whole setup.</p>
-
-<p><a href="http://idvlpsw.files.wordpress.com/2008/04/podcastingrig-large.png" target="_blank"><img src="http://idvlpsw.files.wordpress.com/2008/04/podcastingrig1.png" alt="PodcastingRig.png" border="0" width="200" height="150" /></a></p>
-
-<p>The desk is kind of messy right now. I will be experimenting over the next few days with how to better organize all of the pieces. My MacBook Pro is held up off the desk by a Ergotron laptop swing-arm, and is also hooked to a 24″ Samsung SyncMaster 245BW monitor. One issue I have right now with the arrangement of the equipment is that the mic gets in the way of the lower half of the 245BW. Since I expect to be recording some podcast screen casts using <a target="_blank" href="https://www.varasoftware.com/products/screenflow/">ScreenFlow</a> I really want to workout a placement for the equipment that doesn’t get in the way of using the screen, but still keeps the microphone positioned for good sound pickup. Once I figure out a setup that works for me I will post an update here.</p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -488,6 +426,74 @@ Well, you would be wrong. Companies that repair these drives do exist, and reman
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/03/winqual-registration-head-aches/">WinQual Registration Head Aches</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-03-08T08:00:00-08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In order to digitally sign Windows drivers you need what Microsoft called an Authenticode Digital Certificate. The company I work is creating a number of drivers, so we had a need for an Authenticode Digital Certificate. The certificate would also be used to sign the Microsoft installer packages that we release to customers.</p>
+
+<p>Being a cost conscious group we shopped around and identified two main sources for Authenticode digital certificates.</p>
+
+<ul>
+<li>VeriSign http://www.verisign.com</li>
+<li>Thawte http://www.thawte.com</li>
+</ul>
+
+
+<p>Comparing the prices it seemed clear that the Thawte certificate was a better bet so that is what we purchased. Everything appeared to be fine until we tried to join the WinQual program. That is when I started asking myself the following question:</p>
+
+<p><strong>Question</strong>: When is an Authenticode Digital Certificate not an Authenticode Digital Certificate?</p>
+
+<p><strong>Answer</strong>: When you try and use it in the application process for joining the WinQual program.</p>
+
+<p>In the last couple weeks I have been learning about the requirements to digitally sign Windows device drivers. My strategy has been to take the Toaster sample from Microsoft and try to duplicate all of the steps necessary to build a signed version of the driver. Naively, I figured it should be easy to replicate the steps taken by Microsoft to sign this sample program. Boy was I wrong!</p>
+
+<p>It turns out that there is a utility called inf2cat or something like that. Microsoft recommends using it to create the category file containing hashes of the files you want digitally signed as part of your driver package. So, for me to replicate the Toaster sample signing process I need a copy of inf2cat. This tool is apparently only available to members of the WinQual program that Microsoft runs.</p>
+
+<p>Okay, so I need to join WinQual. How hard could that be. I went to https://winqual.microsoft.com and learned that in order to joint he program you must submit a file to them that is digitally signed with your Authenticode certificate. So off I went to get an Authenticode certificate for my company. After a few google searches I came to the conclusion that VeriSign and Thawte are the two primary sources for these certificates, and Thawte is considerably cheaper. I purchased an Authenticode certificate from Thawte and a few days later the certificate was on my machine and it was time to make the membership request on the WinQual site.</p>
+
+<p>I followed all of the instructions to digitally sign the required file using my new Authenticode certificate. Everything seemed to go smoothly until I tried to upload the signed file to Microsoft. Their web site kept saying that the file was not signed correctly. I went back to the main WinQual web page to try and find an answer to this problem. There was nothing there to help me solve this mystery so I went to the only other resource I could think of. That is the DDK mailing list archives at OSR. These folks have been doing Windows driver work for ages and if anyone knew what was wrong, I was sure the answers would be on their mailing list.</p>
+
+<p>It only took one keyword search of the archives to learn what the problem was. It seems that not all Authenticode digital certificates are created equal, and Microsoft has a predilection to those minted by VeriSign. My new Thawte digital certificate would be just fine for signing my drivers, but it would not be at all useful in joining the WinQual program. It was beginning to look like I needed to buy another Authenticode certificate from VeriSign in order to join the WinQual program.</p>
+
+<p>After carefully re-reading the WinQual page describing the ways to join the program I learned that you could also sign your membership request using something called a Corporate Identifier. It was a cheaper, less capable digital certificate that could be used to sign the file and join the program. This certificate could be purchased from VeriSign for $99.</p>
+
+<p>I waited another couple days and the new Corporate Identifier finally appeared in my inbox. I followed the instructions to sign the file, upload it, and this time I met with success in joining the WinQual program.</p>
+
+<p>So, instead of saving money by using the Thawte certificate I ended up spending roughly the same amount of money that it would have cost to just purchase the Authenticode certificate from VeriSign. The difference was that because the WinQual site was not clear on the specific requirements for using a VeriSign certificate I ended up wasting at least 2 or 3 days trying to join the WinQual program.</p>
+
+<p>In the end it was clear that I should have purchased the “name brand” digital certificate from VeriSign.</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/9/">&larr; Older</a>
@@ -501,6 +507,14 @@ Well, you would be wrong. Companies that repair these drives do exist, and reman
 <aside class="sidebar">
   
     <section>
+    <div style="width:195px; text-align:center;">
+        <iframe  src="http://www.eventbrite.com/countdown-widget?eid=5164111998" frameborder="0" 
+            height="545" width="195" marginheight="0" marginwidth="0" scrolling="no" 
+            allowtransparency="true">
+        </iframe>
+    </div>
+</section>
+<section>
   <h1>About Me</h1>
   <p>My name is Bennett Smith. I’m pleased to welcome you to my site, and hope you come back often. Information about my professional experience, details on how I can help you with your projects and general ramblings about the technologies I use are published here.</p>
   <p>Feel free to surf around and see if you like what’s on my site. I have some strong opinions about software development. Comments are encouraged so please don’t be shy.</p>
@@ -510,11 +524,7 @@ Well, you would be wrong. Companies that repair these drives do exist, and reman
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/01/29/plugin-experiments/">Plugin Experiments</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/01/29/code-blocks/">Code Blocks</a>
+        <a href="/blog/2013/02/10/announcing-ios-weekend-introduction-to-ios-development/">Announcing iOS Weekend - Introduction to iOS Development</a>
       </li>
     
       <li class="post">
@@ -527,6 +537,10 @@ Well, you would be wrong. Companies that repair these drives do exist, and reman
     
       <li class="post">
         <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/07/how-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air/">How I setup Ubuntu 11.04 Server using VirtualBox on a MacBook Air</a>
       </li>
     
   </ul>
