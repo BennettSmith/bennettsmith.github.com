@@ -4,7 +4,7 @@
   <title><![CDATA[iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-02-10T20:56:30-08:00</updated>
+  <updated>2013-02-10T20:57:53-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.idevelopsoftware.com/blog/2013/02/10/announcing-ios-weekend-introduction-to-ios-development/"/>
     <updated>2013-02-10T20:50:00-08:00</updated>
     <id>http://blog.idevelopsoftware.com/blog/2013/02/10/announcing-ios-weekend-introduction-to-ios-development</id>
-    <content type="html"><![CDATA[<p>Join me Friday, March 22, 2013 as we kick off the first iOS Weekend of 2013.  (http://www.iosweekend.com)</p>
+    <content type="html"><![CDATA[<p>Join me Friday, March 22, 2013 as we kick off the first iOS Weekend of 2013.  (<a href="http://www.iosweekend.com">http://www.iosweekend.com</a>)</p>
 
 <p>The focus is on helping you develop practical skills building mobile applications for iOS by building a real application over a weekend.  At iOS Weekend you won&#8217;t get bogged down in mindless study of API calls or every little detail of Objective-C.  What you will do is build a real application from start to finish.  By the time you leave Sunday evening you will have an app running on your phone that you can be proud of.</p>
 
