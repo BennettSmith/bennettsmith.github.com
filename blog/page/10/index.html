@@ -9,7 +9,7 @@
   <meta name="author" content="Bennett Smith">
 
   
-  <meta name="description" content="Microsoft assigns a type to each environment variable that is part of the environment block of a process. The possible types are System, User, &hellip;">
+  <meta name="description" content="ere are a couple scripts that I use to automatically backup a MySQL database on a Windows 2003 Server system. The first script is called getdatetime. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -81,6 +81,108 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2004/12/backup-mysql-database-on-windows-server-2003/">Backup MySQL Database on Windows Server 2003</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-04T08:00:00-08:00" pubdate data-updated="true">Dec 4<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ere are a couple scripts that I use to automatically backup a MySQL database on a Windows 2003 Server system.</p>
+
+<p>The first script is called getdatetime.cmd. It is a reusable script to get the current date/time in some environment variables.</p>
+
+<pre>@echo off
+
+rem *******************************************************************
+rem
+rem Set environment variables with date/time information.
+rem
+rem DT_MONTH .................... Two digit month
+rem DT_DAY ...................... Two digit day
+rem DT_YEAR ..................... Four digit year
+rem DT_HOUR ..................... Two digit hour
+rem DT_MINUTE ................... Two digit minute
+rem DT_SECOND ................... Two digit second
+rem DT_RFC ...................... YYYYMMDDTHHMMSS
+rem
+rem *******************************************************************
+
+rem Grab date and time values for conversion.
+
+SET _CUR_DATE=%DATE%
+SET _CUR_TIME=%TIME%
+
+rem Convert from "Mon 10/27/2003" to individual parts by using a DOS FOR loop.
+
+FOR /F "tokens=1-4 delims=/.- " %%a IN ("%_CUR_DATE%") DO SET DT_MONTH=%%b
+FOR /F "tokens=1-4 delims=/.- " %%a IN ("%_CUR_DATE%") DO SET DT_DAY=%%c
+FOR /F "tokens=1-4 delims=/.- " %%a IN ("%_CUR_DATE%") DO SET DT_YEAR=%%d
+
+rem Convert from "11:40:12.82" to individual parts by using a DOS FOR loop.
+
+FOR /F "tokens=1-4 delims=:." %%a IN ("%_CUR_TIME%") DO SET DT_HOUR=%%a
+FOR /F "tokens=1-4 delims=:." %%a IN ("%_CUR_TIME%") DO SET DT_MINUTE=%%b
+FOR /F "tokens=1-4 delims=:." %%a IN ("%_CUR_TIME%") DO SET DT_SECOND=%%c
+
+SET DT_RFC=%YEAR%%MONTH%%DAY%T%HOUR%%MINUTE%%SECOND%
+</pre>
+
+
+<p>The second script does the actual work of backing up the database. It references the getdatetime.cmd script. Make sure you save both scripts in the same directory. I call this script nightly-backup.cmd, but you can call it anything you wish.</p>
+
+<pre>@echo off
+rem
+rem Perform a backup of the MySQL database called mtblog.  This
+rem is the database with the Movabletype web log data in it.
+rem
+
+rem Get date/time values
+call GetDateTime.cmd
+SET YEAR=%DT_YEAR%
+SET MONTH=%DT_MONTH%
+SET DAY=%DT_DAY%
+SET HOUR=%DT_HOUR%
+SET MINUTE=%DT_MINUTE%
+SET SECOND=%DT_SECOND%
+
+rem Figure out what the filename should be for this backup.
+SET BACKUP_FILE=C:\MT-3.11-full-en_us\db-backups\mtblog-backup-%YEAR%%MONTH%%DAY%T%HOUR%%MINUTE%%SECOND%.sql
+
+rem Perform the backup.
+c:\mysql\bin\mysqldump --host=localhost --password=password --user=root mtblog &gt; %BACKUP_FILE%
+</pre>
+
+
+<p>Don’t forget to change the host, password, and user information on the last line of the script. You may also need to change the path to the mysqldump program if it is not under c:\mysql\bin on your system.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -625,6 +727,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/14/app-definition-statement-for-countem-up/">App Definition Statement for Count&#8217;em UP</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/10/announcing-ios-weekend-introduction-to-ios-development/">Announcing iOS Weekend - Introduction to iOS Development</a>
       </li>
     
@@ -638,10 +744,6 @@
     
       <li class="post">
         <a href="/2011/08/cookbook-snow-leopard-rvm-ruby-on-rails/">Cookbook: Snow Leopard, RVM, Ruby on Rails</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2011/07/how-i-setup-ubuntu-11-04-server-using-virtualbox-on-a-macbook-air/">How I setup Ubuntu 11.04 Server using VirtualBox on a MacBook Air</a>
       </li>
     
   </ul>
