@@ -4,7 +4,7 @@
   <title><![CDATA[iDevelopSoftware]]></title>
   <link href="http://blog.idevelopsoftware.com/atom.xml" rel="self"/>
   <link href="http://blog.idevelopsoftware.com/"/>
-  <updated>2013-02-14T20:37:57-08:00</updated>
+  <updated>2013-02-14T20:56:18-08:00</updated>
   <id>http://blog.idevelopsoftware.com/</id>
   <author>
     <name><![CDATA[Bennett Smith]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The iOS Design Cheat Sheet vol2]]></title>
+    <link href="http://blog.idevelopsoftware.com/blog/2013/02/14/the-ios-design-cheat-sheet-vol2/"/>
+    <updated>2013-02-14T20:50:00-08:00</updated>
+    <id>http://blog.idevelopsoftware.com/blog/2013/02/14/the-ios-design-cheat-sheet-vol2</id>
+    <content type="html"><![CDATA[<p>Fantastic reference for iOS designers and developers. Contains all sorts of useful stuff.  Check it out
+<a href="http://ivomynttinen.com/blog/the-ios-design-cheat-sheet-volume-2/">here</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[App Definition Statement for Count'em UP]]></title>
@@ -1380,31 +1390,6 @@ I am attending the yearly iOSDevCamp event this weekend in SanJose, CA. This is 
     <updated>2010-05-01T08:00:00-07:00</updated>
     <id>http://blog.idevelopsoftware.com/2010/05/a-few-small-upgrades-to-the-blog</id>
     <content type="html"><![CDATA[<p>I just installed the Disqus commenting system on the blog and also added the WP Greet Box plugin.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iPad Review &#8211; First 24 hours]]></title>
-    <link href="http://blog.idevelopsoftware.com/2010/04/ipad-review-first-24-hours/"/>
-    <updated>2010-04-05T08:00:00-07:00</updated>
-    <id>http://blog.idevelopsoftware.com/2010/04/ipad-review-first-24-hours</id>
-    <content type="html"><![CDATA[<p>My experience with it so far is mixed. Like you I tried to touch-type on the keyboard and that really didn’t work at all. I have tried to do the two finger plus thumbs approach and am not that fast typing like that. The keyboard is big enough that I find it kind of weird to hold it in one hand and type with the other. My hand has to move too far to get all the keys unlike on the iPhone where everything is much closer together. I have not tried to hook up a bluetooth keyboard yet either. I expect that to work much better for things like typing e-mails.</p>
-
-<p>I ended up purchasing the 64GB version instead of the 16GB version. The change was based on a recommendation I heard on MacBreak Weekly. They mentioned that based on their preview use (had it for about a week before April 3rd) they feel that if you are going to use it to read books then you will easily fill the 16GB and then have to pick/choose which items to sync to your iPad. With the 64GB version you can just dump all the books/PDFs you want on it and not worry about running out of space.</p>
-
-<p>I have the Kindle for iPad application on it and pulled down all my Kindle books. Very cool! It just works! I also downloaded the iBooks application from the App Store. That application reads the ePub format. I have purchased a number of technical books in the past few years from Pragmatic Programmers. All of their books are available in ePub format so I downloaded that version and loaded them into the iPad too.</p>
-
-<p>So far I really like having all of my technical books in one place like this. I have not tried reading out in full sunlight, but expect it will be an issue. For reading indoors it works fine. Not as easy on the eyes as the Kindle, but it shows all of the technical illustrations in the books in full color which is much better.</p>
-
-<p>I purchased the Pages, Numbers and Keynote applications from Apple also. They really show off the sort of things you can accomplish with the iPad, but the crash a lot. I feel more like a beta tester of these apps than just a user. Sort of a let down, but then I have been here before with other Apple products. Eventually these will be great applications.</p>
-
-<p>With the iPad I also purchased the Apple case for the iPad. I was really surprised when I opened it up at home. The quality of the case is really bad. It only cost $39, but it sucks compared to the case that Amazon sells for the Kindle. After about 2 hours of using the iPad in the case I got so annoyed with it that now I am using the iPad without a case. I am shopping for a different case now.</p>
-
-<p>I have had Safari crash on me more than once now on the iPad. It seems like the crashes were always on very long (lots of scrolling) web pages so maybe it is a memory issue. I’m not sure, but the end result is you are just reading along on the page and all of a sudden you are back to the menu of icons wondering how you got there.</p>
-
-<p>Even more surprising than the crashes of apps on the device is the crash I experienced this morning of the Xcode development environment on the desktop. Apple released an update to Xcode that includes all of the iPad development tools yesterday. I was working on a sample application this morning, following the instructions on how to build an app when all of a sudden Xcode just up and crashed on me. This is very unusual. Earlier versions of Xcode have been very stable for years.</p>
-
-<p>Over all I think purchasing one as a developer at this point is a good move, but for basic consumers it is probably more sensible to wait about 3 months before jumping on the iPad bandwagon.</p>
 ]]></content>
   </entry>
   
