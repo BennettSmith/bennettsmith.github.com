@@ -2,7 +2,7 @@
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
-$khuler-blue: #05c7f2;
+$khuler-blue: #f8982b; // #05c7f2;
 $khuler-white: #f2f2f2;
 $khuler-light-gray: #bfbfbf;
 $khuler-dark-gray: #737373;
@@ -12,7 +12,8 @@ $header-bg: $khuler-white; /* #263347; */
 $title-color: $khuler-black;
 $subtitle-color: $khuler-dark-gray; /* lighten($header-bg, 58); */
 
-$nav-bg: desaturate(lighten($khuler-blue, 18), 5); /* desaturate(lighten(#8fc17a, 18), 5); */
+// $nav-bg: desaturate(lighten($khuler-blue, 18), 5); /* desaturate(lighten(#8fc17a, 18), 5); */
+$nav-bg: $khuler-blue; /* desaturate(lighten(#8fc17a, 18), 5); */
 $nav-bg-front: image-url('noise.png');
 $nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
 
