@@ -5,9 +5,27 @@
 url: http://blog.focalshift.com
 title: FocalShift, LLC
 subtitle: From idea to App Store, we make it happen.
-author: Bennett Smith
+author: bennett
 simple_search: http://google.com/search
 description:
+
+authors:
+  bennett:
+    name: Bennett Smith
+    display_name: Bennett
+    gravatar:
+    email: bennett@focalshift.com
+    web: http://www.focalshift.com
+    twitter: bennettsmith
+    github: BennettSmith
+  terry:
+    name: Terry Tucker
+    display_name: Terry
+    gravatar:
+    email: terry@focalshift.com
+    web: http://www.focalshift.com
+    twitter: TerryTucker
+    github: TerryTucker
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
